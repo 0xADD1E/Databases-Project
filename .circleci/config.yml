@@ -15,4 +15,9 @@ jobs:
 
       - run:
           name: Compile Diagrams
-          command: neato -Tsvg -OER ER.dot
+          command: |-
+            neato -Tsvg -OER ER.dot
+            cp ER.dot.svg /tmp/ER.svg
+      
+      - store_artifacts:
+          path: /tmp/ER.svg
