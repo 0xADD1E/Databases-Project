@@ -1,7 +1,96 @@
 <!DOCTYPE html>
-<head>
 
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic.min.css">
+    <script src="semantic.min.js"></script>
 </head>
+
 <body>
-    <img src="ER.dot.svg">
+    <div class="ui inverted vertical masthead center aligned segment">
+        <div class="ui text container">
+            <h1 class="ui inverted header">
+                PokémonDB
+            </h1>
+            <h2>by Morrison, Schimming, Hoggatt, Jayathilake</h2>
+        </div>
+    </div>
+    <h4 class="ui horizontal divider header">
+        Phase 1
+    </h4>
+    <div id="er" class="ui large modal">
+        <div class="header container">
+            <div class="ui secondary menu">
+                <div class="item">ER Diagram</div>
+                <a class="right item"><i class="close icon" onclick="$('#er').modal('hide')"></i></a>
+            </div>
+        </div>
+        <div class="image content">
+            <div class="ui fluid rounded image">
+                <img src="ER.dot.svg">
+            </div>
+        </div>
+    </div>
+    <div class="ui container three column grid">
+        <div class="column">
+            <div class="ui fluid card">
+                <div class="content">
+                    <div class="header">Description</div>
+                    <div class="description">
+                        Coming Soon
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui fluid card">
+                <div class="content">
+                    <div class="header">ER Diagram</div>
+                    <div class="description">
+                        All the entities, and relations to be used in this project
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="ER.dot.svg">
+                </div>
+                <div class="ui bottom attached button" onclick="$('#er').modal('show')">
+                    <i class="add icon"></i>
+                    Fullscreen
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui fluid card">
+                <div class="content">
+                    <div class="header">Schemas</div>
+                    <div class="description">
+                        Coming Soon
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <h4 class="ui horizontal divider header">
+        Phase 2
+    </h4>
+    <div class="ui container three column grid">
+        <div class="column">
+            <div class="ui fluid card">
+                <div class="content">
+                    <div class="header">Description</div>
+                    <div class="description">
+                        All the entities, and relations to be used in this project
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="ER.dot.svg">
+                </div>
+                <div class="ui bottom attached button" onclick="$('#er').modal('show')">
+                    Fullscreen
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
 </body>
