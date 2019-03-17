@@ -8,8 +8,8 @@ graph {
     bgcolor="#455A64";
     nodesep=1.5;
     #splines=polyline; # maybe?
-    node[fontname=Sailec,fontsize=14,style=filled,penwidth=1.5,color="#2979FF", fillcolor="#212121",fontcolor=white];
-    edge[fontname=Sailec,fontsize=10,fontcolor=white,len=1.5];
+    node[fontname="Sailec,Arial",fontsize=14,style=filled,penwidth=1.5,color="#2979FF", fillcolor="#212121",fontcolor=white];
+    edge[fontname="Sailec,Arial",fontsize=10,fontcolor=white,len=1.5];
 
 
     ###########################################################################
