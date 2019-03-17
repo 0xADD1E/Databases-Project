@@ -1,0 +1,11 @@
+language: minimal
+addons:
+  apt:
+    update: true
+    packages:
+      - graphviz
+jobs:
+  include:
+    - stage: diagrams
+      script:
+        - neato -Tsvg -OER ER.dot
