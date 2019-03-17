@@ -9,3 +9,12 @@ jobs:
     - stage: diagrams
       script:
         - neato -Tsvg -OER ER.dot
+        - cp *.svg pages
+deploy:
+  provider: pages
+  local-dir: pages
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: master
