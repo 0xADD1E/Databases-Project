@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  diagrams:
+    docker:
+      - image: debian:stretch
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install Dependencies
+          command: apt-get install -y graphviz
+
+      - run:
+          name: Compile Diagrams
+          command: neato -Tsvg -OER ER.dot
