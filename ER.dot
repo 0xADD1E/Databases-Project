@@ -36,7 +36,7 @@ graph {
     Attacks -- AttkType;
     AttkType -- Types;
 
-    Pokemon -- CanLearn;
+    AppearsIn -- CanLearn[label="Is This Legal?"];
     CanLearn -- Attacks;
     
     Media -- IsOf;
