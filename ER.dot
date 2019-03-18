@@ -30,6 +30,9 @@ graph {
     Pokemon -- PkmnType;
     PkmnType -- Types;
 
+    Pokemon -- IsEvolutionOf[label="Self",dir=back];
+    Pokemon -- IsEvolutionOf[label="Other",dir=back];
+
     Types -- Matchups[label="Self",dir=back]; 
     Types -- Matchups[label="Other",dir=back];
 
