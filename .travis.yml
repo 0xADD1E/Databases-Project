@@ -13,7 +13,7 @@ jobs:
       script:
         - plantuml -tsvg Phase1/UML.plantuml
         - ls && echo "" && ls Phase1
-        - mv PokemonDB.svg pages/PokemonDB.svg
+        - mv phase1/PokemonDB pages/PokemonDB.svg
         - sed -i /\<\!--Description--\>/r/<(pandoc -t html Phase1\/Description.md) pages/index.html
         - sed -i /\<\!--Schemas--\>/r/<(pandoc -t html Phase1\/Schemas.md) pages/index.html
 deploy:
