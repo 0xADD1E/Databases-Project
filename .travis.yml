@@ -12,7 +12,9 @@ jobs:
     - stage: UMLDiagram
       script:
         - plantuml -tsvg Phase1/UML.plantuml
-        - cp Phase1/*.svg pages
+        - ls
+        - ls Phase1
+        - cp Phase1/PokemonDB.svg pages
     - stage: Phase1Docs
       script:
         - sed -i 's/%%DESCRIPTION%%/$(pandoc -t html Phase1\/Description.md)/' pages/index.html
