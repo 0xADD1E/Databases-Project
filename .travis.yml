@@ -1,15 +1,21 @@
 language: minimal
+dist: xenial
 addons:
   apt:
     update: true
     packages:
-      - graphviz
+      - plantuml
+      - pandoc
 jobs:
   include:
-    - stage: diagrams
+    - stage: UMLDiagram
       script:
-        - neato -Tsvg -OER ER.dot
-        - cp *.svg pages
+        - cd Phase1 && plantuml -tsvg UML.plantuml
+        - cp Phase1/*.svg pages
+    - stage: Phase1Docs
+      script:
+        - sed -i 's/%%DESCRIPTION%%/$(pandoc -t html Phase1/Description.md)' pages/index.html
+        - sed -i 's/%%SCHEMAS%%/$(pandoc -t html Phase1/Schemas.md)' pages/index.html
 deploy:
   provider: pages
   local-dir: pages

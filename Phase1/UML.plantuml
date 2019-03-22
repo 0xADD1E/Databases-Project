@@ -1,0 +1,86 @@
+@startuml PokemonDB
+
+class Pokemon {
+    +TEXT Name,
+}
+class PokemonEvolutions{
+    ---
+    ~Base,
+    ~Evolution,
+}
+class PokemonAppearance{
+    +INTEGER ID,
+    +INTEGER BaseHP,
+    +INTEGER BaseSpeed,
+    +INTEGER BaseAttack,
+    +INTEGER BaseDefence,
+    +INTEGER BaseSpAttack,
+    +INTEGER BaseSpDefence,
+    ---
+    ~Pokemon,
+    ~Game,
+}
+class PokemonCanLearn{
+    +INTEGER AtLevel,
+    ---
+    ~Appearance,
+    ~Attack,
+}
+class Types{
+    +TEXT Name,
+}
+class TypeMatchups{
+    +INTEGER EffectivenessMultiplier,
+    ---
+    ~Self,
+    ~Other,
+}
+class Attacks{
+    +TEXT Name,
+    +INTEGER Priority,
+    +INTEGER Accuracy,
+    +INTEGER? TMNumber,
+    +INTEGER PP,
+    +INTEGER Power,
+}
+class AttackTypes{
+    ---
+    ~Attack,
+    ~Type
+}
+class Media{
+    +TEXT Filename,
+    +BLOB Data,
+    ---
+    ~Pokemon,
+    ~MIMEType,
+}
+class MIMETypes{
+    +TEXT FriendlyName,
+    +TEXT MIMEString,
+    +TEXT Extension,
+}
+class Games{
+    +TEXT Name,
+    +DATE ReleaseDate,
+    ---
+    ~Platform
+}
+class Platforms{
+    +TEXT Name,
+}
+
+Platforms::Name --* Games::Platform
+Pokemon::Name --* Media::Pokemon
+Pokemon::Name --* PokemonAppearance::Pokemon
+Pokemon::Name --* PokemonEvolutions::Base
+Pokemon::Name --* PokemonEvolutions::Evolution
+Games::Name --* PokemonAppearance::Game
+PokemonAppearance::ID --* PokemonCanLearn::Appearance
+Attacks::Name --* PokemonCanLearn::Attack
+Attacks::Name --* AttackTypes::Attack
+Types::Name --* AttackTypes::Type
+Types::Name --* TypeMatchups::Self
+Types::Name --* TypeMatchups::Other
+Media::MIMEType -- MIMETypes::MIMEString
+@enduml
