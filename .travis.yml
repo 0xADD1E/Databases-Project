@@ -13,8 +13,8 @@ jobs:
       script:
         - plantuml -tsvg Phase1/UML.plantuml
         - cp Phase1/PokemonDB.svg pages
-        - sed -i '' /\<\!--Description--\>/r/<(pandoc -t html Phase1\/Description.md) pages/index.html
-        - sed -i '' /\<\!--Schemas--\>/r/<(pandoc -t html Phase1\/Schemas.md) pages/index.html
+        - sed -i /\<\!--Description--\>/r/<(pandoc -t html Phase1\/Description.md) pages/index.html
+        - sed -i /\<\!--Schemas--\>/r/<(pandoc -t html Phase1\/Schemas.md) pages/index.html
 deploy:
   provider: pages
   local-dir: pages
