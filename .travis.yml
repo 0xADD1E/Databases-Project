@@ -5,17 +5,17 @@ addons:
     update: true
     packages:
       - graphviz
-      - plantuml
+      - wget
+      - openjdk-8-jre
       - pandoc
-jobs:
-  include:
-    - stage: UMLDiagram
-      script:
-        - plantuml -tsvg Phase1/UML.plantuml
-        - ls && echo "" && ls Phase1
-        - mv Phase1/PokemonDB pages/PokemonDB.svg
-        - sed -i /\<\!--Description--\>/r/<(pandoc -t html Phase1\/Description.md) pages/index.html
-        - sed -i /\<\!--Schemas--\>/r/<(pandoc -t html Phase1\/Schemas.md) pages/index.html
+before_script:
+  - wget http://sourceforge.net/projects/plantuml/files/plantuml.jar/download -O plantuml.jar
+script:
+  - java -jar plantuml.jar -tsvg Phase1/UML.plantuml
+  - ls && echo "" && ls Phase1
+  - mv Phase1/PokemonDB.svg pages/PokemonDB.svg
+  - sed -i /\<\!--Description--\>/r/<(pandoc -t html Phase1\/Description.md) pages/index.html
+  - sed -i /\<\!--Schemas--\>/r/<(pandoc -t html Phase1\/Schemas.md) pages/index.html
 deploy:
   provider: pages
   local-dir: pages
