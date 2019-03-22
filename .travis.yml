@@ -11,7 +11,7 @@ jobs:
   include:
     - stage: UMLDiagram
       script:
-        - cd Phase1 && plantuml -tsvg UML.plantuml
+        - plantuml -tsvg Phase1/UML.plantuml
         - cp Phase1/*.svg pages
     - stage: Phase1Docs
       script:
