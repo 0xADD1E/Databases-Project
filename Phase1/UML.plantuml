@@ -1,7 +1,10 @@
 @startuml PokemonDB
 
 class Pokemon {
+    {static}+INTEGER PokedexID,
     +TEXT Name,
+    +INTEGER GenderDistribution,
+    +BOOLEAN Legendary,
 }
 class PokemonEvolutions{
     ---
@@ -9,7 +12,7 @@ class PokemonEvolutions{
     ~Evolution,
 }
 class PokemonAppearance{
-    +INTEGER ID,
+    {static}+INTEGER ID,
     +INTEGER BaseHP,
     +INTEGER BaseSpeed,
     +INTEGER BaseAttack,
@@ -27,7 +30,7 @@ class PokemonCanLearn{
     ~Attack,
 }
 class Types{
-    +TEXT Name,
+    {static}+TEXT Name,
 }
 class TypeMatchups{
     +INTEGER EffectivenessMultiplier,
@@ -36,7 +39,7 @@ class TypeMatchups{
     ~Other,
 }
 class Attacks{
-    +TEXT Name,
+    {static}+TEXT Name,
     +INTEGER Priority,
     +INTEGER Accuracy,
     +INTEGER? TMNumber,
@@ -49,6 +52,7 @@ class AttackTypes{
     ~Type
 }
 class Media{
+    {static}+INTEGER ID,
     +TEXT Filename,
     +BLOB Data,
     ---
@@ -56,25 +60,31 @@ class Media{
     ~MIMEType,
 }
 class MIMETypes{
+    {static}+TEXT MIMEString,
     +TEXT FriendlyName,
-    +TEXT MIMEString,
     +TEXT Extension,
 }
 class Games{
-    +TEXT Name,
+    {static}+TEXT Name,
     +DATE ReleaseDate,
     ---
     ~Platform
 }
 class Platforms{
-    +TEXT Name,
+    {static}+TEXT Name,
 }
 
+note "Since these tables essentially represent matricies\nit doesn't really make sense to have a primary key\nas their only value is in reference of one of their foriegn keys" as MatrixNote
+MatrixNote..PokemonCanLearn
+MatrixNote..AttackTypes
+MatrixNote..TypeMatchups
+MatrixNote..PokemonEvolutions
+
 Platforms::Name --* Games::Platform
-Pokemon::Name --* Media::Pokemon
-Pokemon::Name --* PokemonAppearance::Pokemon
-Pokemon::Name --* PokemonEvolutions::Base
-Pokemon::Name --* PokemonEvolutions::Evolution
+Pokemon::PokedexID --* Media::Pokemon
+Pokemon::PokedexID --* PokemonAppearance::Pokemon
+Pokemon::PokedexID --* PokemonEvolutions::Base
+Pokemon::PokedexID --* PokemonEvolutions::Evolution
 Games::Name --* PokemonAppearance::Game
 PokemonAppearance::ID --* PokemonCanLearn::Appearance
 Attacks::Name --* PokemonCanLearn::Attack
