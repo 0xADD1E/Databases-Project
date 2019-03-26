@@ -18,6 +18,18 @@
     <h4 class="ui horizontal divider header">
         Phase 1
     </h4>
+    <!-- Popups -->
+     <div id="desc" class="ui large modal">
+        <div class="header container">
+            <div class="ui secondary menu">
+                <div class="item">Project Description</div>
+                <a class="right item"><i class="close icon" onclick="$('#schema').modal('hide')"></i></a>
+            </div>
+        </div>
+        <div class="content">
+            <!--Description-->
+        </div>
+    </div>
     <div id="er" class="ui large modal">
         <div class="header container">
             <div class="ui secondary menu">
@@ -31,13 +43,29 @@
             </div>
         </div>
     </div>
+    <div id="schema" class="ui large modal">
+        <div class="header container">
+            <div class="ui secondary menu">
+                <div class="item">Database Schemas</div>
+                <a class="right item"><i class="close icon" onclick="$('#schema').modal('hide')"></i></a>
+            </div>
+        </div>
+        <div class="content">
+            <!--Schemas-->
+        </div>
+    </div>
+    <!-- Cards -->
     <div class="ui container three column grid">
         <div class="column">
             <div class="ui fluid card">
                 <div class="content">
                     <div class="header">Description</div>
                     <div class="description">
-                        <!--Description-->
+                        <!--DescriptionSummary-->
+                    </div>
+                    <div class="ui bottom attached button" onclick="$('#desc').modal('show')">
+                        <i class="add icon"></i>
+                        Show More
                     </div>
                 </div>
             </div>
@@ -64,7 +92,11 @@
                 <div class="content">
                     <div class="header">Schemas</div>
                     <div class="description">
-                        <!--Schemas-->
+                        <!--SchemasSummary-->
+                    </div>
+                    <div class="ui bottom attached button" onclick="$('#schemas').modal('show')">
+                        <i class="add icon"></i>
+                        Show More
                     </div>
                 </div>
             </div>
