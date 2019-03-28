@@ -15,9 +15,9 @@ script:
   - ls && echo "" && ls Phase1
   - mv Phase1/PokemonDB.svg pages/PokemonDB.svg
   - sed -i /\<\!--Description--\>/r/<(pandoc -t html Phase1\/Description.md) pages/index.html
-  - sed -i /\<\!--DescriptionSummary--\>/r/<(pandoc -t plain Phase1\/Description.md | tr '\n' '\1' | cut -c-64 | tr '\1' '\n'|cat - <(echo '...')) pages/index.html
+  - sed -i /\<\!--DescriptionSummary--\>/r/<(pandoc -t plain Phase1\/Description.md | tr '\n' '\1' | cut -c-128 | tr '\1' '\n'|cat - <(echo '...')) pages/index.html
   - sed -i /\<\!--Schemas--\>/r/<(pandoc -t html Phase1\/Schemas.md) pages/index.html
-  - sed -i /\<\!--SchemasSummary--\>/r/<(pandoc -t plain Phase1\/Schemas.md | tr '\n' '\1' | cut -c-64 | tr '\1' '\n'|cat - <(echo '...')) pages/index.html
+  - sed -i /\<\!--SchemasSummary--\>/r/<(pandoc -t plain Phase1\/Schemas.md | tr '\n' '\1' | cut -c-128 | tr '\1' '\n'|cat - <(echo '...')) pages/index.html
 deploy:
   provider: pages
   local-dir: pages
