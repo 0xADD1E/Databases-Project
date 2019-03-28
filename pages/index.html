@@ -23,7 +23,7 @@
         <div class="header container">
             <div class="ui secondary menu">
                 <div class="item">Project Description</div>
-                <a class="right item"><i class="close icon" onclick="$('#schema').modal('hide')"></i></a>
+                <a class="right item" onclick="$('#desc').modal('hide')"><i class="close icon" ></i></a>
             </div>
         </div>
         <div class="content">
@@ -34,7 +34,7 @@
         <div class="header container">
             <div class="ui secondary menu">
                 <div class="item">UML Diagram</div>
-                <a class="right item"><i class="close icon" onclick="$('#er').modal('hide')"></i></a>
+                <a class="right item" onclick="$('#er').modal('hide')"><i class="close icon"></i></a>
             </div>
         </div>
         <div class="image content">
@@ -47,7 +47,7 @@
         <div class="header container">
             <div class="ui secondary menu">
                 <div class="item">Database Schemas</div>
-                <a class="right item"><i class="close icon" onclick="$('#schema').modal('hide')"></i></a>
+                <a class="right item" onclick="$('#schema').modal('hide')"><i class="close icon"></i></a>
             </div>
         </div>
         <div class="content">
@@ -63,10 +63,10 @@
                     <div class="description">
                         <!--DescriptionSummary-->
                     </div>
-                    <div class="ui bottom attached button" onclick="$('#desc').modal('show')">
-                        <i class="add icon"></i>
-                        Show More
-                    </div>
+                </div>
+                <div class="ui bottom attached button" onclick="$('#desc').modal('show')">
+                    <i class="add icon"></i>
+                    Show More
                 </div>
             </div>
         </div>
@@ -94,10 +94,10 @@
                     <div class="description">
                         <!--SchemasSummary-->
                     </div>
-                    <div class="ui bottom attached button" onclick="$('#schemas').modal('show')">
-                        <i class="add icon"></i>
-                        Show More
-                    </div>
+                </div>
+                <div class="ui bottom attached button" onclick="$('#schema').modal('show')">
+                    <i class="add icon"></i>
+                    Show More
                 </div>
             </div>
         </div>
