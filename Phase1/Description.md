@@ -1,18 +1,18 @@
 # Description
 **Platforms**
->The Platforms entity serves to convey which Nintendo platform the Pokémon game appeared on.
+>The Platforms entity serves to convey which Nintendo platform the Pokémon game appeared on. This Entity's only attribute is the name of the platform.
 
 **Games**
->The Games entity describes the publication of the game. It contains the title, release date, and the platform for which the game was initially developed.
+>The Games entity describes the publication of the game. This entity's attributes are the title of the game, its initial release date, and the platform for which the game was initially developed.
 
 **PokémonApperance**
->The PokémonAppearance entity contains the data belonging to the Pokémon appearing in a certain game. Each game can contain different Pokémon and Pokémon can appear in more than one game. This entity’s attributes are the Pokémon’s ID, base health points, base speed, base attack, base defense, base special attack, base special defense, its name, and finally the game in which it appears.  
+>The PokémonAppearance entity contains the data belonging to the Pokémon appearing in a certain game. Each game can contain different Pokémon, and Pokémon can appear in more than one game. This entity’s attributes are the Pokémon’s ID, base health points, base speed, base attack, base defense, base special attack, base special defense, its name, and finally the game in which it appears.  
 
 **PokémonCanLearn**
->The PokémonCanLearn entity coveys which abilities, at a certain level, a Pokémon is capable of learning. This Entity’s attributes are the Pokémon’s level, the appearance, and the attack’s name.
+>The PokémonCanLearn entity coveys which abilities, at a certain level, a Pokémon is capable of learning. This Entity’s attributes are the Pokémon’s required level, the appearance, and the attack’s name.
 
 **Attacks**
->The Attacks entity describes the attack abilities which Pokémon can use. This entity’s attributes are the name of the attack, its priority, the accuracy or likelihood of it hitting, the TM number which is its id when on a technical machine in the game, the pp or power points which is the cost to use the attack, and its power which is the damage the attack can do.
+>The Attacks entity describes the attack abilities which Pokémon can use. This entity’s attributes are the name of the attack, the priority which decides who attacks first, the accuracy or likelihood of it hitting, the TM number which is its id when on a technical machine in the game, the PP or power points which is the cost to use the attack, and its power which is the damage the attack can do.
 
 **AttackTypes**
 >The AttackTypes entity contains the details of what Pokémon type an attack is considered. This entity’s attributes are the name of the attack, and the attack’s type.
