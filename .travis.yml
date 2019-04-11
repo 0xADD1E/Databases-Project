@@ -8,16 +8,23 @@ addons:
       - wget
       - openjdk-8-jre
       - pandoc
+      - texlive
+      - inkscape
 before_script:
   - wget http://sourceforge.net/projects/plantuml/files/plantuml.jar/download -O plantuml.jar
 script:
+  - echo "Step 1 - The website"
   - java -jar plantuml.jar -tsvg Phase1/UML.plantuml
-  - ls && echo "" && ls Phase1
   - mv Phase1/PokemonDB.svg pages/PokemonDB.svg
   - sed -i /\<\!--Description--\>/r/<(pandoc -t html Phase1\/Description.md) pages/index.html
   - sed -i /\<\!--DescriptionSummary--\>/r/<(pandoc -t plain Phase1\/Description.md | tr '\n' '\1' | cut -c-128 | tr '\1' '\n'|cat - <(echo '...')) pages/index.html
   - sed -i /\<\!--Schemas--\>/r/<(pandoc -t html Phase1\/Schemas.md) pages/index.html
   - sed -i /\<\!--SchemasSummary--\>/r/<(pandoc -t plain Phase1\/Schemas.md | tr '\n' '\1' | cut -c-128 | tr '\1' '\n'|cat - <(echo '...')) pages/index.html
+  - echo "Step 2 - The Report"
+  - inkscape $(pwd)/pages/PokemonDB.svg --export-pdf $(pwd)/Report/UML.pdf
+  - pandoc -t latex Phase1\/Description.md | sed 's/\\\\tightlist//g' > Report/descriptions.tex
+  - pandoc -t latex Phase1\/Schemas.md | sed 's/\\\\tightlist//g' > Report/schemas.tex
+  - cd Report && latexmk -pdf document && mv document.pdf ../pages/Report.pdf
 deploy:
   provider: pages
   local-dir: pages
