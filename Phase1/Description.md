@@ -1,6 +1,6 @@
 # Description
 **Platforms**
->*The Platforms entity serves to convey which Nintendo platform the Pokémon game appeared on. *
+>*The Platforms entity serves to convey which Nintendo platform the Pokémon game appeared on.*
 - This Entity's only attribute is the name of the platform.
 
 **Games**
@@ -10,7 +10,7 @@
 - The Platform attribute refers to the platform for which the game was initially developed.
 
 **PokemonApperance**
->*The PokemonAppearance entity contains the data belonging to the Pokémon appearing in a certain game. Each game can contain different Pokémon, and Pokémon can appear in more than one game. *
+>*The PokemonAppearance entity contains the data belonging to the Pokémon appearing in a certain game. Each game can contain different Pokémon, and Pokémon can appear in more than one game.*
 - The ID attribute is the Pokémon's designated number
 - The BaseHp attribute is the base health points stat the Pokémon begins with
 - The BaseSpeed attribute is the Pokémon's initial speed stat
@@ -28,7 +28,7 @@
 - The Attack attribute is a package containing Attacks, it is the many end of the relation
 
 **Attacks**
->*The Attacks entity describes the attack abilities which Pokémon can use. *
+>*The Attacks entity describes the attack abilities which Pokémon can use.*
 - The Name attribute is the name of the attack
 - The Priority attribute value decides who attacks first
 - The Accuracy attribute is the likelihood of it hitting the opponent
@@ -52,7 +52,7 @@
 - The Other attribute contains whether the advantage is with or against the opponent
 
 **Pokémon**
->*The Pokémon entity details an individual Pokémon’s characteristics. *
+>*The Pokémon entity details an individual Pokémon’s characteristics.*
 - The PokedexID attribute is the Pokémon’s ID given by the in game Pokédex tool
 - The Name attribute is the Pokémon's name
 - The GenderDistribution is the gender of the Pokémon
