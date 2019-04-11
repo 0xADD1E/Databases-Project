@@ -1,4 +1,8 @@
-# Description
+# Purpose of the database
+
+>*The purpose of this database is to make information about different pokemon accross multiple titles easily avaliable. This also includes media such as fan-art and in game assets. The user should be able to quierie a specific pokemon's attributes in a certain game, and on its designated platform.*
+
+# Entity Descriptions
 **Platforms**
 
 >*The Platforms entity serves to convey which Nintendo platform the Pokémon game appeared on.*
@@ -24,6 +28,7 @@
 - The BaseDefence attribute is the Pokémon's initial defense stat
 - The BaseSpAttack attribute is the Pokémon's initial special attack stat
 - The BaseSpDefence attribute is the Pokémon's initial special defense stat
+
 - The Pokemon attribute is a package containing Pokemon, it is the many end of the relation
 - The Game attribute is a package containing Game, it is the many end of the relation
  
