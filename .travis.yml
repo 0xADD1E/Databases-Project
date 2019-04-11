@@ -23,8 +23,8 @@ script:
   - sed -i /\<\!--SchemasSummary--\>/r/<(pandoc -t plain Phase1\/Schemas.md | tr '\n' '\1' | cut -c-128 | tr '\1' '\n'|cat - <(echo '...')) pages/index.html
   - echo "Step 2 - The Report"
   - inkscape $(pwd)/pages/PokemonDB.svg --export-pdf $(pwd)/Report/UML.pdf
-  - pandoc -t latex Phase1\/Description.md | sed 's/\\\\tightlist//g' > Report/descriptions.tex
-  - pandoc -t latex Phase1\/Schemas.md | sed 's/\\\\tightlist//g' > Report/schemas.tex
+  - pandoc -t latex Phase1\/Description.md | sed 's/\\tightlist//g' > Report/descriptions.tex
+  - pandoc -t latex Phase1\/Schemas.md | sed 's/\\tightlist//g' > Report/schemas.tex
   - cd Report && latexmk -pdf document && mv document.pdf ../pages/Report.pdf
 deploy:
   provider: pages

@@ -1,3 +1,6 @@
+# Purpose
+The purpose of this database is to make information about different pokemon accross multiple titles easily avaliable. This also includes media such as fan-art and in game assets. The user should be able to query a specific pokemon's attributes in a certain game, and on its designated platform.
+
 # Entity Descriptions
 ## Platforms
 
