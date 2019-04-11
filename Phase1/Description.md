@@ -1,6 +1,6 @@
 # Description
 **Platforms**
->*The Platforms entity serves to convey which Nintendo platform the PokÈmon game appeared on.*
+>*The Platforms entity serves to convey which Nintendo platform the Pok√©mon game appeared on.*
 - This Entity's only attribute is the name of the platform.
 
 **Games**
@@ -10,25 +10,25 @@
 - The Platform attribute refers to the platform for which the game was initially developed.
 
 **PokemonApperance**
->*The PokemonAppearance entity contains the data belonging to the PokÈmon appearing in a certain game. Each game can contain different PokÈmon, and PokÈmon can appear in more than one game.*
-- The ID attribute is the PokÈmon's designated number
-- The BaseHp attribute is the base health points stat the PokÈmon begins with
-- The BaseSpeed attribute is the PokÈmon's initial speed stat
-- The BaseAttack attribute is the PokÈmon's initial attack stat
-- The BaseDefence attribute is the PokÈmon's initial defense stat
-- The BaseSpAttack attribute is the PokÈmon's initial special attack stat
-- The BaseSpDefence attribute is the PokÈmon's initial special defense stat
+>*The PokemonAppearance entity contains the data belonging to the Pok√©mon appearing in a certain game. Each game can contain different Pok√©mon, and Pok√©mon can appear in more than one game.*
+- The ID attribute is the Pok√©mon's designated number
+- The BaseHp attribute is the base health points stat the Pok√©mon begins with
+- The BaseSpeed attribute is the Pok√©mon's initial speed stat
+- The BaseAttack attribute is the Pok√©mon's initial attack stat
+- The BaseDefence attribute is the Pok√©mon's initial defense stat
+- The BaseSpAttack attribute is the Pok√©mon's initial special attack stat
+- The BaseSpDefence attribute is the Pok√©mon's initial special defense stat
 - The Pokemon attribute is a package containing Pokemon, it is the many end of the relation
 - The Game attribute is a package containing Game, it is the many end of the relation
  
 **PokemonCanLearn**
->*The PokemonCanLearn entity coveys which abilities, at a certain level, a PokÈmon is capable of learning.*
+>*The PokemonCanLearn entity coveys which abilities, at a certain level, a Pok√©mon is capable of learning.*
 - The AtLevel attribute states the level at which an attack can be learned
 - The Appearance attribute is a package containing PokemonAppearance, it is the many end of the relation
 - The Attack attribute is a package containing Attacks, it is the many end of the relation
 
 **Attacks**
->*The Attacks entity describes the attack abilities which PokÈmon can use.*
+>*The Attacks entity describes the attack abilities which Pok√©mon can use.*
 - The Name attribute is the name of the attack
 - The Priority attribute value decides who attacks first
 - The Accuracy attribute is the likelihood of it hitting the opponent
@@ -37,39 +37,38 @@
 - The Power attribute is the damage the attack can do.
 
 **AttackTypes**
->*The AttackTypes entity contains the details of what PokÈmon type an attack is considered.*
+>*The AttackTypes entity contains the details of what Pok√©mon type an attack is considered.*
 - The Attack attribute is a package containing Attacks, it is the many end of the relation
 - The Type attribute is a package containing Types, it is the many end of the relation
 
 **Types**
->*The Types entity contains the name of the type. Currently in PokÈmon there are normal, fighting, flying, poison, ground, rock, bug, ghost, steel, fire, water, grass, electric, psychic, ice, dragon, dark, and fairy types. These types describe what are considered to be ìelementalî properties.*
+>*The Types entity contains the name of the type. Currently in Pok√©mon there are normal, fighting, flying, poison, ground, rock, bug, ghost, steel, fire, water, grass, electric, psychic, ice, dragon, dark, and fairy types. These types describe what are considered to be ‚Äúelemental‚Äù properties.*
 - The only attribute is Name which states the name of the type
 
 **TypeMatchups**
->*The TypeMatchups entity describes which types are strong against, or are weaker to other types. This entityís attributes are the effectiveness multiplier given to an attack when there is a type advantage, the self-attribute which indicates if the damage is against the playerís PokÈmon, and the Other attribute which indicates if the damage is against the opponent.*
+>*The TypeMatchups entity describes which types are strong against, or are weaker to other types. This entity‚Äôs attributes are the effectiveness multiplier given to an attack when there is a type advantage, the self-attribute which indicates if the damage is against the player‚Äôs Pok√©mon, and the Other attribute which indicates if the damage is against the opponent.*
 - The EffectivenessMultiplier attribute contains the value that the effectiveness is modified by
 - The self attribute contains whether the advantage is with or against the player
 - The Other attribute contains whether the advantage is with or against the opponent
 
-**PokÈmon**
->*The PokÈmon entity details an individual PokÈmonís characteristics.*
-- The PokedexID attribute is the PokÈmonís ID given by the in game PokÈdex tool
-- The Name attribute is the PokÈmon's name
-- The GenderDistribution is the gender of the PokÈmon
-- The Legendary attribute states whether the PokÈmon is considered to be of a legendary variety
+**Pok√©mon**
+>*The Pok√©mon entity details an individual Pok√©mon‚Äôs characteristics.*
+- The PokedexID attribute is the Pok√©mon‚Äôs ID given by the in game Pok√©dex tool
+- The Name attribute is the Pok√©mon's name
+- The GenderDistribution is the gender of the Pok√©mon
+- The Legendary attribute states whether the Pok√©mon is considered to be of a legendary variety
 
 **PokemonEvolutions**
->*The PokemonEvolutions entity contains the evolution information for a PokÈmon.* 
-- The Base attribute is the PokÈmonís current form
-- The Evolution attribute is the form the PokÈmon can become.
+>*The PokemonEvolutions entity contains the evolution information for a Pok√©mon.* 
+- The Base attribute is the Pok√©mon‚Äôs current form
+- The Evolution attribute is the form the Pok√©mon can become.
 
-## Could we remove Media and MIMETypes if we aren't going to use them?
 **Media**
->*The Media entity details the media in which a PokÈmon is featured.*
-- The IntegerId attribute contains the PokÈmon Id the media is about
+>*The Media entity details the media in which a Pok√©mon is featured.*
+- The IntegerId attribute contains the Pok√©mon Id the media is about
 - The FileName attribute contains the name of the file in which the media is stored
 - The BLOBdata attribute is the media data stored in the database
-- The PokÈmon attribute is a package containing Pokemon, it is the many end of the relation
+- The Pok√©mon attribute is a package containing Pokemon, it is the many end of the relation
 - The MIMEType attribute is a package containing MIMETypes, it is the many end of the relation
 
 **MIMETypes**
