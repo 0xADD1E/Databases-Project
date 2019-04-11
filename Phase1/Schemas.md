@@ -1,3 +1,4 @@
+# Schemas
 + Platforms(__Name__:TEXT)
 + Games(__GameName__:TEXT, _PlatformName_:TEXT, ReleaseDate:DATE)
 + PokemonAppearance(__ID__:INTEGER, _GameName_:TEXT, _PokedexID_:INTEGER, BaseHP:INTEGER, BaseSpeed:INTEGER, BaseAttack:INTEGER, BaseDefence:INTEGER, BaseSpAttack:INTEGER, BaseSpDefence:INTEGER)
