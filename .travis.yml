@@ -9,6 +9,7 @@ addons:
       - openjdk-8-jre
       - pandoc
       - texlive
+      - latexmk
       - inkscape
 before_script:
   - wget http://sourceforge.net/projects/plantuml/files/plantuml.jar/download -O plantuml.jar
