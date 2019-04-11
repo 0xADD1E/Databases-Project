@@ -1,5 +1,5 @@
 # Purpose of the database
->*The purpose of this database is to make information about diffent pokemon accross multiple titles easily avaliable. This also includes media such as fan-art and in game assets. The user should be able to querie a specific pokemon's attributes in a certain game, and on its designated platform.*
+>*The purpose of this database is to make information about different pokemon accross multiple titles easily avaliable. This also includes media such as fan-art and in game assets. The user should be able to quierie a specific pokemon's attributes in a certain game, and on its designated platform.*
 
 # Entity Descriptions
 **Platforms**
@@ -18,7 +18,7 @@
 - The BaseHp attribute is the base health points stat the Pokémon begins with
 - The BaseSpeed attribute is the Pokémon's initial speed stat
 - The BaseAttack attribute is the Pokémon's initial attack stat
-- The BaseDefence attribute is the Pokémon's initial defence stat
+- The BaseDefence attribute is the Pokémon's initial defense stat
 - The BaseSpAttack attribute is the Pokémon's initial special attack stat
 - The BaseSpDefence attribute is the Pokémon's initial special defense stat
 - The Pokemon attribute is a package containing Pokemon, it is the many end of the relation
@@ -59,7 +59,7 @@
 - The PokédexID attribute is the Pokémon’s ID given by the in game Pokédex tool
 - The Name attribute is the Pokémon's name
 - The GenderDistribution is the gender of the Pokémon
-- The Legendary attribute atates whether the Pokémon is considered to be of a legendary variety
+- The Legendary attribute states whether the Pokémon is considered to be of a legendary variety
 
 **PokemonEvolutions**
 >*The PokemonEvolutions entity contains the evolution information for a Pokémon.* 
@@ -94,16 +94,16 @@
 - AppearanceId and LearnAtLevel would be the two keys for this relation
 
 **CanLearnAttacks**
-> *The CanLearnAttacks relation is the relation between the PokemonCanLearn and Attacks entities. Each level can have multiple attacks availble at it, however individual attacks always are learnable at the same level.*
+> *The CanLearnAttacks relation is the relation between the PokemonCanLearn and Attacks entities. Each level can have multiple attacks available at it, however individual attacks always are learnable at the same level.*
 - LearnAtLevel and AttackName would be the two keys for this relation
 
 **TypeOfAttack**
 > *The TypeOfAttack relation is the relation between the Attacks and AttackTypes entities. Each attack has only one type, however multiple attacks are classified as each type.*
-- AttackName would be the key for the relation as AttackTypes references a foriegn key
+- AttackName would be the key for the relation as AttackTypes references a foreign key
 
 **TypeOf**
 > *The TypeOf relation is the relation between the Types and AttackTypes entities. Each type has only one attack type as it corresponds directly with the entity, however attack types can have multiple types.*
-- TypeName would be the key for the relation as AttackTypes references a foriegn key
+- TypeName would be the key for the relation as AttackTypes references a foreign key
 
 **TypeMatch**
 > *The Typematch relation is the relation between the Types and TypeMatchups entities. Each type has two matchups, either against itself, or against another. The matchup however can work against multiple different types.*
@@ -115,7 +115,7 @@
 
 **EvolvesTo**
 > *The EvolvesTo relation is the relation between the Pokemon and PokemonEvolutions entities. Each Pokemon has two states, its current form and its evolved form. Many Pokemon have evolutions.*
-- PokemonID would be the key for the relation as PokemonEvolutions references a foriegn key.
+- PokemonID would be the key for the relation as PokemonEvolutions references a foreign key.
 
 **PokemonHasMedia**
 > *The PokemonHasMedia relation is the relation between the Pokemon and Media entities. Each Pokemon would have only one media file, while there are multiple Pokemon to have media for.*
@@ -126,8 +126,8 @@
 - MIMEText and Media ID would be the two keys for this relation
 
 # Information That Could Be Extracted
-> *We expect the user to be able to extract any relivant information about the pokemon available on a platform. For example, the user could find out the number of pokemon games available on a console, or what pokemon are available on a console. The user could quiere a pokemon on the Gameboy and find out what moves it can use, and at which level it can learn them. They could also extract what that pokemons base stats are. Using the Media entity the user could also see if any media files are available for said pokemon. The user could go so far as to find which move types are advantageous against others. The user could also find the differnces in a pokemon's evolution between titles.*
+> *We expect the user to be able to extract any relevant information about the Pokémon available on a platform. For example, the user could find out the number of Pokémon games available on a console, or what Pokémon are available on a console. The user could quire a Pokémon on the Gameboy and find out what moves it can use, and at which level it can learn them. They could also extract what that Pokémon’s base stats are. Using the Media entity, the user could also see if any media files are available for said Pokémon. The user could go so far as to find which move types are advantageous against others. The user could also find the differences in a Pokémon’s evolution between titles.*
 
-# Updates To The Database
-> *A new game would cause many additions to the database, with nearly every entity recieving new entries. This is because pokemon from previous titles are often brought over into new titles. This would mean that all of the entities would recive those duplicate pokemon, with possible updates to their stats and moves. The Media and MIMEType entities are less likely to see an immidiate update as they require people to create media for the new pokemon. The Media and MIMEType could also be modified but changes to these entities would not create changes in the rest of the database.*
+# Updates to the Database
+> *A new game would cause many additions to the database, with nearly every entity receiving new entries. This is because Pokémon from previous titles are often brought over into new titles. This would mean that all of the entities would receive those duplicate Pokémon, with possible updates to their stats and moves. The Media and MIMEType entities are less likely to see an immediate update as they require people to create media for the new Pokémon. The Media and MIMEType could also be modified but changes to these entities would not create changes in the rest of the database.*
 
