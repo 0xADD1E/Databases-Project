@@ -1,4 +1,5 @@
 # Purpose of the database
+>*The purpose of this database is to make information about diffent pokemon accross multiple titles easily avaliable. This also includes media such as fan-art and in game assets. The user should be able to querie a specific pokemon's attributes in a certain game, and on its designated platform.*
 
 # Entity Descriptions
 **Platforms**
@@ -125,5 +126,8 @@
 - MIMEText and Media ID would be the two keys for this relation
 
 # Information That Could Be Extracted
+> *We expect the user to be able to extract any relivant information about the pokemon available on a platform. For example, the user could find out the number of pokemon games available on a console, or what pokemon are available on a console. The user could quiere a pokemon on the Gameboy and find out what moves it can use, and at which level it can learn them. They could also extract what that pokemons base stats are. Using the Media entity the user could also see if any media files are available for said pokemon. The user could go so far as to find which move types are advantageous against others. The user could also find the differnces in a pokemon's evolution between titles.*
 
 # Updates To The Database
+> *A new game would cause many additions to the database, with nearly every entity recieving new entries. This is because pokemon from previous titles are often brought over into new titles. This would mean that all of the entities would recive those duplicate pokemon, with possible updates to their stats and moves. The Media and MIMEType entities are less likely to see an immidiate update as they require people to create media for the new pokemon. The Media and MIMEType could also be modified but changes to these entities would not create changes in the rest of the database.*
+
