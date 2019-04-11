@@ -43,7 +43,7 @@
 
 **Types**
 >*The Types entity contains the name of the type. Currently in Pokémon there are normal, fighting, flying, poison, ground, rock, bug, ghost, steel, fire, water, grass, electric, psychic, ice, dragon, dark, and fairy types. These types describe what are considered to be “elemental” properties.*
-- The only attribute is Name which states the Name of the type
+- The only attribute is Name which states the name of the type
 
 **TypeMatchups**
 >*The TypeMatchups entity describes which types are strong against, or are weaker to other types. This entity’s attributes are the effectiveness multiplier given to an attack when there is a type advantage, the self-attribute which indicates if the damage is against the player’s Pokémon, and the Other attribute which indicates if the damage is against the opponent.*
@@ -56,7 +56,6 @@
 - The PokedexID attribute is the Pokémon’s ID given by the in game Pokédex tool
 - The Name attribute is the Pokémon's name
 - The GenderDistribution is the gender of the Pokémon
-- The Shiny attribute states whether the Pokémon is a shiny variant
 - The Legendary attribute states whether the Pokémon is considered to be of a legendary variety
 
 **PokemonEvolutions**
