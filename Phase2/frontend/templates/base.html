@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'semantic/min.css' %}" />
+    <title>PokémonDB</title>
+</head>
+
+<body>
+    <div class="ui blue secondary pointing menu">
+        <div class="item">
+            PokémonDB
+        </div>
+
+        {% for a in nav_links %}
+        <a class="{% if request.path == a.route %}active{% endif %} item" href="{{a.route}}"> {{ a.name }}
+        </a>
+        {% endfor %}
+    </div>
+    <div class="ui container">
+        {% block content %}
+        <div class="ui placeholder">
+            <div class="image header">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="paragraph">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        {% endblock %}
+    </div>
+    <script src="{% static 'semantic/min.js' %}"></script>
+</body>
