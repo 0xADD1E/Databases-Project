@@ -25,7 +25,7 @@ script:
   - inkscape $(pwd)/pages/PokemonDB.svg --export-pdf $(pwd)/Report/UML.pdf
   - pandoc -t latex Phase1\/Description.md | sed 's/\\tightlist//g' > Report/descriptions.tex
   - pandoc -t latex Phase1\/Schemas.md | sed 's/\\tightlist//g' > Report/schemas.tex
-  - cd Report && latexmk -pdf document && mv document.pdf ../pages/Report.pdf
+  - cd Report && lualatex -interaction=nonstopmode document.tex && mv document.pdf ../pages/Report.pdf
 deploy:
   provider: pages
   local-dir: pages

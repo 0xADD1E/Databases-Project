@@ -10,3 +10,4 @@ Cargo.lock
 **/*.rs.bk
 
 *.dot.svg
+.mypy_cache
