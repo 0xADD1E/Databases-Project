@@ -4,6 +4,8 @@ from django.db import models
 class Pokemon(models.Model):
     pokedex_id = models.IntegerField(primary_key=True)
     name = models.TextField()
+    weight = models.FloatField()
+    height = models.FloatField()
     gender_distribution = models.IntegerField()
     legendary = models.BooleanField()
 

@@ -62,6 +62,8 @@ def kalos_uploader(request):
         for pkmn in json.load(request.FILES['kalos']):
             new = Pokemon(pokedex_id=pkmn['number'],
                           name=pkmn['name'],
+                          weight=pkmn['weight'],
+                          height=pkmn['height'],
                           gender_distribution=0,
                           legendary=False)
             new.save()
