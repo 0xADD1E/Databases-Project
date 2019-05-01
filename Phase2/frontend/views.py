@@ -1,5 +1,6 @@
 import logging
 from django.shortcuts import render
+from django.http import HttpResponseServerError
 
 
 def pokemon_view(request):
@@ -18,9 +19,9 @@ def pokemon_view(request):
                      for n in range(total_pages)
                      if abs(page-n) < 7]
 
-    pokemon = namedtuple('Pokemon', ['name', 'pokedex_id', 'image'])
-    pokemon_list = []
     with connection.cursor() as cursor:
+        pokemon = namedtuple('Pokemon', ['name', 'pokedex_id', 'image'])
+        pokemon_list = []
         cursor.execute("""
         SELECT frontend_pokemon.pokedex_id AS pokedex_id,
             frontend_pokemon.name AS name,
@@ -38,12 +39,39 @@ def pokemon_view(request):
             image_encoded = "data:{};base64,{}".format(
                 mime,
                 b64encode(image).decode('UTF-8')
-            ) if image!=None else None
+            ) if image != None else None
             pokemon_list.append(pokemon(name=name,
                                         pokedex_id=pokedex_id,
                                         image=image_encoded))
 
-    return render(request, 'pokemon_list.html', {'pokemon_list': pokemon_list, 'pages': display_pages, 'max': total_pages-1})
+        return render(request, 'pokemon_list.html', {'pokemon_list': pokemon_list, 'pages': display_pages, 'max': total_pages-1})
+    return HttpResponseServerError("Database connection isn't functioning")
+
+
+def pokemon_info(request):
+    import json
+    from django.db import connection
+    from django.http import HttpResponse,HttpResponseBadRequest
+    pokemon = request.GET.get('for', 'Pikachu')
+    with connection.cursor() as cursor:
+        cursor.execute("""
+            SELECT 
+                frontend_pokemon.name,
+                frontend_pokemon.pokedex_id
+            FROM frontend_pokemon
+            WHERE frontend_pokemon.name = %s
+            LIMIT 10
+        """, [pokemon])
+        try:
+            row = cursor.fetchone()
+            result = {
+                'name': row[0], 
+                'pokedex_id': row[1]
+            }
+        except:
+            return HttpResponseBadRequest("Invalid Pokemon")
+        return HttpResponse(json.dumps(result), content_type='application/json')
+    return HttpResponseServerError("Database connection isn't functioning")
 
 
 def kalos_uploader(request):
