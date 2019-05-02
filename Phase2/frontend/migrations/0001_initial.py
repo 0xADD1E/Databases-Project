@@ -49,6 +49,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('pokedex_id', models.IntegerField(primary_key=True, serialize=False)),
                 ('name', models.TextField()),
+                ('weight', models.FloatField()),
+                ('height', models.FloatField()),
                 ('gender_distribution', models.IntegerField()),
                 ('legendary', models.BooleanField()),
             ],

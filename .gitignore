@@ -12,7 +12,3 @@ Cargo.lock
 *.dot.svg
 .mypy_cache
 Phase2/db.sqlite3
-
-*cpython*
-*auto*
-Phase2/frontend/migrations/*
