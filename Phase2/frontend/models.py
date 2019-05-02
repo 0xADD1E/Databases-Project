@@ -21,10 +21,13 @@ class Type(models.Model):
     name = models.TextField(primary_key=True)
 
 class PokemonType(models.Model):
-    pokemon = models.ForeignKey(Pokemon,
-                                on_delete=models.CASCADE)
-    pokemon_type = models.ForeignKey(Type,
-                                     on_delete=models.CASCADE)
+    def __str__(self):
+        return f'{self.pokemon}: {self.pokemon_type}'
+    pokemon: models.ForeignKey = models.ForeignKey(Pokemon,
+                                                   on_delete=models.CASCADE)
+    pokemon_type: models.ForeignKey = models.ForeignKey(Type,
+                                                        on_delete=models.CASCADE)
+    
 
 class MIMEType(models.Model):
     mime_string = models.TextField(primary_key=True)

@@ -38,7 +38,7 @@ def pokemon_view(request):
             image_encoded = "data:{};base64,{}".format(
                 mime,
                 b64encode(image).decode('UTF-8')
-            ) if image!=None else None
+            ) if image != None else None
             pokemon_list.append(pokemon(name=name,
                                         pokedex_id=pokedex_id,
                                         image=image_encoded))
@@ -49,7 +49,7 @@ def pokemon_view(request):
 def kalos_uploader(request):
     from .models import Pokemon, Media, MIMEType
     import json
-    import requests
+    from requests import get
     from django import forms
     log = logging.getLogger('kalos_import')
 
@@ -57,21 +57,25 @@ def kalos_uploader(request):
         kalos = forms.FileField()
 
     if request.method == 'POST':
+        x = 'some_str'
+        y = 3
+        y += x
+
         form = KalosForm(request.POST, request.FILES)
         png = MIMEType.objects.get(mime_string='image/png')
         for pkmn in json.load(request.FILES['kalos']):
-            new = Pokemon(pokedex_id=pkmn['number'],
-                          name=pkmn['name'],
-                          weight=pkmn['weight'],
-                          height=pkmn['height'],
-                          gender_distribution=0,
-                          legendary=False)
+            new = Pokemon.objects.get_or_create(pokedex_id=pkmn['number'],
+                                                name=pkmn['name'],
+                                                weight=pkmn['weight'],
+                                                height=pkmn['height'],
+                                                gender_distribution=0,
+                                                legendary=False)
             new.save()
             log.info('Added pokemon {}'.format(new.name))
-            thumb = Media(filename='{}_thummbnail.png'.format(new.name),
-                          mime=png,
-                          data=requests.get(pkmn['ThumbnailImage']).content,
-                          of=new)
+            thumb = Media.objects.get_or_create(filename='{}_thummbnail.png'.format(new.name),
+                                                mime=png,
+                                                data=get(pkmn['ThumbnailImage']).content,  # noqa
+                                                of=new)
             thumb.save()
             log.debug('Saved thumbnail for {}'.format(new.name))
     else:
