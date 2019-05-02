@@ -1,1 +1,5 @@
-./.hgignore
+.mypy_cache
+__pycache__
+db.sqlite3*
+.DS_Store
+.bak

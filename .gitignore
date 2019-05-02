@@ -11,3 +11,4 @@ Cargo.lock
 
 *.dot.svg
 .mypy_cache
+Phase2/db.sqlite3
