@@ -3,10 +3,17 @@ from django.shortcuts import render
 from django.http import HttpResponseServerError
 
 
+def encode_image(image:bytes, mime:str):
+    from base64 import b64encode
+    if image is None:
+        return None
+    else:
+        return f"data:{mime};base64,{b64encode(image).decode('UTF-8')}"
+
+
 def pokemon_view(request):
     from .models import Pokemon
     from math import ceil
-    from base64 import b64encode
     from collections import namedtuple
     from django.db import connection
     log = logging.getLogger('pokemon_view')
@@ -14,10 +21,10 @@ def pokemon_view(request):
 
     pagination_item = namedtuple('Page', ['number', 'display', 'is_active'])
     page = int(request.GET.get('page', '0'))
-    total_pages = ceil(Pokemon.objects.count()/18)
-    display_pages = [pagination_item(number=n, display=n+1, is_active=(n == page))
+    total_pages = int(ceil(Pokemon.objects.count() / 18))
+    display_pages = [pagination_item(number=n, display=n + 1, is_active=(n == page))
                      for n in range(total_pages)
-                     if abs(page-n) < 7]
+                     if abs(page - n) < 7]
 
     with connection.cursor() as cursor:
         pokemon = namedtuple('Pokemon', ['name', 'pokedex_id', 'image'])
@@ -34,50 +41,40 @@ def pokemon_view(request):
             GROUP BY frontend_media.of_id
             ) AS first_media ON first_media.of_id = frontend_pokemon.pokedex_id
         ORDER BY frontend_pokemon.pokedex_id
-        LIMIT %s OFFSET %s""", [CARDS_PER_PAGE, CARDS_PER_PAGE*page])
+        LIMIT %s OFFSET %s""", [CARDS_PER_PAGE, CARDS_PER_PAGE * page])
         for (pokedex_id, name, image, mime) in cursor.fetchall():
-            image_encoded = "data:{};base64,{}".format(
-                mime,
-                b64encode(image).decode('UTF-8')
-            ) if image != None else None
+            image_encoded = encode_image(image,mime)
             pokemon_list.append(pokemon(name=name,
                                         pokedex_id=pokedex_id,
                                         image=image_encoded))
 
-        return render(request, 'pokemon_list.html', {'pokemon_list': pokemon_list, 'pages': display_pages, 'max': total_pages-1})
-    return HttpResponseServerError("Database connection isn't functioning")
+        return render(request, 'pokemon_list.html',
+                      {'pokemon_list': pokemon_list, 'pages': display_pages, 'max': total_pages - 1})
 
 
 def pokemon_info(request):
     import json
-    from django.db import connection
-    from django.http import HttpResponse,HttpResponseBadRequest
-    pokemon = request.GET.get('for', 'Pikachu')
-    with connection.cursor() as cursor:
-        cursor.execute("""
-            SELECT 
-                frontend_pokemon.name,
-                frontend_pokemon.pokedex_id
-            FROM frontend_pokemon
-            WHERE frontend_pokemon.name = %s
-            LIMIT 10
-        """, [pokemon])
-        try:
-            row = cursor.fetchone()
-            result = {
-                'name': row[0], 
-                'pokedex_id': row[1]
-            }
-        except:
-            return HttpResponseBadRequest("Invalid Pokemon")
-        return HttpResponse(json.dumps(result), content_type='application/json')
-    return HttpResponseServerError("Database connection isn't functioning")
+    from django.http import HttpResponse, HttpResponseBadRequest
+    from .models import Pokemon
+    pokemon_name = request.GET.get('for', 'Pikachu')
+
+    pokemon = Pokemon.objects.get(name=pokemon_name)
+    image = pokemon.media_set.first()
+    types = pokemon.pokemontype_set.all()
+
+    result = {
+        'name': pokemon.name,
+        'id': pokemon.pokedex_id,
+        'types': [t for t in types],
+        'image': encode_image(image.data, image.mime)
+    }
+    return HttpResponse(json.dumps(result), content_type='application/json')
 
 
 def kalos_uploader(request):
     from .models import Pokemon, Media, MIMEType
     import json
-    import requests
+    from requests import get
     from django import forms
     log = logging.getLogger('kalos_import')
 
@@ -88,16 +85,17 @@ def kalos_uploader(request):
         form = KalosForm(request.POST, request.FILES)
         png = MIMEType.objects.get(mime_string='image/png')
         for pkmn in json.load(request.FILES['kalos']):
-            new = Pokemon(pokedex_id=pkmn['number'],
-                          name=pkmn['name'],
-                          gender_distribution=0,
-                          legendary=False)
+            new = Pokemon.objects.get_or_create(pokedex_id=pkmn['number'],
+                                                name=pkmn['name'],
+                                                gender_distribution=0,
+                                                legendary=False)
             new.save()
             log.info('Added pokemon {}'.format(new.name))
-            thumb = Media(filename='{}_thummbnail.png'.format(new.name),
-                          mime=png,
-                          data=requests.get(pkmn['ThumbnailImage']).content,
-                          of=new)
+            thumb = Media.objects.get_or_create(filename='{}_thummbnail.png'.format(new.name),
+                                                mime=png,
+                                                data=get(
+                                                    pkmn['ThumbnailImage']).content,
+                                                of=new)
             thumb.save()
             log.debug('Saved thumbnail for {}'.format(new.name))
     else:

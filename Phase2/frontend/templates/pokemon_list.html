@@ -1,10 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="ui large modal">
+  <div id="modal_header" class="header">Header</div>
+  <div class="image content">
+    <img id="modal_image" class="image">
+    <div class="description">
+      <p></p>
+    </div>
+  </div>
+</div>
 <div class="ui segments">
     <div class="ui segment">
         <div class="ui six link cards">
             {%for pokemon in pokemon_list %}
-            <div class="card">
+            <div class="card" onClick="loadData('{{pokemon.name}}')">
                 <div class="image">
                     <img src="{{pokemon.image}}">
                 </div>
@@ -31,4 +40,20 @@
       </div>
     </div>
 </div>
+<script>
+    function loadData(name){
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', `/pkmn?for=${name}`);
+        xhr.onload = function() {
+            if(xhr.status == 200){
+                response_parsed = JSON.parse(xhr.response)
+                console.log(response_parsed)
+                $('#modal_header').text(response_parsed.name)
+                $('#modal_image').attr('src', response_parsed.image)
+                $('.large.modal').modal('show');
+            }
+        };
+        xhr.send();
+    }
+</script>
 {% endblock %}
