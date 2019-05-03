@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.http import HttpResponseServerError
 
 
-def encode_image(image:bytes, mime:str):
+def encode_image(image: bytes, mime: str):
     from base64 import b64encode
     if image is None:
         return None
@@ -43,7 +43,7 @@ def pokemon_view(request):
         ORDER BY frontend_pokemon.pokedex_id
         LIMIT %s OFFSET %s""", [CARDS_PER_PAGE, CARDS_PER_PAGE * page])
         for (pokedex_id, name, image, mime) in cursor.fetchall():
-            image_encoded = encode_image(image,mime)
+            image_encoded = encode_image(image, mime)
             pokemon_list.append(pokemon(name=name,
                                         pokedex_id=pokedex_id,
                                         image=image_encoded))
@@ -93,8 +93,7 @@ def kalos_uploader(request):
             log.info('Added pokemon {}'.format(new.name))
             thumb = Media.objects.get_or_create(filename='{}_thummbnail.png'.format(new.name),
                                                 mime=png,
-                                                data=get(
-                                                    pkmn['ThumbnailImage']).content,
+                                                data=get(pkmn['ThumbnailImage']).content,  # noqa
                                                 of=new)
             thumb.save()
             log.debug('Saved thumbnail for {}'.format(new.name))

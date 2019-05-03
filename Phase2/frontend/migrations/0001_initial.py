@@ -20,7 +20,8 @@ class Migration(migrations.Migration):
                 ('power', models.IntegerField()),
                 ('priority', models.IntegerField()),
                 ('accuracy', models.IntegerField()),
-                ('tm_number', models.IntegerField(blank=True, default=None, null=True)),
+                ('tm_number', models.IntegerField(
+                    blank=True, default=None, null=True)),
             ],
         ),
         migrations.CreateModel(
@@ -33,7 +34,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='MIMEType',
             fields=[
-                ('mime_string', models.TextField(primary_key=True, serialize=False)),
+                ('mime_string', models.TextField(
+                    primary_key=True, serialize=False)),
                 ('friendly_name', models.TextField()),
                 ('extension', models.TextField()),
             ],
@@ -47,7 +49,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Pokemon',
             fields=[
-                ('pokedex_id', models.IntegerField(primary_key=True, serialize=False)),
+                ('pokedex_id', models.IntegerField(
+                    primary_key=True, serialize=False)),
                 ('name', models.TextField()),
                 ('gender_distribution', models.IntegerField()),
                 ('legendary', models.BooleanField()),
@@ -56,15 +59,18 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='PokemonAppearance',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
                 ('base_hp', models.IntegerField()),
                 ('base_speed', models.IntegerField()),
                 ('base_attack', models.IntegerField()),
                 ('base_defence', models.IntegerField()),
                 ('base_sp_attack', models.IntegerField()),
                 ('base_sp_defence', models.IntegerField()),
-                ('game', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='frontend.Game')),
-                ('pokemon', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='frontend.Pokemon')),
+                ('game', models.ForeignKey(
+                    on_delete=django.db.models.deletion.PROTECT, to='frontend.Game')),
+                ('pokemon', models.ForeignKey(
+                    on_delete=django.db.models.deletion.PROTECT, to='frontend.Pokemon')),
             ],
         ),
         migrations.CreateModel(
@@ -76,50 +82,66 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='TypeMatchup',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
                 ('effectiveness_multiplier', models.FloatField()),
-                ('other', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='+', to='frontend.Type')),
-                ('this', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='+', to='frontend.Type')),
+                ('other', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, related_name='+', to='frontend.Type')),
+                ('this', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, related_name='+', to='frontend.Type')),
             ],
         ),
         migrations.CreateModel(
             name='PokemonEvolution',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('base', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='evolves_to', to='frontend.Pokemon')),
-                ('evolution', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='evolved_from', to='frontend.Pokemon')),
+                ('id', models.AutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
+                ('base', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE,
+                                           related_name='evolves_to', to='frontend.Pokemon')),
+                ('evolution', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE,
+                                                related_name='evolved_from', to='frontend.Pokemon')),
             ],
         ),
         migrations.CreateModel(
             name='PokemonCanLearn',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
                 ('at_level', models.IntegerField()),
-                ('appearance', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='frontend.PokemonAppearance')),
-                ('attack', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='frontend.Attack')),
+                ('appearance', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, to='frontend.PokemonAppearance')),
+                ('attack', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, to='frontend.Attack')),
             ],
         ),
         migrations.CreateModel(
             name='Media',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
                 ('filename', models.TextField()),
                 ('data', models.BinaryField()),
-                ('mime', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='frontend.MIMEType')),
-                ('of', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='frontend.Pokemon')),
+                ('mime', models.ForeignKey(
+                    on_delete=django.db.models.deletion.PROTECT, to='frontend.MIMEType')),
+                ('of', models.ForeignKey(
+                    on_delete=django.db.models.deletion.PROTECT, to='frontend.Pokemon')),
             ],
         ),
         migrations.AddField(
             model_name='game',
             name='platform',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='frontend.Platform'),
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.PROTECT, to='frontend.Platform'),
         ),
         migrations.CreateModel(
             name='AttackTypes',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('attack', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='frontend.Attack')),
-                ('attack_type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='frontend.Type')),
+                ('id', models.AutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
+                ('attack', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, to='frontend.Attack')),
+                ('attack_type', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, to='frontend.Type')),
             ],
         ),
     ]

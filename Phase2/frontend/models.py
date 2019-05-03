@@ -6,6 +6,8 @@ class Pokemon(models.Model):
         return self.name
     pokedex_id: models.IntegerField = models.IntegerField(primary_key=True)
     name: models.TextField = models.TextField()
+    weight: models.FloatField = models.FloatField()
+    height: models.FloatField = models.FloatField()
     gender_distribution: models.IntegerField = models.IntegerField()
     legendary: models.BooleanField = models.BooleanField()
 
