@@ -85,25 +85,34 @@ def kalos_uploader(request):
         form = KalosForm(request.POST, request.FILES)
         png = MIMEType.objects.get(mime_string='image/png')
         for pkmn in json.load(request.FILES['kalos']):
-            newtype = Type(name=pkmn['type'])
-            log.info('Added type {}'.format(newtype))
-            new = Pokemon.objects.get_or_create(pokedex_id=pkmn['number'],
-                                      name=pkmn['name'],
-                                      weight=pkmn['weight'],
-                                      height=pkmn['height'],
-                                      gender_distribution=0,
-                                      legendary=False)
-            log.info('Added pokemon {}'.format(new[1]))
-            thumb = Media.objects.get_or_create(filename='{}_thummbnail.png'.format(new[0]),
-                          mime=png,
-                          data=get(pkmn['ThumbnailImage']).content,
-                          of=new)
-            thumb.save()
-            log.debug('Saved thumbnail for {}'.format(new[0]))
-            pkmnType = PokemonType(pokemon=new,
-                                                         pokemon_type=newtype)
-            log.debug('Saved Pokemon Type {0} for {1}'.format(pkmnType.pokemon_type,
-                                                              pkmnType.pokemon.name))
+            new, created = Pokemon.objects.get_or_create(pokedex_id=pkmn['id'])
+            if created:
+                new.name = pkmn['name']
+                new.weight = pkmn['weight']
+                new.height = pkmn['height']
+                new.gender_distribution = 0
+                new.legendary = False
+                new.save()
+                log.info(f'Added pokemon {new.name}')
+            thumb, created = Media.objects.get_or_create(filename=f'{new.name}_thummbnail.png',
+                                                         mime=png,
+                                                         of=new)
+            if created:
+                thumb.data = get(pkmn['ThumbnailImage']).content
+                thumb.save()
+                log.debug(f'Saved thumbnail for {new.name}')
+            for pkmnType in pkmn['type']:
+                newtype, created = Type.objects.get_or_create(
+                    name=pkmnType)
+                newtype.save()
+                if created:
+                    log.info('Added type {}'.format(newtype))
+                pkmnType, created = PokemonType.objects.get_or_create(pokemon=new,
+                                                                      pokemon_type=newtype)
+                pkmnType.save()
+                if created:
+                    log.debug('Saved Pokemon Type {0} for {1}'.format(pkmnType.pokemon_type,
+                                                                      pkmnType.pokemon.name))
     else:
         form = KalosForm()
     return render(request, 'upload.html', {'form': form, 'is_valid': form.is_valid()})
