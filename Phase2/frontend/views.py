@@ -116,6 +116,31 @@ def matchup_uploader(request):
     return render(request, 'upload.html', {'form': form, 'is_valid': form.is_valid(), 'endpoint': 'matchup'})
 
 
+def typechart(request):
+    from .models import Type, TypeMatchup
+    log = logging.getLogger('matchup_import')
+    types = []
+    matchups = []
+    for t in Type.objects.order_by('name'):
+        typename = t.name.title()
+        types.append(typename)
+        matchups.append([])
+        matchups[-1].append(('', typename))
+        for m in TypeMatchup.objects.filter(this=t).order_by('other'):
+            num = m.effectiveness_multiplier
+            if num == 2.0:
+                matchups[-1].append(('positive', '2x'))
+            elif num == 1.0:
+                matchups[-1].append(('', '-'))
+            elif num == 0.5:
+                matchups[-1].append(('negative', '1/2x'))
+            elif num == 0.0:
+                matchups[-1].append(('negative', '0x'))
+
+    log.warn(matchups)
+    return render(request, 'typechart.html', {'types': types, 'matchups': matchups})
+
+
 def kalos_uploader(request):
     from .models import Pokemon, PokemonType, Media, MIMEType, Type
     import json
