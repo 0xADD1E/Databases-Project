@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-{% if is_valid %}<div class="ui green message">Successfully submitted Kalos JSON</div>{% endif %}
+{% if is_valid %}<div class="ui green message">Successfully submitted file</div>{% endif %}
 <div class="ui form">
-  <form enctype="multipart/form-data" action="/kalos" method="post">
+  <form enctype="multipart/form-data" action="/{{endpoint}}" method="post">
     {% csrf_token %}
     <div class="">
       {{form}}

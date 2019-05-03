@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<table class="ui celled definition table">
+  <thead>
+    <tr><th>This\Against</th>
+    {% for type in types %}
+    <th>{{type}}</th>
+    {% endfor %}
+  </tr></thead>
+  <tbody>
+    {% for row in matchups %}
+    <tr>
+      {% for class,cell in row %}
+      <td class="{{class}}">{{cell}}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+</tbody></table>
+{% endblock %}
