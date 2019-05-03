@@ -65,7 +65,9 @@ def pokemon_info(request):
     result = {
         'name': pokemon.name,
         'id': pokemon.pokedex_id,
-        'types': [t for t in types],
+        'height': pokemon.height,
+        'weight': pokemon.weight,
+        'types': [t.pokemon_type.name for t in types],
         'image': encode_image(image.data, image.mime)
     }
     return HttpResponse(json.dumps(result), content_type='application/json')
