@@ -72,7 +72,7 @@ def pokemon_info(request):
 
 
 def kalos_uploader(request):
-    from .models import Pokemon, Media, MIMEType
+    from .models import Pokemon, PokemonType, Media, MIMEType, Type
     import json
     from requests import get
     from django import forms
@@ -85,18 +85,25 @@ def kalos_uploader(request):
         form = KalosForm(request.POST, request.FILES)
         png = MIMEType.objects.get(mime_string='image/png')
         for pkmn in json.load(request.FILES['kalos']):
+            newtype = Type(name=pkmn['type'])
+            log.info('Added type {}'.format(newtype))
             new = Pokemon.objects.get_or_create(pokedex_id=pkmn['number'],
-                                                name=pkmn['name'],
-                                                gender_distribution=0,
-                                                legendary=False)
-            new.save()
-            log.info('Added pokemon {}'.format(new.name))
-            thumb = Media.objects.get_or_create(filename='{}_thummbnail.png'.format(new.name),
-                                                mime=png,
-                                                data=get(pkmn['ThumbnailImage']).content,  # noqa
-                                                of=new)
+                                      name=pkmn['name'],
+                                      weight=pkmn['weight'],
+                                      height=pkmn['height'],
+                                      gender_distribution=0,
+                                      legendary=False)
+            log.info('Added pokemon {}'.format(new[1]))
+            thumb = Media.objects.get_or_create(filename='{}_thummbnail.png'.format(new[0]),
+                          mime=png,
+                          data=get(pkmn['ThumbnailImage']).content,
+                          of=new)
             thumb.save()
-            log.debug('Saved thumbnail for {}'.format(new.name))
+            log.debug('Saved thumbnail for {}'.format(new[0]))
+            pkmnType = PokemonType(pokemon=new,
+                                                         pokemon_type=newtype)
+            log.debug('Saved Pokemon Type {0} for {1}'.format(pkmnType.pokemon_type,
+                                                              pkmnType.pokemon.name))
     else:
         form = KalosForm()
     return render(request, 'upload.html', {'form': form, 'is_valid': form.is_valid()})
