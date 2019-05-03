@@ -115,7 +115,7 @@ class PokemonCanLearn(models.Model):
 class TypeMatchup(models.Model):
     def __str__(self):
         return f'{self.this} vs {self.other}'
-    effectiveness_multiplier: models.IntegerField = models.IntegerField()
+    effectiveness_multiplier: models.FloatField = models.FloatField()
     this: models.ForeignKey = models.ForeignKey(Type,
                                                 on_delete=models.CASCADE,
                                                 related_name='+')
