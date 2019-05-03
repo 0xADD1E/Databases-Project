@@ -137,7 +137,7 @@ def typechart(request):
             elif num == 0.0:
                 matchups[-1].append(('negative', '0x'))
 
-    log.warn(matchups)
+    log.debug(matchups)
     return render(request, 'typechart.html', {'types': types, 'matchups': matchups})
 
 
