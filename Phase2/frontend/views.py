@@ -55,9 +55,11 @@ def pokemon_view(request):
 def searchie_boi(request):
     import json
     from .models import Pokemon
-    pokemon = json.dumps([{'title': x.name} for x in Pokemon.objects.all()])
+    pokemon_names = json.dumps([{'id': x.pokedex_id, 'title': x.name}
+                                for x in Pokemon.objects.all()])
 
-    return render(request,'searchieboi.html',{'pokemon_names': pokemon})
+    return render(request, 'searchieboi.html', {'pokemon_names': pokemon_names})
+
 
 def pokemon_info(request):
     import json
@@ -149,7 +151,7 @@ def typechart(request):
 
 
 def kalos_uploader(request):
-    from .models import Pokemon, PokemonType, Media, MIMEType, Type
+    from .models import Pokemon, PokemonType, Media, MIMEType, Type, Ability, PokemonAbility
     import json
     from requests import get
     from django import forms
@@ -170,7 +172,7 @@ def kalos_uploader(request):
                 new.gender_distribution = 0
                 new.legendary = False
                 new.save()
-                log.info(f'Added pokemon {new.name}')
+                log.debug(f'Added pokemon {new.name}')
             thumb, created = Media.objects.get_or_create(filename=f'{new.name}_thummbnail.png',
                                                          mime=png,
                                                          of=new)
@@ -190,6 +192,19 @@ def kalos_uploader(request):
                 if created:
                     log.debug('Saved Pokemon Type {0} for {1}'.format(pkmnType.pokemon_type,
                                                                       pkmnType.pokemon.name))
+
+            for pkmnAbility in pkmn['abilities']:
+                newAbility, created = Ability.objects.get_or_create(
+                    name=pkmnAbility)
+                newAbility.save()
+                if created:
+                    log.info('Added ability: {}'.format(newAbility))
+                pkmnAbility, created = PokemonAbility.objects.get_or_create(pokemon=new,
+                                                                            pokemon_ability=newAbility)
+                pkmnAbility.save()
+                if created:
+                    log.debug('Saved Pokemon Ability {0} for {1}'.format(pkmnAbility.pokemon_ability,
+                                                                         pkmnAbility.pokemon.name))
     else:
         form = KalosForm()
     return render(request, 'upload.html', {'form': form, 'is_valid': form.is_valid(), 'endpoint': 'kalos'})
