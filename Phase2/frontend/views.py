@@ -52,6 +52,13 @@ def pokemon_view(request):
                       {'pokemon_list': pokemon_list, 'pages': display_pages, 'max': total_pages - 1})
 
 
+def searchie_boi(request):
+    import json
+    from .models import Pokemon
+    pokemon = json.dumps([{'title': x.name} for x in Pokemon.objects.all()])
+
+    return render(request,'searchieboi.html',{'pokemon_names': pokemon})
+
 def pokemon_info(request):
     import json
     from django.http import HttpResponse, HttpResponseBadRequest

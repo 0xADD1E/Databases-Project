@@ -1,9 +1,10 @@
 from django.urls import path
-from .views import pokemon_view, typechart, matchup_uploader, kalos_uploader, pokemon_info
+from .views import pokemon_view, typechart, matchup_uploader, kalos_uploader, pokemon_info, searchie_boi
 from collections import namedtuple
 from typing import List, Dict
 NavInfo = namedtuple('NavInfo', ['name', 'view', 'route'])
 pages: List[NavInfo] = [
+    NavInfo(name='Searchieboi', view=searchie_boi, route='/searchieboi'),
     NavInfo(name='Pokémon', view=pokemon_view, route='/'),
     NavInfo(name='Type Chart', view=typechart, route='/chart'),
     NavInfo(name='Upload Kalos', view=kalos_uploader, route='/kalos'),
