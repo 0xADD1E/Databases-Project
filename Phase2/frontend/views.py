@@ -74,7 +74,7 @@ def pokemon_info(request):
 
     result = {
         'name': pokemon.name,
-        'id': pokemon.pokedex_id,
+        'id': str(pokemon.pokedex_id).zfill(3),
         'height': pokemon.height,
         'weight': pokemon.weight,
         'types': [t.pokemon_type.name for t in types],
