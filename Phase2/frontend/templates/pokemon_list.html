@@ -8,6 +8,7 @@
             <p>Height: <span id="modal_height"></span>in</p>
             <p>Weight: <span id="modal_weight"></span>lbs</p>
             <p>Types: <span id="modal_types"></span></p>
+            <p>Abilities: <span id="modal_abilities"></span></p>
         </div>
     </div>
 </div>
@@ -36,7 +37,8 @@
     <div class="ui center aligned segment">
         <div class="ui pagination menu">
             <a class="item" href="?page=0"><i class="angle double left icon"></i></a> {%for itm in pages%}
-            <a class="{%if itm.is_active%}active{%endif%} item" href="?page={{itm.number}}"> {{itm.display}}</a> {%endfor%}
+            <a class="{%if itm.is_active%}active{%endif%} item" href="?page={{itm.number}}"> {{itm.display}}</a>
+            {%endfor%}
             <a class="item" href="?page={{max}}"><i class="angle double right icon"></i></a>
         </div>
     </div>
@@ -45,7 +47,7 @@
     function loadData(name) {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', `/pkmn?for=${name}`);
-        xhr.onload = function() {
+        xhr.onload = function () {
             if (xhr.status == 200) {
                 response_parsed = JSON.parse(xhr.response)
                 console.log(response_parsed)
@@ -53,8 +55,12 @@
                 $('#modal_height').text(response_parsed.height)
                 $('#modal_weight').text(response_parsed.weight)
                 $('#modal_types').text(response_parsed.types
-                    .map(x=>x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
-                    .reduce((acc,i)=>acc+', '+i))
+                    .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
+                    .reduce((acc, i) => acc + ', ' + i))
+                if (response_parsed.abilities.length > 0)
+                    $('#modal_abilities').text(response_parsed.abilities
+                        .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
+                        .reduce((acc, i) => acc + ', ' + i))
                 $('#modal_image').attr('src', response_parsed.image)
                 $('.large.modal').modal('show');
             }

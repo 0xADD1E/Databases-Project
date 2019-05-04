@@ -70,6 +70,7 @@ def pokemon_info(request):
     pokemon = Pokemon.objects.get(name=pokemon_name)
     image = pokemon.media_set.first()
     types = pokemon.pokemontype_set.all()
+    abilities = pokemon.pokemonability_set.all()
 
     result = {
         'name': pokemon.name,
@@ -77,6 +78,7 @@ def pokemon_info(request):
         'height': pokemon.height,
         'weight': pokemon.weight,
         'types': [t.pokemon_type.name for t in types],
+        'abilities': [t.pokemon_ability.name for t in abilities],
         'image': encode_image(image.data, image.mime)
     }
     return HttpResponse(json.dumps(result), content_type='application/json')

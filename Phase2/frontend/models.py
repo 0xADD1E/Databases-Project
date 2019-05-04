@@ -17,6 +17,7 @@ class Ability(models.Model):
         return f'{self.name}'
     name: models.TextField = models.TextField(primary_key=True)
 
+
 class PokemonAbility(models.Model):
     def __str__(self):
         return f'{self.pokemon}: {self.pokemon_ability}'
