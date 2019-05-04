@@ -57,10 +57,9 @@
                 $('#modal_types').text(response_parsed.types
                     .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
                     .reduce((acc, i) => acc + ', ' + i))
-                if (response_parsed.abilities.length > 0)
-                    $('#modal_abilities').text(response_parsed.abilities
-                        .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
-                        .reduce((acc, i) => acc + ', ' + i))
+                $('#modal_abilities').text(response_parsed.abilities.length > 0 ? response_parsed.abilities
+                    .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
+                    .reduce((acc, i) => acc + ', ' + i) : "N/A" )
                 $('#modal_image').attr('src', response_parsed.image)
                 $('.large.modal').modal('show');
             }
