@@ -2,16 +2,52 @@
 
 <div class="ui search">
     <div class="ui icon input">
-        <input class="prompt" type="text" placeholder="Search Pokémon...">
+        <input class="prompt" type="text" placeholder="Search Pokémon..." value="Pikachu">
         <i class="search icon"></i>
     </div>
     <div class="results"></div>
 </div>
 
+    <div id="modal_header" class="header">Header</div>
+    <div class="image content">
+        <img id="modal_image" class="image">
+        <div class="description">
+            <p>Height: <span id="modal_height"></span>in</p>
+            <p>Weight: <span id="modal_weight"></span>lbs</p>
+            <p>Types: <span id="modal_types"></span></p>
+            <p>Abilities: <span id="modal_abilities"></span></p>
+        </div>
+    </div>
 <script>
+    function loadData(name) {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', `/pkmn?for=${name}`);
+        xhr.onload = function () {
+            if (xhr.status == 200) {
+                response_parsed = JSON.parse(xhr.response)
+                console.log(response_parsed)
+                $('#modal_header').text(response_parsed.name + " #" + response_parsed.id)
+                $('#modal_height').text(response_parsed.height)
+                $('#modal_weight').text(response_parsed.weight)
+                $('#modal_types').text(response_parsed.types
+                    .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
+                    .reduce((acc, i) => acc + ', ' + i))
+                if (response_parsed.abilities.length > 0)
+                    $('#modal_abilities').text(response_parsed.abilities
+                        .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
+                        .reduce((acc, i) => acc + ', ' + i))
+                $('#modal_image').attr('src', response_parsed.image)
+                $('.large.modal').modal('show');
+            }
+        };
+        xhr.send();
+    }
+
+    var name = $(".prompt").val()
     $('.ui.search').search({
-        source: {{ pokemon_names| safe}}
+        source: {{ pokemon_names | safe }}
         })
+    loadData(name)
 </script>
 
 {% endblock %}
