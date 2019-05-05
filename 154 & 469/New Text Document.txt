@@ -1,0 +1,5 @@
+ pkmn = {154:(stats(hp=80,attack=82,defence=100,sp_attack=83,sp_defence=100,speed=80))} 
+return pkmn[154] 
+
+ pkmn = {469:(stats(hp=86,attack=76,defence=86,sp_attack=116,sp_defence=56,speed=95))} 
+return pkmn[469] 
