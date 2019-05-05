@@ -457,6 +457,9 @@ return pkmn[152]
  pkmn = {153:(stats(hp=60,attack=62,defence=80,sp_attack=63,sp_defence=80,speed=60))} 
 return pkmn[153] 
 
+pkmn = {154:(stats(hp=80,attack=82,defence=100,sp_attack=83,sp_defence=100,speed=80))} 
+return pkmn[154] 
+
  pkmn = {155:(stats(hp=39,attack=52,defence=43,sp_attack=60,sp_defence=50,speed=65))} 
 return pkmn[155] 
 
@@ -1398,6 +1401,9 @@ return pkmn[467]
 
  pkmn = {468:(stats(hp=85,attack=50,defence=95,sp_attack=120,sp_defence=115,speed=80))} 
 return pkmn[468] 
+
+ pkmn = {469:(stats(hp=86,attack=76,defence=86,sp_attack=116,sp_defence=56,speed=95))} 
+return pkmn[469] 
 
  pkmn = {470:(stats(hp=65,attack=110,defence=130,sp_attack=60,sp_defence=65,speed=95))} 
 return pkmn[470] 
