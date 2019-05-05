@@ -84,6 +84,45 @@ def pokemon_info(request):
     return HttpResponse(json.dumps(result), content_type='application/json')
 
 
+def stats_uploader(request):
+    from re import compile
+    from django import forms
+    from requests import get
+    from .models import PokemonAppearance, Pokemon
+    from collections import namedtuple
+    from django.http import HttpResponseRedirect
+    log = logging.getLogger('stat_import')
+    r = compile("\{(?P<pokedex_id>\d+):\(stats\(hp=(?P<hp>\d+),attack=(?P<attk>\d+),defence=(?P<defn>\d+),sp_attack=(?P<sp_attk>\d+),sp_defence=(?P<sp_defn>\d+),speed=(?P<speed>\d+)\)\)\}")
+    t = namedtuple('Stats', 'pokedex_id hp attack defence sp_attack sp_defence speed')
+
+    class StatsForm(forms.Form):
+        stats = forms.FileField()
+    log.warn("Stating stats_uploader")
+    if request.method == 'POST':
+        form = StatsForm(request.POST, request.FILES)
+        if form.is_valid():
+            lines = [x.decode('UTF-8') for x in request.FILES['stats'].readlines()[1:]]
+            for m in r.finditer('\n'.join(lines)):
+                x = t(pokedex_id=m.group('pokedex_id'), hp=m.group('hp'), attack=m.group('attk'), defence=m.group('defn'),
+                      sp_attack=m.group('sp_attk'), sp_defence=m.group('sp_defn'), speed=m.group('speed'))
+                pkmn = Pokemon.objects.get(pokedex_id=x.pokedex_id)
+                log.warn(f'Added pokemon {x.pokedex_id}')
+                new, created = PokemonAppearance.objects.get_or_create(
+                    pokemon=pkmn)
+                if created:
+                    new.base_hp = x.hp
+                    new.base_speed = x.speed
+                    new.base_attack = x.attack
+                    new.base_defence = x.defence
+                    new.base_sp_attack = x.sp_attack
+                    new.base_sp_defence = x.sp_defence
+                    new.save()
+
+    else:
+        form = StatsForm()
+    return render(request, 'upload.html', {'form': form, 'is_valid': form.is_valid(), 'endpoint': 'stats'})
+
+
 def matchup_uploader(request):
     from .models import Type, TypeMatchup
     from django import forms

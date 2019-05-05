@@ -12,6 +12,22 @@ class Pokemon(models.Model):
     legendary: models.BooleanField = models.BooleanField(default=False)
 
 
+class Stat(models.Model):
+    def __str__(self):
+        return f'{self.name}'
+    name: models.TextField = models.TextField(primary_key=True)
+
+
+class PokemonStat(models.Model):
+    def __str__(self):
+        return f'{self.pokemon}, {self.pokemon_stat} = {self.value}'
+    pokemon: models.ForeignKey = models.ForeignKey(Pokemon,
+                                                   on_delete=models.CASCADE)
+    pokemon_stat: models.ForeignKey = models.ForeignKey(Stat,
+                                                        on_delete=models.CASCADE)
+    value: models.IntegerField = models.IntegerField(default=0)
+
+
 class Ability(models.Model):
     def __str__(self):
         return f'{self.name}'
@@ -92,7 +108,7 @@ class Game(models.Model):
 
 class PokemonAppearance(models.Model):
     def __str__(self):
-        return f'{self.pokemon} in {self.game}'
+        return f'{self.pokemon}'
     base_hp: models.IntegerField = models.IntegerField(default=0)
     base_speed: models.IntegerField = models.IntegerField(default=0)
     base_attack: models.IntegerField = models.IntegerField(default=0)
@@ -102,8 +118,8 @@ class PokemonAppearance(models.Model):
 
     pokemon: models.ForeignKey = models.ForeignKey(Pokemon,
                                                    on_delete=models.PROTECT)
-    game: models.ForeignKey = models.ForeignKey(Game,
-                                                on_delete=models.PROTECT)
+    # game: models.ForeignKey = models.ForeignKey(Game,
+    #                                             on_delete=models.PROTECT)
 
 
 class Attack(models.Model):
