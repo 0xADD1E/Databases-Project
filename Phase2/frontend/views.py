@@ -64,17 +64,36 @@ def searchie_boi(request):
 def pokemon_info(request):
     import json
     from django.http import HttpResponse, HttpResponseBadRequest
-    from .models import Pokemon
+    from .models import Pokemon, PokemonAppearance
     pokemon_name = request.GET.get('for', 'Pikachu')
 
     pokemon = Pokemon.objects.get(name=pokemon_name)
+    stats = PokemonAppearance.objects.get(pokemon=pokemon)
     image = pokemon.media_set.first()
     types = pokemon.pokemontype_set.all()
     abilities = pokemon.pokemonability_set.all()
-
+            #     <p>HP: <span id="modal_hp"></span></p>
+            # <p>Attack: <span id="modal_attack"></span></p>
+            # <p>Defense: <span id="modal_defense"></span></p>
+            # <p>Sp. Atk: <span id="modal_sp_atk"></span></p>
+            # <p>Sp.Def: <span id="modal_sp_def"></span></p>
+            # <p>Speed: <span id="modal_speed"></span></p>
+            # <p>Total: <span id="modal_total"></span></p>
+    # base_hp: models.IntegerField = models.IntegerField(default=0)
+    # base_speed: models.IntegerField = models.IntegerField(default=0)
+    # base_attack: models.IntegerField = models.IntegerField(default=0)
+    # base_defence: models.IntegerField = models.IntegerField(default=0)
+    # base_sp_attack: models.IntegerField = models.IntegerField(default=0)
+    # base_sp_defence: models.IntegerField = models.IntegerField(default=0)
     result = {
         'name': pokemon.name,
         'id': str(pokemon.pokedex_id).zfill(3),
+        'hp': stats.base_hp,
+        'attack': stats.base_attack,
+        'defense': stats.base_defence,
+        'spAtk': stats.base_sp_attack,
+        'spDef': stats.base_sp_defence,
+        'speed': stats.base_speed,
         'height': pokemon.height,
         'weight': pokemon.weight,
         'types': [t.pokemon_type.name for t in types],
