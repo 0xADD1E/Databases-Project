@@ -1,1 +1,1 @@
-# Description Goes Here
+﻿#### **Main Idea:**  - This project is based on the Pokémon game. <more to come>#### **UML diagrams:**  - Pokémon: 
