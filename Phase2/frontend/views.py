@@ -72,19 +72,6 @@ def pokemon_info(request):
     image = pokemon.media_set.first()
     types = pokemon.pokemontype_set.all()
     abilities = pokemon.pokemonability_set.all()
-            #     <p>HP: <span id="modal_hp"></span></p>
-            # <p>Attack: <span id="modal_attack"></span></p>
-            # <p>Defense: <span id="modal_defense"></span></p>
-            # <p>Sp. Atk: <span id="modal_sp_atk"></span></p>
-            # <p>Sp.Def: <span id="modal_sp_def"></span></p>
-            # <p>Speed: <span id="modal_speed"></span></p>
-            # <p>Total: <span id="modal_total"></span></p>
-    # base_hp: models.IntegerField = models.IntegerField(default=0)
-    # base_speed: models.IntegerField = models.IntegerField(default=0)
-    # base_attack: models.IntegerField = models.IntegerField(default=0)
-    # base_defence: models.IntegerField = models.IntegerField(default=0)
-    # base_sp_attack: models.IntegerField = models.IntegerField(default=0)
-    # base_sp_defence: models.IntegerField = models.IntegerField(default=0)
     result = {
         'name': pokemon.name,
         'id': str(pokemon.pokedex_id).zfill(3),
