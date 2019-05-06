@@ -4,11 +4,21 @@
     <div id="modal_header" class="header">Header</div>
     <div class="image content">
         <img id="modal_image" class="image">
-        <div class="description">
-            <p>Height: <span id="modal_height"></span>in</p>
-            <p>Weight: <span id="modal_weight"></span>lbs</p>
-            <p>Types: <span id="modal_types"></span></p>
-            <p>Abilities: <span id="modal_abilities"></span></p>
+        <div class="ui two column very relaxed grid">
+            <div class="column">
+                <p>Height: <span id="modal_height"></span>in</p>
+                <p>Weight: <span id="modal_weight"></span>lbs</p>
+                <p>Types: <span id="modal_types"></span></p>
+                <p>Abilities: <span id="modal_abilities"></span></p>
+            </div>
+            <div class="column">
+                <p>HP: <span id="modal_hp"></span></p>
+                <p>Attack: <span id="modal_attack"></span></p>
+                <p>Defense: <span id="modal_defense"></span></p>
+                <p>Sp. Atk: <span id="modal_sp_atk"></span></p>
+                <p>Sp.Def: <span id="modal_sp_def"></span></p>
+                <p>Speed: <span id="modal_speed"></span></p>
+            </div>
         </div>
     </div>
 </div>
@@ -59,7 +69,13 @@
                     .reduce((acc, i) => acc + ', ' + i))
                 $('#modal_abilities').text(response_parsed.abilities.length > 0 ? response_parsed.abilities
                     .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
-                    .reduce((acc, i) => acc + ', ' + i) : "N/A" )
+                    .reduce((acc, i) => acc + ', ' + i) : "N/A")
+                $('#modal_hp').text(response_parsed.hp)
+                $('#modal_attack').text(response_parsed.attack)
+                $('#modal_defense').text(response_parsed.defense)
+                $('#modal_sp_atk').text(response_parsed.spAtk)
+                $('#modal_sp_def').text(response_parsed.spDef)
+                $('#modal_speed').text(response_parsed.speed)
                 $('#modal_image').attr('src', response_parsed.image)
                 $('.large.modal').modal('show');
             }

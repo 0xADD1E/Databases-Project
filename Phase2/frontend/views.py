@@ -64,17 +64,23 @@ def searchie_boi(request):
 def pokemon_info(request):
     import json
     from django.http import HttpResponse, HttpResponseBadRequest
-    from .models import Pokemon
+    from .models import Pokemon, PokemonAppearance
     pokemon_name = request.GET.get('for', 'Pikachu')
 
     pokemon = Pokemon.objects.get(name=pokemon_name)
+    stats = PokemonAppearance.objects.get(pokemon=pokemon)
     image = pokemon.media_set.first()
     types = pokemon.pokemontype_set.all()
     abilities = pokemon.pokemonability_set.all()
-
     result = {
         'name': pokemon.name,
         'id': str(pokemon.pokedex_id).zfill(3),
+        'hp': stats.base_hp,
+        'attack': stats.base_attack,
+        'defense': stats.base_defence,
+        'spAtk': stats.base_sp_attack,
+        'spDef': stats.base_sp_defence,
+        'speed': stats.base_speed,
         'height': pokemon.height,
         'weight': pokemon.weight,
         'types': [t.pokemon_type.name for t in types],
@@ -82,6 +88,45 @@ def pokemon_info(request):
         'image': encode_image(image.data, image.mime)
     }
     return HttpResponse(json.dumps(result), content_type='application/json')
+
+
+def stats_uploader(request):
+    from re import compile
+    from django import forms
+    from requests import get
+    from .models import PokemonAppearance, Pokemon
+    from collections import namedtuple
+    from django.http import HttpResponseRedirect
+    log = logging.getLogger('stat_import')
+    r = compile("\{(?P<pokedex_id>\d+):\(stats\(hp=(?P<hp>\d+),attack=(?P<attk>\d+),defence=(?P<defn>\d+),sp_attack=(?P<sp_attk>\d+),sp_defence=(?P<sp_defn>\d+),speed=(?P<speed>\d+)\)\)\}")
+    t = namedtuple('Stats', 'pokedex_id hp attack defence sp_attack sp_defence speed')
+
+    class StatsForm(forms.Form):
+        stats = forms.FileField()
+    log.warn("Stating stats_uploader")
+    if request.method == 'POST':
+        form = StatsForm(request.POST, request.FILES)
+        if form.is_valid():
+            lines = [x.decode('UTF-8') for x in request.FILES['stats'].readlines()[1:]]
+            for m in r.finditer('\n'.join(lines)):
+                x = t(pokedex_id=m.group('pokedex_id'), hp=m.group('hp'), attack=m.group('attk'), defence=m.group('defn'),
+                      sp_attack=m.group('sp_attk'), sp_defence=m.group('sp_defn'), speed=m.group('speed'))
+                pkmn = Pokemon.objects.get(pokedex_id=x.pokedex_id)
+                log.warn(f'Added pokemon {x.pokedex_id}')
+                new, created = PokemonAppearance.objects.get_or_create(
+                    pokemon=pkmn)
+                if created:
+                    new.base_hp = x.hp
+                    new.base_speed = x.speed
+                    new.base_attack = x.attack
+                    new.base_defence = x.defence
+                    new.base_sp_attack = x.sp_attack
+                    new.base_sp_defence = x.sp_defence
+                    new.save()
+
+    else:
+        form = StatsForm()
+    return render(request, 'upload.html', {'form': form, 'is_valid': form.is_valid(), 'endpoint': 'stats'})
 
 
 def matchup_uploader(request):

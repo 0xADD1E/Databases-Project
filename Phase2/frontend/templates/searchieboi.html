@@ -1,29 +1,53 @@
-{% extends "base.html" %} {% block content %}
-
-<div class="ui form">
-    <form enctype="multipart/form-data" action="/{{endpoint}}" method="post">
+{% extends "base.html" %} {% block content %}{% csrf_token %}
+<div class='ui three column centered grid'>
+    <div class='row'></div>
+    <div class="ui column left float form">
         <div class="ui search">
             <div class="ui icon input">
-                <input class="prompt" type="text" placeholder="Search Pokémon..." value="Pikachu">
+                <input class="prompt" type="text" placeholder="Search Pokémon..." value="Pikachu"
+                    oninput="loadData(this.value)" onclick="loadData(this.value)">
                 <i class="search icon"></i>
             </div>
             <div class="results"></div>
         </div>
-    </form>
-</div>
-
-<div id="modal_header" class="header">Header</div>
-<div class="image content">
-    <img id="modal_image" class="image">
-    <div class="description">
-        <p>Height: <span id="modal_height"></span>in</p>
-        <p>Weight: <span id="modal_weight"></span>lbs</p>
-        <p>Types: <span id="modal_types"></span></p>
-        <p>Abilities: <span id="modal_abilities"></span></p>
     </div>
+    <div class="image column right float content">
+        <!-- <h3 class="ui block header">
+            Header
+        </h3> -->
+        <img id="modal_image" class="image">
+        <div class="description">
+            <div class="ui two column very relaxed grid">
+                <div class="column">
+                    <p>Height: <span id="modal_height"></span>in</p>
+                    <p>Weight: <span id="modal_weight"></span>lbs</p>
+                    <p>Types: <span id="modal_types"></span></p>
+                    <p>Abilities: <span id="modal_abilities"></span></p>
+                </div>
+                <div class="column">
+                    <p>HP: <span id="modal_hp"></span></p>
+                    <p>Attack: <span id="modal_attack"></span></p>
+                    <p>Defense: <span id="modal_defense"></span></p>
+                    <p>Sp. Atk: <span id="modal_sp_atk"></span></p>
+                    <p>Sp.Def: <span id="modal_sp_def"></span></p>
+                    <p>Speed: <span id="modal_speed"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column"></div>
 </div>
 <script>
+    $(".prompt").keyup(function (event) {
+        if (event.keyCode === 13) {
+            loadData($(".prompt").val())
+        }
+    });
+    function jsUcfirst(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
     function loadData(name) {
+        name = jsUcfirst(name)
         let xhr = new XMLHttpRequest();
         xhr.open('GET', `/pkmn?for=${name}`);
         xhr.onload = function () {
@@ -36,16 +60,21 @@
                 $('#modal_types').text(response_parsed.types
                     .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
                     .reduce((acc, i) => acc + ', ' + i))
-                $('#modal_abilities').text(response_parsed.abilities
+                $('#modal_abilities').text(response_parsed.abilities.length > 0 ? response_parsed.abilities
                     .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
-                    .reduce((acc, i) => acc + ', ' + i))
+                    .reduce((acc, i) => acc + ', ' + i) : "N/A")
+                $('#modal_hp').text(response_parsed.hp)
+                $('#modal_attack').text(response_parsed.attack)
+                $('#modal_defense').text(response_parsed.defense)
+                $('#modal_sp_atk').text(response_parsed.spAtk)
+                $('#modal_sp_def').text(response_parsed.spDef)
+                $('#modal_speed').text(response_parsed.speed)
                 $('#modal_image').attr('src', response_parsed.image)
                 $('.large.modal').modal('show');
             }
         };
         xhr.send();
     }
-
     var name = $(".prompt").val()
     $('.ui.search').search({
         source: {{ pokemon_names | safe }}
