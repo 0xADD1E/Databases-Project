@@ -12,31 +12,15 @@ class Pokemon(models.Model):
     legendary = models.BooleanField(default=False)
 
 
-class Stat(models.Model):
-    def __str__(self):
-        return f'{self.name}'
-    name: models.TextField = models.TextField(primary_key=True)
-
-
-class PokemonStat(models.Model):
-    def __str__(self):
-        return f'{self.pokemon}, {self.pokemon_stat} = {self.value}'
-    pokemon: models.ForeignKey = models.ForeignKey(Pokemon,
-                                                   on_delete=models.CASCADE)
-    pokemon_stat: models.ForeignKey = models.ForeignKey(Stat,
-                                                        on_delete=models.CASCADE)
-    value: models.IntegerField = models.IntegerField(default=0)
-
-
 class Ability(models.Model):
     def __str__(self):
-        return f'{self.name}'
+        return '{}'.format(self.name)
     name: models.TextField = models.TextField(primary_key=True)
 
 
 class PokemonAbility(models.Model):
     def __str__(self):
-        return f'{self.pokemon}: {self.pokemon_ability}'
+        return '{}: {}'.format(self.pokemon, self.pokemon_ability)
     pokemon: models.ForeignKey = models.ForeignKey(Pokemon,
                                                    on_delete=models.CASCADE)
     pokemon_ability: models.ForeignKey = models.ForeignKey(Ability,
