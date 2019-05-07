@@ -1,0 +1,2427 @@
+ pkmn = {1:(stats(hp=45,attack=49,defence=49,sp_attack=65,sp_defence=65,speed=45))} 
+return pkmn[1] 
+
+ pkmn = {2:(stats(hp=60,attack=62,defence=63,sp_attack=80,sp_defence=80,speed=60))} 
+return pkmn[2] 
+
+ pkmn = {3:(stats(hp=80,attack=82,defence=83,sp_attack=100,sp_defence=100,speed=80))} 
+return pkmn[3] 
+
+ pkmn = {4:(stats(hp=39,attack=52,defence=43,sp_attack=60,sp_defence=50,speed=65))} 
+return pkmn[4] 
+
+ pkmn = {5:(stats(hp=58,attack=64,defence=58,sp_attack=80,sp_defence=65,speed=80))} 
+return pkmn[5] 
+
+ pkmn = {6:(stats(hp=78,attack=84,defence=78,sp_attack=109,sp_defence=85,speed=100))} 
+return pkmn[6] 
+
+ pkmn = {7:(stats(hp=44,attack=48,defence=65,sp_attack=50,sp_defence=64,speed=43))} 
+return pkmn[7] 
+
+ pkmn = {8:(stats(hp=59,attack=63,defence=80,sp_attack=65,sp_defence=80,speed=58))} 
+return pkmn[8] 
+
+ pkmn = {9:(stats(hp=79,attack=83,defence=100,sp_attack=85,sp_defence=105,speed=78))} 
+return pkmn[9] 
+
+ pkmn = {10:(stats(hp=45,attack=30,defence=35,sp_attack=20,sp_defence=20,speed=45))} 
+return pkmn[10] 
+
+ pkmn = {11:(stats(hp=50,attack=20,defence=55,sp_attack=25,sp_defence=25,speed=30))} 
+return pkmn[11] 
+
+ pkmn = {12:(stats(hp=60,attack=45,defence=50,sp_attack=90,sp_defence=80,speed=70))} 
+return pkmn[12] 
+
+ pkmn = {13:(stats(hp=40,attack=35,defence=30,sp_attack=20,sp_defence=20,speed=50))} 
+return pkmn[13] 
+
+ pkmn = {14:(stats(hp=45,attack=25,defence=50,sp_attack=25,sp_defence=25,speed=35))} 
+return pkmn[14] 
+
+ pkmn = {15:(stats(hp=65,attack=90,defence=40,sp_attack=45,sp_defence=80,speed=75))} 
+return pkmn[15] 
+
+ pkmn = {16:(stats(hp=40,attack=45,defence=40,sp_attack=35,sp_defence=35,speed=56))} 
+return pkmn[16] 
+
+ pkmn = {17:(stats(hp=63,attack=60,defence=55,sp_attack=50,sp_defence=50,speed=71))} 
+return pkmn[17] 
+
+ pkmn = {18:(stats(hp=83,attack=80,defence=75,sp_attack=70,sp_defence=70,speed=101))} 
+return pkmn[18] 
+
+ pkmn = {19:(stats(hp=30,attack=56,defence=35,sp_attack=25,sp_defence=35,speed=72))} 
+return pkmn[19] 
+
+ pkmn = {20:(stats(hp=55,attack=81,defence=60,sp_attack=50,sp_defence=70,speed=97))} 
+return pkmn[20] 
+
+ pkmn = {21:(stats(hp=40,attack=60,defence=30,sp_attack=31,sp_defence=31,speed=70))} 
+return pkmn[21] 
+
+ pkmn = {22:(stats(hp=65,attack=90,defence=65,sp_attack=61,sp_defence=61,speed=100))} 
+return pkmn[22] 
+
+ pkmn = {23:(stats(hp=35,attack=60,defence=44,sp_attack=40,sp_defence=54,speed=55))} 
+return pkmn[23] 
+
+ pkmn = {24:(stats(hp=60,attack=95,defence=69,sp_attack=65,sp_defence=79,speed=80))} 
+return pkmn[24] 
+
+ pkmn = {25:(stats(hp=35,attack=55,defence=40,sp_attack=50,sp_defence=50,speed=90))} 
+return pkmn[25] 
+
+ pkmn = {26:(stats(hp=60,attack=90,defence=55,sp_attack=90,sp_defence=80,speed=110))} 
+return pkmn[26] 
+
+ pkmn = {27:(stats(hp=50,attack=75,defence=85,sp_attack=20,sp_defence=30,speed=40))} 
+return pkmn[27] 
+
+ pkmn = {28:(stats(hp=75,attack=100,defence=110,sp_attack=45,sp_defence=55,speed=65))} 
+return pkmn[28] 
+
+ pkmn = {29:(stats(hp=55,attack=47,defence=52,sp_attack=40,sp_defence=40,speed=41))} 
+return pkmn[29] 
+
+ pkmn = {30:(stats(hp=70,attack=62,defence=67,sp_attack=55,sp_defence=55,speed=56))} 
+return pkmn[30] 
+
+ pkmn = {31:(stats(hp=90,attack=92,defence=87,sp_attack=75,sp_defence=85,speed=76))} 
+return pkmn[31] 
+
+ pkmn = {32:(stats(hp=46,attack=57,defence=40,sp_attack=40,sp_defence=40,speed=50))} 
+return pkmn[32] 
+
+ pkmn = {33:(stats(hp=61,attack=72,defence=57,sp_attack=55,sp_defence=55,speed=65))} 
+return pkmn[33] 
+
+ pkmn = {34:(stats(hp=81,attack=102,defence=77,sp_attack=85,sp_defence=75,speed=85))} 
+return pkmn[34] 
+
+ pkmn = {35:(stats(hp=70,attack=45,defence=48,sp_attack=60,sp_defence=65,speed=35))} 
+return pkmn[35] 
+
+ pkmn = {36:(stats(hp=95,attack=70,defence=73,sp_attack=95,sp_defence=90,speed=60))} 
+return pkmn[36] 
+
+ pkmn = {37:(stats(hp=38,attack=41,defence=40,sp_attack=50,sp_defence=65,speed=65))} 
+return pkmn[37] 
+
+ pkmn = {38:(stats(hp=73,attack=76,defence=75,sp_attack=81,sp_defence=100,speed=100))} 
+return pkmn[38] 
+
+ pkmn = {39:(stats(hp=115,attack=45,defence=20,sp_attack=45,sp_defence=25,speed=20))} 
+return pkmn[39] 
+
+ pkmn = {40:(stats(hp=140,attack=70,defence=45,sp_attack=85,sp_defence=50,speed=45))} 
+return pkmn[40] 
+
+ pkmn = {41:(stats(hp=40,attack=45,defence=35,sp_attack=30,sp_defence=40,speed=55))} 
+return pkmn[41] 
+
+ pkmn = {42:(stats(hp=75,attack=80,defence=70,sp_attack=65,sp_defence=75,speed=90))} 
+return pkmn[42] 
+
+ pkmn = {43:(stats(hp=45,attack=50,defence=55,sp_attack=75,sp_defence=65,speed=30))} 
+return pkmn[43] 
+
+ pkmn = {44:(stats(hp=60,attack=65,defence=70,sp_attack=85,sp_defence=75,speed=40))} 
+return pkmn[44] 
+
+ pkmn = {45:(stats(hp=75,attack=80,defence=85,sp_attack=110,sp_defence=90,speed=50))} 
+return pkmn[45] 
+
+ pkmn = {46:(stats(hp=35,attack=70,defence=55,sp_attack=45,sp_defence=55,speed=25))} 
+return pkmn[46] 
+
+ pkmn = {47:(stats(hp=60,attack=95,defence=80,sp_attack=60,sp_defence=80,speed=30))} 
+return pkmn[47] 
+
+ pkmn = {48:(stats(hp=60,attack=55,defence=50,sp_attack=40,sp_defence=55,speed=45))} 
+return pkmn[48] 
+
+ pkmn = {49:(stats(hp=70,attack=65,defence=60,sp_attack=90,sp_defence=75,speed=90))} 
+return pkmn[49] 
+
+ pkmn = {50:(stats(hp=10,attack=55,defence=25,sp_attack=35,sp_defence=45,speed=95))} 
+return pkmn[50] 
+
+ pkmn = {51:(stats(hp=35,attack=100,defence=50,sp_attack=50,sp_defence=70,speed=120))} 
+return pkmn[51] 
+
+ pkmn = {52:(stats(hp=40,attack=45,defence=35,sp_attack=40,sp_defence=40,speed=90))} 
+return pkmn[52] 
+
+ pkmn = {53:(stats(hp=65,attack=70,defence=60,sp_attack=65,sp_defence=65,speed=115))} 
+return pkmn[53] 
+
+ pkmn = {54:(stats(hp=50,attack=52,defence=48,sp_attack=65,sp_defence=50,speed=55))} 
+return pkmn[54] 
+
+ pkmn = {55:(stats(hp=80,attack=82,defence=78,sp_attack=95,sp_defence=80,speed=85))} 
+return pkmn[55] 
+
+ pkmn = {56:(stats(hp=40,attack=80,defence=35,sp_attack=35,sp_defence=45,speed=70))} 
+return pkmn[56] 
+
+ pkmn = {57:(stats(hp=65,attack=105,defence=60,sp_attack=60,sp_defence=70,speed=95))} 
+return pkmn[57] 
+
+ pkmn = {58:(stats(hp=55,attack=70,defence=45,sp_attack=70,sp_defence=50,speed=60))} 
+return pkmn[58] 
+
+ pkmn = {59:(stats(hp=90,attack=110,defence=80,sp_attack=100,sp_defence=80,speed=95))} 
+return pkmn[59] 
+
+ pkmn = {60:(stats(hp=40,attack=50,defence=40,sp_attack=40,sp_defence=40,speed=90))} 
+return pkmn[60] 
+
+ pkmn = {61:(stats(hp=65,attack=65,defence=65,sp_attack=50,sp_defence=50,speed=90))} 
+return pkmn[61] 
+
+ pkmn = {62:(stats(hp=90,attack=95,defence=95,sp_attack=70,sp_defence=90,speed=70))} 
+return pkmn[62] 
+
+ pkmn = {63:(stats(hp=25,attack=20,defence=15,sp_attack=105,sp_defence=55,speed=90))} 
+return pkmn[63] 
+
+ pkmn = {64:(stats(hp=40,attack=35,defence=30,sp_attack=120,sp_defence=70,speed=105))} 
+return pkmn[64] 
+
+ pkmn = {65:(stats(hp=55,attack=50,defence=45,sp_attack=135,sp_defence=95,speed=120))} 
+return pkmn[65] 
+
+ pkmn = {66:(stats(hp=70,attack=80,defence=50,sp_attack=35,sp_defence=35,speed=35))} 
+return pkmn[66] 
+
+ pkmn = {67:(stats(hp=80,attack=100,defence=70,sp_attack=50,sp_defence=60,speed=45))} 
+return pkmn[67] 
+
+ pkmn = {68:(stats(hp=90,attack=130,defence=80,sp_attack=65,sp_defence=85,speed=55))} 
+return pkmn[68] 
+
+ pkmn = {69:(stats(hp=50,attack=75,defence=35,sp_attack=70,sp_defence=30,speed=40))} 
+return pkmn[69] 
+
+ pkmn = {70:(stats(hp=65,attack=90,defence=50,sp_attack=85,sp_defence=45,speed=55))} 
+return pkmn[70] 
+
+ pkmn = {71:(stats(hp=80,attack=105,defence=65,sp_attack=100,sp_defence=70,speed=70))} 
+return pkmn[71] 
+
+ pkmn = {72:(stats(hp=40,attack=40,defence=35,sp_attack=50,sp_defence=100,speed=70))} 
+return pkmn[72] 
+
+ pkmn = {73:(stats(hp=80,attack=70,defence=65,sp_attack=80,sp_defence=120,speed=100))} 
+return pkmn[73] 
+
+ pkmn = {74:(stats(hp=40,attack=80,defence=100,sp_attack=30,sp_defence=30,speed=20))} 
+return pkmn[74] 
+
+ pkmn = {75:(stats(hp=55,attack=95,defence=115,sp_attack=45,sp_defence=45,speed=35))} 
+return pkmn[75] 
+
+ pkmn = {76:(stats(hp=80,attack=120,defence=130,sp_attack=55,sp_defence=65,speed=45))} 
+return pkmn[76] 
+
+ pkmn = {77:(stats(hp=50,attack=85,defence=55,sp_attack=65,sp_defence=65,speed=90))} 
+return pkmn[77] 
+
+ pkmn = {78:(stats(hp=65,attack=100,defence=70,sp_attack=80,sp_defence=80,speed=105))} 
+return pkmn[78] 
+
+ pkmn = {79:(stats(hp=90,attack=65,defence=65,sp_attack=40,sp_defence=40,speed=15))} 
+return pkmn[79] 
+
+ pkmn = {80:(stats(hp=95,attack=75,defence=110,sp_attack=100,sp_defence=80,speed=30))} 
+return pkmn[80] 
+
+ pkmn = {81:(stats(hp=25,attack=35,defence=70,sp_attack=95,sp_defence=55,speed=45))} 
+return pkmn[81] 
+
+ pkmn = {82:(stats(hp=50,attack=60,defence=95,sp_attack=120,sp_defence=70,speed=70))} 
+return pkmn[82] 
+
+ pkmn = {83:(stats(hp=52,attack=90,defence=55,sp_attack=58,sp_defence=62,speed=60))} 
+return pkmn[83] 
+
+ pkmn = {84:(stats(hp=35,attack=85,defence=45,sp_attack=35,sp_defence=35,speed=75))} 
+return pkmn[84] 
+
+ pkmn = {85:(stats(hp=60,attack=110,defence=70,sp_attack=60,sp_defence=60,speed=110))} 
+return pkmn[85] 
+
+ pkmn = {86:(stats(hp=65,attack=45,defence=55,sp_attack=45,sp_defence=70,speed=45))} 
+return pkmn[86] 
+
+ pkmn = {87:(stats(hp=90,attack=70,defence=80,sp_attack=70,sp_defence=95,speed=70))} 
+return pkmn[87] 
+
+ pkmn = {88:(stats(hp=80,attack=80,defence=50,sp_attack=40,sp_defence=50,speed=25))} 
+return pkmn[88] 
+
+ pkmn = {89:(stats(hp=105,attack=105,defence=75,sp_attack=65,sp_defence=100,speed=50))} 
+return pkmn[89] 
+
+ pkmn = {90:(stats(hp=30,attack=65,defence=100,sp_attack=45,sp_defence=25,speed=40))} 
+return pkmn[90] 
+
+ pkmn = {91:(stats(hp=50,attack=95,defence=180,sp_attack=85,sp_defence=45,speed=70))} 
+return pkmn[91] 
+
+ pkmn = {92:(stats(hp=30,attack=35,defence=30,sp_attack=100,sp_defence=35,speed=80))} 
+return pkmn[92] 
+
+ pkmn = {93:(stats(hp=45,attack=50,defence=45,sp_attack=115,sp_defence=55,speed=95))} 
+return pkmn[93] 
+
+ pkmn = {94:(stats(hp=60,attack=65,defence=60,sp_attack=130,sp_defence=75,speed=110))} 
+return pkmn[94] 
+
+ pkmn = {95:(stats(hp=35,attack=45,defence=160,sp_attack=30,sp_defence=45,speed=70))} 
+return pkmn[95] 
+
+ pkmn = {96:(stats(hp=60,attack=48,defence=45,sp_attack=43,sp_defence=90,speed=42))} 
+return pkmn[96] 
+
+ pkmn = {97:(stats(hp=85,attack=73,defence=70,sp_attack=73,sp_defence=115,speed=67))} 
+return pkmn[97] 
+
+ pkmn = {98:(stats(hp=30,attack=105,defence=90,sp_attack=25,sp_defence=25,speed=50))} 
+return pkmn[98] 
+
+ pkmn = {99:(stats(hp=55,attack=130,defence=115,sp_attack=50,sp_defence=50,speed=75))} 
+return pkmn[99] 
+
+ pkmn = {100:(stats(hp=40,attack=30,defence=50,sp_attack=55,sp_defence=55,speed=100))} 
+return pkmn[100] 
+
+ pkmn = {101:(stats(hp=60,attack=50,defence=70,sp_attack=80,sp_defence=80,speed=150))} 
+return pkmn[101] 
+
+ pkmn = {102:(stats(hp=60,attack=40,defence=80,sp_attack=60,sp_defence=45,speed=40))} 
+return pkmn[102] 
+
+ pkmn = {103:(stats(hp=95,attack=95,defence=85,sp_attack=125,sp_defence=75,speed=55))} 
+return pkmn[103] 
+
+ pkmn = {104:(stats(hp=50,attack=50,defence=95,sp_attack=40,sp_defence=50,speed=35))} 
+return pkmn[104] 
+
+ pkmn = {105:(stats(hp=60,attack=80,defence=110,sp_attack=50,sp_defence=80,speed=45))} 
+return pkmn[105] 
+
+ pkmn = {106:(stats(hp=50,attack=120,defence=53,sp_attack=35,sp_defence=110,speed=87))} 
+return pkmn[106] 
+
+ pkmn = {107:(stats(hp=50,attack=105,defence=79,sp_attack=35,sp_defence=110,speed=76))} 
+return pkmn[107] 
+
+ pkmn = {108:(stats(hp=90,attack=55,defence=75,sp_attack=60,sp_defence=75,speed=30))} 
+return pkmn[108] 
+
+ pkmn = {109:(stats(hp=40,attack=65,defence=95,sp_attack=60,sp_defence=45,speed=35))} 
+return pkmn[109] 
+
+ pkmn = {110:(stats(hp=65,attack=90,defence=120,sp_attack=85,sp_defence=70,speed=60))} 
+return pkmn[110] 
+
+ pkmn = {111:(stats(hp=80,attack=85,defence=95,sp_attack=30,sp_defence=30,speed=25))} 
+return pkmn[111] 
+
+ pkmn = {112:(stats(hp=105,attack=130,defence=120,sp_attack=45,sp_defence=45,speed=40))} 
+return pkmn[112] 
+
+ pkmn = {113:(stats(hp=250,attack=5,defence=5,sp_attack=35,sp_defence=105,speed=50))} 
+return pkmn[113] 
+
+ pkmn = {114:(stats(hp=65,attack=55,defence=115,sp_attack=100,sp_defence=40,speed=60))} 
+return pkmn[114] 
+
+ pkmn = {115:(stats(hp=105,attack=95,defence=80,sp_attack=40,sp_defence=80,speed=90))} 
+return pkmn[115] 
+
+ pkmn = {116:(stats(hp=30,attack=40,defence=70,sp_attack=70,sp_defence=25,speed=60))} 
+return pkmn[116] 
+
+ pkmn = {117:(stats(hp=55,attack=65,defence=95,sp_attack=95,sp_defence=45,speed=85))} 
+return pkmn[117] 
+
+ pkmn = {118:(stats(hp=45,attack=67,defence=60,sp_attack=35,sp_defence=50,speed=63))} 
+return pkmn[118] 
+
+ pkmn = {119:(stats(hp=80,attack=92,defence=65,sp_attack=65,sp_defence=80,speed=68))} 
+return pkmn[119] 
+
+ pkmn = {120:(stats(hp=30,attack=45,defence=55,sp_attack=70,sp_defence=55,speed=85))} 
+return pkmn[120] 
+
+ pkmn = {121:(stats(hp=60,attack=75,defence=85,sp_attack=100,sp_defence=85,speed=115))} 
+return pkmn[121] 
+
+ pkmn = {122:(stats(hp=40,attack=45,defence=65,sp_attack=100,sp_defence=120,speed=90))} 
+return pkmn[122] 
+
+ pkmn = {123:(stats(hp=70,attack=110,defence=80,sp_attack=55,sp_defence=80,speed=105))} 
+return pkmn[123] 
+
+ pkmn = {124:(stats(hp=65,attack=50,defence=35,sp_attack=115,sp_defence=95,speed=95))} 
+return pkmn[124] 
+
+ pkmn = {125:(stats(hp=65,attack=83,defence=57,sp_attack=95,sp_defence=85,speed=105))} 
+return pkmn[125] 
+
+ pkmn = {126:(stats(hp=65,attack=95,defence=57,sp_attack=100,sp_defence=85,speed=93))} 
+return pkmn[126] 
+
+ pkmn = {127:(stats(hp=65,attack=125,defence=100,sp_attack=55,sp_defence=70,speed=85))} 
+return pkmn[127] 
+
+ pkmn = {128:(stats(hp=75,attack=100,defence=95,sp_attack=40,sp_defence=70,speed=110))} 
+return pkmn[128] 
+
+ pkmn = {129:(stats(hp=20,attack=10,defence=55,sp_attack=15,sp_defence=20,speed=80))} 
+return pkmn[129] 
+
+ pkmn = {130:(stats(hp=95,attack=125,defence=79,sp_attack=60,sp_defence=100,speed=81))} 
+return pkmn[130] 
+
+ pkmn = {131:(stats(hp=130,attack=85,defence=80,sp_attack=85,sp_defence=95,speed=60))} 
+return pkmn[131] 
+
+ pkmn = {132:(stats(hp=48,attack=48,defence=48,sp_attack=48,sp_defence=48,speed=48))} 
+return pkmn[132] 
+
+ pkmn = {133:(stats(hp=55,attack=55,defence=50,sp_attack=45,sp_defence=65,speed=55))} 
+return pkmn[133] 
+
+ pkmn = {134:(stats(hp=130,attack=65,defence=60,sp_attack=110,sp_defence=95,speed=65))} 
+return pkmn[134] 
+
+ pkmn = {135:(stats(hp=65,attack=65,defence=60,sp_attack=110,sp_defence=95,speed=130))} 
+return pkmn[135] 
+
+ pkmn = {136:(stats(hp=65,attack=130,defence=60,sp_attack=95,sp_defence=110,speed=65))} 
+return pkmn[136] 
+
+ pkmn = {137:(stats(hp=65,attack=60,defence=70,sp_attack=85,sp_defence=75,speed=40))} 
+return pkmn[137] 
+
+ pkmn = {138:(stats(hp=35,attack=40,defence=100,sp_attack=90,sp_defence=55,speed=35))} 
+return pkmn[138] 
+
+ pkmn = {139:(stats(hp=70,attack=60,defence=125,sp_attack=115,sp_defence=70,speed=55))} 
+return pkmn[139] 
+
+ pkmn = {140:(stats(hp=30,attack=80,defence=90,sp_attack=55,sp_defence=45,speed=55))} 
+return pkmn[140] 
+
+ pkmn = {141:(stats(hp=60,attack=115,defence=105,sp_attack=65,sp_defence=70,speed=80))} 
+return pkmn[141] 
+
+ pkmn = {142:(stats(hp=80,attack=105,defence=65,sp_attack=60,sp_defence=75,speed=130))} 
+return pkmn[142] 
+
+ pkmn = {143:(stats(hp=160,attack=110,defence=65,sp_attack=65,sp_defence=110,speed=30))} 
+return pkmn[143] 
+
+ pkmn = {144:(stats(hp=90,attack=85,defence=100,sp_attack=95,sp_defence=125,speed=85))} 
+return pkmn[144] 
+
+ pkmn = {145:(stats(hp=90,attack=90,defence=85,sp_attack=125,sp_defence=90,speed=100))} 
+return pkmn[145] 
+
+ pkmn = {146:(stats(hp=90,attack=100,defence=90,sp_attack=125,sp_defence=85,speed=90))} 
+return pkmn[146] 
+
+ pkmn = {147:(stats(hp=41,attack=64,defence=45,sp_attack=50,sp_defence=50,speed=50))} 
+return pkmn[147] 
+
+ pkmn = {148:(stats(hp=61,attack=84,defence=65,sp_attack=70,sp_defence=70,speed=70))} 
+return pkmn[148] 
+
+ pkmn = {149:(stats(hp=91,attack=134,defence=95,sp_attack=100,sp_defence=100,speed=80))} 
+return pkmn[149] 
+
+ pkmn = {150:(stats(hp=106,attack=110,defence=90,sp_attack=154,sp_defence=90,speed=130))} 
+return pkmn[150] 
+
+ pkmn = {151:(stats(hp=100,attack=100,defence=100,sp_attack=100,sp_defence=100,speed=100))} 
+return pkmn[151] 
+
+ pkmn = {152:(stats(hp=45,attack=49,defence=65,sp_attack=49,sp_defence=65,speed=45))} 
+return pkmn[152] 
+
+ pkmn = {153:(stats(hp=60,attack=62,defence=80,sp_attack=63,sp_defence=80,speed=60))} 
+return pkmn[153] 
+
+pkmn = {154:(stats(hp=80,attack=82,defence=100,sp_attack=83,sp_defence=100,speed=80))} 
+return pkmn[154] 
+
+ pkmn = {155:(stats(hp=39,attack=52,defence=43,sp_attack=60,sp_defence=50,speed=65))} 
+return pkmn[155] 
+
+ pkmn = {156:(stats(hp=58,attack=64,defence=58,sp_attack=80,sp_defence=65,speed=80))} 
+return pkmn[156] 
+
+ pkmn = {157:(stats(hp=78,attack=84,defence=78,sp_attack=109,sp_defence=85,speed=100))} 
+return pkmn[157] 
+
+ pkmn = {158:(stats(hp=50,attack=65,defence=64,sp_attack=44,sp_defence=48,speed=43))} 
+return pkmn[158] 
+
+ pkmn = {159:(stats(hp=65,attack=80,defence=80,sp_attack=59,sp_defence=63,speed=58))} 
+return pkmn[159] 
+
+ pkmn = {160:(stats(hp=85,attack=105,defence=100,sp_attack=79,sp_defence=83,speed=78))} 
+return pkmn[160] 
+
+ pkmn = {161:(stats(hp=35,attack=46,defence=34,sp_attack=35,sp_defence=45,speed=20))} 
+return pkmn[161] 
+
+ pkmn = {162:(stats(hp=85,attack=76,defence=64,sp_attack=45,sp_defence=55,speed=90))} 
+return pkmn[162] 
+
+ pkmn = {163:(stats(hp=60,attack=30,defence=30,sp_attack=36,sp_defence=56,speed=50))} 
+return pkmn[163] 
+
+ pkmn = {164:(stats(hp=100,attack=50,defence=50,sp_attack=86,sp_defence=96,speed=70))} 
+return pkmn[164] 
+
+ pkmn = {165:(stats(hp=40,attack=20,defence=30,sp_attack=40,sp_defence=80,speed=55))} 
+return pkmn[165] 
+
+ pkmn = {166:(stats(hp=55,attack=35,defence=50,sp_attack=55,sp_defence=110,speed=85))} 
+return pkmn[166] 
+
+ pkmn = {167:(stats(hp=40,attack=60,defence=40,sp_attack=40,sp_defence=40,speed=30))} 
+return pkmn[167] 
+
+ pkmn = {168:(stats(hp=70,attack=90,defence=70,sp_attack=60,sp_defence=70,speed=40))} 
+return pkmn[168] 
+
+ pkmn = {169:(stats(hp=85,attack=90,defence=80,sp_attack=70,sp_defence=80,speed=130))} 
+return pkmn[169] 
+
+ pkmn = {170:(stats(hp=75,attack=38,defence=38,sp_attack=56,sp_defence=56,speed=67))} 
+return pkmn[170] 
+
+ pkmn = {171:(stats(hp=125,attack=58,defence=58,sp_attack=76,sp_defence=76,speed=67))} 
+return pkmn[171] 
+
+ pkmn = {172:(stats(hp=20,attack=40,defence=15,sp_attack=35,sp_defence=35,speed=60))} 
+return pkmn[172] 
+
+ pkmn = {173:(stats(hp=50,attack=25,defence=28,sp_attack=45,sp_defence=55,speed=15))} 
+return pkmn[173] 
+
+ pkmn = {174:(stats(hp=90,attack=30,defence=15,sp_attack=40,sp_defence=20,speed=15))} 
+return pkmn[174] 
+
+ pkmn = {175:(stats(hp=35,attack=20,defence=65,sp_attack=40,sp_defence=65,speed=20))} 
+return pkmn[175] 
+
+ pkmn = {176:(stats(hp=55,attack=40,defence=85,sp_attack=80,sp_defence=105,speed=40))} 
+return pkmn[176] 
+
+ pkmn = {177:(stats(hp=40,attack=50,defence=45,sp_attack=70,sp_defence=45,speed=70))} 
+return pkmn[177] 
+
+ pkmn = {178:(stats(hp=65,attack=75,defence=70,sp_attack=95,sp_defence=70,speed=95))} 
+return pkmn[178] 
+
+ pkmn = {179:(stats(hp=55,attack=40,defence=40,sp_attack=65,sp_defence=45,speed=35))} 
+return pkmn[179] 
+
+ pkmn = {180:(stats(hp=70,attack=55,defence=55,sp_attack=80,sp_defence=60,speed=45))} 
+return pkmn[180] 
+
+ pkmn = {181:(stats(hp=90,attack=75,defence=85,sp_attack=115,sp_defence=90,speed=55))} 
+return pkmn[181] 
+
+ pkmn = {182:(stats(hp=75,attack=80,defence=95,sp_attack=90,sp_defence=100,speed=50))} 
+return pkmn[182] 
+
+ pkmn = {183:(stats(hp=70,attack=20,defence=50,sp_attack=20,sp_defence=50,speed=40))} 
+return pkmn[183] 
+
+ pkmn = {184:(stats(hp=100,attack=50,defence=80,sp_attack=60,sp_defence=80,speed=50))} 
+return pkmn[184] 
+
+ pkmn = {185:(stats(hp=70,attack=100,defence=115,sp_attack=30,sp_defence=65,speed=30))} 
+return pkmn[185] 
+
+ pkmn = {186:(stats(hp=90,attack=75,defence=75,sp_attack=90,sp_defence=100,speed=70))} 
+return pkmn[186] 
+
+ pkmn = {187:(stats(hp=35,attack=35,defence=40,sp_attack=35,sp_defence=55,speed=50))} 
+return pkmn[187] 
+
+ pkmn = {188:(stats(hp=55,attack=45,defence=50,sp_attack=45,sp_defence=65,speed=80))} 
+return pkmn[188] 
+
+ pkmn = {189:(stats(hp=75,attack=55,defence=70,sp_attack=55,sp_defence=95,speed=110))} 
+return pkmn[189] 
+
+ pkmn = {190:(stats(hp=55,attack=70,defence=55,sp_attack=40,sp_defence=55,speed=85))} 
+return pkmn[190] 
+
+ pkmn = {191:(stats(hp=30,attack=30,defence=30,sp_attack=30,sp_defence=30,speed=30))} 
+return pkmn[191] 
+
+ pkmn = {192:(stats(hp=75,attack=75,defence=55,sp_attack=105,sp_defence=85,speed=30))} 
+return pkmn[192] 
+
+ pkmn = {193:(stats(hp=65,attack=65,defence=45,sp_attack=75,sp_defence=45,speed=95))} 
+return pkmn[193] 
+
+ pkmn = {194:(stats(hp=55,attack=45,defence=45,sp_attack=25,sp_defence=25,speed=15))} 
+return pkmn[194] 
+
+ pkmn = {195:(stats(hp=95,attack=85,defence=85,sp_attack=65,sp_defence=65,speed=35))} 
+return pkmn[195] 
+
+ pkmn = {196:(stats(hp=65,attack=65,defence=60,sp_attack=130,sp_defence=95,speed=110))} 
+return pkmn[196] 
+
+ pkmn = {197:(stats(hp=95,attack=65,defence=110,sp_attack=60,sp_defence=130,speed=65))} 
+return pkmn[197] 
+
+ pkmn = {198:(stats(hp=60,attack=85,defence=42,sp_attack=85,sp_defence=42,speed=91))} 
+return pkmn[198] 
+
+ pkmn = {199:(stats(hp=95,attack=75,defence=80,sp_attack=100,sp_defence=110,speed=30))} 
+return pkmn[199] 
+
+ pkmn = {200:(stats(hp=60,attack=60,defence=60,sp_attack=85,sp_defence=85,speed=85))} 
+return pkmn[200] 
+
+ pkmn = {201:(stats(hp=48,attack=72,defence=48,sp_attack=72,sp_defence=48,speed=48))} 
+return pkmn[201] 
+
+ pkmn = {202:(stats(hp=190,attack=33,defence=58,sp_attack=33,sp_defence=58,speed=33))} 
+return pkmn[202] 
+
+ pkmn = {203:(stats(hp=70,attack=80,defence=65,sp_attack=90,sp_defence=65,speed=85))} 
+return pkmn[203] 
+
+ pkmn = {204:(stats(hp=50,attack=65,defence=90,sp_attack=35,sp_defence=35,speed=15))} 
+return pkmn[204] 
+
+ pkmn = {205:(stats(hp=75,attack=90,defence=140,sp_attack=60,sp_defence=60,speed=40))} 
+return pkmn[205] 
+
+ pkmn = {206:(stats(hp=100,attack=70,defence=70,sp_attack=65,sp_defence=65,speed=45))} 
+return pkmn[206] 
+
+ pkmn = {207:(stats(hp=65,attack=75,defence=105,sp_attack=35,sp_defence=65,speed=85))} 
+return pkmn[207] 
+
+ pkmn = {208:(stats(hp=75,attack=85,defence=200,sp_attack=55,sp_defence=65,speed=30))} 
+return pkmn[208] 
+
+ pkmn = {209:(stats(hp=60,attack=80,defence=50,sp_attack=40,sp_defence=40,speed=30))} 
+return pkmn[209] 
+
+ pkmn = {210:(stats(hp=90,attack=120,defence=75,sp_attack=60,sp_defence=60,speed=45))} 
+return pkmn[210] 
+
+ pkmn = {211:(stats(hp=65,attack=95,defence=85,sp_attack=55,sp_defence=55,speed=85))} 
+return pkmn[211] 
+
+ pkmn = {212:(stats(hp=70,attack=130,defence=100,sp_attack=55,sp_defence=80,speed=65))} 
+return pkmn[212] 
+
+ pkmn = {213:(stats(hp=20,attack=10,defence=230,sp_attack=10,sp_defence=230,speed=5))} 
+return pkmn[213] 
+
+ pkmn = {214:(stats(hp=80,attack=125,defence=75,sp_attack=40,sp_defence=95,speed=85))} 
+return pkmn[214] 
+
+ pkmn = {215:(stats(hp=55,attack=95,defence=55,sp_attack=35,sp_defence=75,speed=115))} 
+return pkmn[215] 
+
+ pkmn = {216:(stats(hp=60,attack=80,defence=50,sp_attack=50,sp_defence=50,speed=40))} 
+return pkmn[216] 
+
+ pkmn = {217:(stats(hp=90,attack=130,defence=75,sp_attack=75,sp_defence=75,speed=55))} 
+return pkmn[217] 
+
+ pkmn = {218:(stats(hp=40,attack=40,defence=40,sp_attack=70,sp_defence=40,speed=20))} 
+return pkmn[218] 
+
+ pkmn = {219:(stats(hp=60,attack=50,defence=120,sp_attack=90,sp_defence=80,speed=30))} 
+return pkmn[219] 
+
+ pkmn = {220:(stats(hp=50,attack=50,defence=40,sp_attack=30,sp_defence=30,speed=50))} 
+return pkmn[220] 
+
+ pkmn = {221:(stats(hp=100,attack=100,defence=80,sp_attack=60,sp_defence=60,speed=50))} 
+return pkmn[221] 
+
+ pkmn = {222:(stats(hp=65,attack=55,defence=95,sp_attack=65,sp_defence=95,speed=35))} 
+return pkmn[222] 
+
+ pkmn = {223:(stats(hp=35,attack=65,defence=35,sp_attack=65,sp_defence=35,speed=65))} 
+return pkmn[223] 
+
+ pkmn = {224:(stats(hp=75,attack=105,defence=75,sp_attack=105,sp_defence=75,speed=45))} 
+return pkmn[224] 
+
+ pkmn = {225:(stats(hp=45,attack=55,defence=45,sp_attack=65,sp_defence=45,speed=75))} 
+return pkmn[225] 
+
+ pkmn = {226:(stats(hp=85,attack=40,defence=70,sp_attack=80,sp_defence=140,speed=70))} 
+return pkmn[226] 
+
+ pkmn = {227:(stats(hp=65,attack=80,defence=140,sp_attack=40,sp_defence=70,speed=70))} 
+return pkmn[227] 
+
+ pkmn = {228:(stats(hp=45,attack=60,defence=30,sp_attack=80,sp_defence=50,speed=65))} 
+return pkmn[228] 
+
+ pkmn = {229:(stats(hp=75,attack=90,defence=50,sp_attack=110,sp_defence=80,speed=95))} 
+return pkmn[229] 
+
+ pkmn = {230:(stats(hp=75,attack=95,defence=95,sp_attack=95,sp_defence=95,speed=85))} 
+return pkmn[230] 
+
+ pkmn = {231:(stats(hp=90,attack=60,defence=60,sp_attack=40,sp_defence=40,speed=40))} 
+return pkmn[231] 
+
+ pkmn = {232:(stats(hp=90,attack=120,defence=120,sp_attack=60,sp_defence=60,speed=50))} 
+return pkmn[232] 
+
+ pkmn = {233:(stats(hp=85,attack=80,defence=90,sp_attack=105,sp_defence=95,speed=60))} 
+return pkmn[233] 
+
+ pkmn = {234:(stats(hp=73,attack=95,defence=62,sp_attack=85,sp_defence=65,speed=85))} 
+return pkmn[234] 
+
+ pkmn = {235:(stats(hp=55,attack=20,defence=35,sp_attack=20,sp_defence=45,speed=75))} 
+return pkmn[235] 
+
+ pkmn = {236:(stats(hp=35,attack=35,defence=35,sp_attack=35,sp_defence=35,speed=35))} 
+return pkmn[236] 
+
+ pkmn = {237:(stats(hp=50,attack=95,defence=95,sp_attack=35,sp_defence=110,speed=70))} 
+return pkmn[237] 
+
+ pkmn = {238:(stats(hp=45,attack=30,defence=15,sp_attack=85,sp_defence=65,speed=65))} 
+return pkmn[238] 
+
+ pkmn = {239:(stats(hp=45,attack=63,defence=37,sp_attack=65,sp_defence=55,speed=95))} 
+return pkmn[239] 
+
+ pkmn = {240:(stats(hp=45,attack=75,defence=37,sp_attack=70,sp_defence=55,speed=83))} 
+return pkmn[240] 
+
+ pkmn = {241:(stats(hp=95,attack=80,defence=105,sp_attack=40,sp_defence=70,speed=100))} 
+return pkmn[241] 
+
+ pkmn = {242:(stats(hp=255,attack=10,defence=10,sp_attack=75,sp_defence=135,speed=55))} 
+return pkmn[242] 
+
+ pkmn = {243:(stats(hp=90,attack=85,defence=75,sp_attack=115,sp_defence=100,speed=115))} 
+return pkmn[243] 
+
+ pkmn = {244:(stats(hp=115,attack=115,defence=85,sp_attack=90,sp_defence=75,speed=100))} 
+return pkmn[244] 
+
+ pkmn = {245:(stats(hp=100,attack=75,defence=115,sp_attack=90,sp_defence=115,speed=85))} 
+return pkmn[245] 
+
+ pkmn = {246:(stats(hp=50,attack=64,defence=50,sp_attack=45,sp_defence=50,speed=41))} 
+return pkmn[246] 
+
+ pkmn = {247:(stats(hp=70,attack=84,defence=70,sp_attack=65,sp_defence=70,speed=51))} 
+return pkmn[247] 
+
+ pkmn = {248:(stats(hp=100,attack=134,defence=110,sp_attack=95,sp_defence=100,speed=61))} 
+return pkmn[248] 
+
+ pkmn = {249:(stats(hp=106,attack=90,defence=130,sp_attack=90,sp_defence=154,speed=110))} 
+return pkmn[249] 
+
+ pkmn = {250:(stats(hp=106,attack=130,defence=90,sp_attack=110,sp_defence=154,speed=90))} 
+return pkmn[250] 
+
+ pkmn = {251:(stats(hp=100,attack=100,defence=100,sp_attack=100,sp_defence=100,speed=100))} 
+return pkmn[251] 
+
+ pkmn = {252:(stats(hp=40,attack=45,defence=35,sp_attack=65,sp_defence=55,speed=70))} 
+return pkmn[252] 
+
+ pkmn = {253:(stats(hp=50,attack=65,defence=45,sp_attack=85,sp_defence=65,speed=95))} 
+return pkmn[253] 
+
+ pkmn = {254:(stats(hp=70,attack=85,defence=65,sp_attack=105,sp_defence=85,speed=120))} 
+return pkmn[254] 
+
+ pkmn = {255:(stats(hp=45,attack=60,defence=40,sp_attack=70,sp_defence=50,speed=45))} 
+return pkmn[255] 
+
+ pkmn = {256:(stats(hp=60,attack=85,defence=60,sp_attack=85,sp_defence=60,speed=55))} 
+return pkmn[256] 
+
+ pkmn = {257:(stats(hp=80,attack=120,defence=70,sp_attack=110,sp_defence=70,speed=80))} 
+return pkmn[257] 
+
+ pkmn = {258:(stats(hp=50,attack=70,defence=50,sp_attack=50,sp_defence=50,speed=40))} 
+return pkmn[258] 
+
+ pkmn = {259:(stats(hp=70,attack=85,defence=70,sp_attack=60,sp_defence=70,speed=50))} 
+return pkmn[259] 
+
+ pkmn = {260:(stats(hp=100,attack=110,defence=90,sp_attack=85,sp_defence=90,speed=60))} 
+return pkmn[260] 
+
+ pkmn = {261:(stats(hp=35,attack=55,defence=35,sp_attack=30,sp_defence=30,speed=35))} 
+return pkmn[261] 
+
+ pkmn = {262:(stats(hp=70,attack=90,defence=70,sp_attack=60,sp_defence=60,speed=70))} 
+return pkmn[262] 
+
+ pkmn = {263:(stats(hp=38,attack=30,defence=41,sp_attack=30,sp_defence=41,speed=60))} 
+return pkmn[263] 
+
+ pkmn = {264:(stats(hp=78,attack=70,defence=61,sp_attack=50,sp_defence=61,speed=100))} 
+return pkmn[264] 
+
+ pkmn = {265:(stats(hp=45,attack=45,defence=35,sp_attack=20,sp_defence=30,speed=20))} 
+return pkmn[265] 
+
+ pkmn = {266:(stats(hp=50,attack=35,defence=55,sp_attack=25,sp_defence=25,speed=15))} 
+return pkmn[266] 
+
+ pkmn = {267:(stats(hp=60,attack=70,defence=50,sp_attack=100,sp_defence=50,speed=65))} 
+return pkmn[267] 
+
+ pkmn = {268:(stats(hp=50,attack=35,defence=55,sp_attack=25,sp_defence=25,speed=15))} 
+return pkmn[268] 
+
+ pkmn = {269:(stats(hp=60,attack=50,defence=70,sp_attack=50,sp_defence=90,speed=65))} 
+return pkmn[269] 
+
+ pkmn = {270:(stats(hp=40,attack=30,defence=30,sp_attack=40,sp_defence=50,speed=30))} 
+return pkmn[270] 
+
+ pkmn = {271:(stats(hp=60,attack=50,defence=50,sp_attack=60,sp_defence=70,speed=50))} 
+return pkmn[271] 
+
+ pkmn = {272:(stats(hp=80,attack=70,defence=70,sp_attack=90,sp_defence=100,speed=70))} 
+return pkmn[272] 
+
+ pkmn = {273:(stats(hp=40,attack=40,defence=50,sp_attack=30,sp_defence=30,speed=30))} 
+return pkmn[273] 
+
+ pkmn = {274:(stats(hp=70,attack=70,defence=40,sp_attack=60,sp_defence=40,speed=60))} 
+return pkmn[274] 
+
+ pkmn = {275:(stats(hp=90,attack=100,defence=60,sp_attack=90,sp_defence=60,speed=80))} 
+return pkmn[275] 
+
+ pkmn = {276:(stats(hp=40,attack=55,defence=30,sp_attack=30,sp_defence=30,speed=85))} 
+return pkmn[276] 
+
+ pkmn = {277:(stats(hp=60,attack=85,defence=60,sp_attack=75,sp_defence=50,speed=125))} 
+return pkmn[277] 
+
+ pkmn = {278:(stats(hp=40,attack=30,defence=30,sp_attack=55,sp_defence=30,speed=85))} 
+return pkmn[278] 
+
+ pkmn = {279:(stats(hp=60,attack=50,defence=100,sp_attack=95,sp_defence=70,speed=65))} 
+return pkmn[279] 
+
+ pkmn = {280:(stats(hp=28,attack=25,defence=25,sp_attack=45,sp_defence=35,speed=40))} 
+return pkmn[280] 
+
+ pkmn = {281:(stats(hp=38,attack=35,defence=35,sp_attack=65,sp_defence=55,speed=50))} 
+return pkmn[281] 
+
+ pkmn = {282:(stats(hp=68,attack=65,defence=65,sp_attack=125,sp_defence=115,speed=80))} 
+return pkmn[282] 
+
+ pkmn = {283:(stats(hp=40,attack=30,defence=32,sp_attack=50,sp_defence=52,speed=65))} 
+return pkmn[283] 
+
+ pkmn = {284:(stats(hp=70,attack=60,defence=62,sp_attack=100,sp_defence=82,speed=80))} 
+return pkmn[284] 
+
+ pkmn = {285:(stats(hp=60,attack=40,defence=60,sp_attack=40,sp_defence=60,speed=35))} 
+return pkmn[285] 
+
+ pkmn = {286:(stats(hp=60,attack=130,defence=80,sp_attack=60,sp_defence=60,speed=70))} 
+return pkmn[286] 
+
+ pkmn = {287:(stats(hp=60,attack=60,defence=60,sp_attack=35,sp_defence=35,speed=30))} 
+return pkmn[287] 
+
+ pkmn = {288:(stats(hp=80,attack=80,defence=80,sp_attack=55,sp_defence=55,speed=90))} 
+return pkmn[288] 
+
+ pkmn = {289:(stats(hp=150,attack=160,defence=100,sp_attack=95,sp_defence=65,speed=100))} 
+return pkmn[289] 
+
+ pkmn = {290:(stats(hp=31,attack=45,defence=90,sp_attack=30,sp_defence=30,speed=40))} 
+return pkmn[290] 
+
+ pkmn = {291:(stats(hp=61,attack=90,defence=45,sp_attack=50,sp_defence=50,speed=160))} 
+return pkmn[291] 
+
+ pkmn = {292:(stats(hp=1,attack=90,defence=45,sp_attack=30,sp_defence=30,speed=40))} 
+return pkmn[292] 
+
+ pkmn = {293:(stats(hp=64,attack=51,defence=23,sp_attack=51,sp_defence=23,speed=28))} 
+return pkmn[293] 
+
+ pkmn = {294:(stats(hp=84,attack=71,defence=43,sp_attack=71,sp_defence=43,speed=48))} 
+return pkmn[294] 
+
+ pkmn = {295:(stats(hp=104,attack=91,defence=63,sp_attack=91,sp_defence=73,speed=68))} 
+return pkmn[295] 
+
+ pkmn = {296:(stats(hp=72,attack=60,defence=30,sp_attack=20,sp_defence=30,speed=25))} 
+return pkmn[296] 
+
+ pkmn = {297:(stats(hp=144,attack=120,defence=60,sp_attack=40,sp_defence=60,speed=50))} 
+return pkmn[297] 
+
+ pkmn = {298:(stats(hp=50,attack=20,defence=40,sp_attack=20,sp_defence=40,speed=20))} 
+return pkmn[298] 
+
+ pkmn = {299:(stats(hp=30,attack=45,defence=135,sp_attack=45,sp_defence=90,speed=30))} 
+return pkmn[299] 
+
+ pkmn = {300:(stats(hp=50,attack=45,defence=45,sp_attack=35,sp_defence=35,speed=50))} 
+return pkmn[300] 
+
+ pkmn = {301:(stats(hp=70,attack=65,defence=65,sp_attack=55,sp_defence=55,speed=90))} 
+return pkmn[301] 
+
+ pkmn = {302:(stats(hp=50,attack=75,defence=75,sp_attack=65,sp_defence=65,speed=50))} 
+return pkmn[302] 
+
+ pkmn = {303:(stats(hp=50,attack=85,defence=85,sp_attack=55,sp_defence=55,speed=50))} 
+return pkmn[303] 
+
+ pkmn = {304:(stats(hp=50,attack=70,defence=100,sp_attack=40,sp_defence=40,speed=30))} 
+return pkmn[304] 
+
+ pkmn = {305:(stats(hp=60,attack=90,defence=140,sp_attack=50,sp_defence=50,speed=40))} 
+return pkmn[305] 
+
+ pkmn = {306:(stats(hp=70,attack=110,defence=180,sp_attack=60,sp_defence=60,speed=50))} 
+return pkmn[306] 
+
+ pkmn = {307:(stats(hp=30,attack=40,defence=55,sp_attack=40,sp_defence=55,speed=60))} 
+return pkmn[307] 
+
+ pkmn = {308:(stats(hp=60,attack=60,defence=75,sp_attack=60,sp_defence=75,speed=80))} 
+return pkmn[308] 
+
+ pkmn = {309:(stats(hp=40,attack=45,defence=40,sp_attack=65,sp_defence=40,speed=65))} 
+return pkmn[309] 
+
+ pkmn = {310:(stats(hp=70,attack=75,defence=60,sp_attack=105,sp_defence=60,speed=105))} 
+return pkmn[310] 
+
+ pkmn = {311:(stats(hp=60,attack=50,defence=40,sp_attack=85,sp_defence=75,speed=95))} 
+return pkmn[311] 
+
+ pkmn = {312:(stats(hp=60,attack=40,defence=50,sp_attack=75,sp_defence=85,speed=95))} 
+return pkmn[312] 
+
+ pkmn = {313:(stats(hp=65,attack=73,defence=75,sp_attack=47,sp_defence=85,speed=85))} 
+return pkmn[313] 
+
+ pkmn = {314:(stats(hp=65,attack=47,defence=75,sp_attack=73,sp_defence=85,speed=85))} 
+return pkmn[314] 
+
+ pkmn = {315:(stats(hp=50,attack=60,defence=45,sp_attack=100,sp_defence=80,speed=65))} 
+return pkmn[315] 
+
+ pkmn = {316:(stats(hp=70,attack=43,defence=53,sp_attack=43,sp_defence=53,speed=40))} 
+return pkmn[316] 
+
+ pkmn = {317:(stats(hp=100,attack=73,defence=83,sp_attack=73,sp_defence=83,speed=55))} 
+return pkmn[317] 
+
+ pkmn = {318:(stats(hp=45,attack=90,defence=20,sp_attack=65,sp_defence=20,speed=65))} 
+return pkmn[318] 
+
+ pkmn = {319:(stats(hp=70,attack=120,defence=40,sp_attack=95,sp_defence=40,speed=95))} 
+return pkmn[319] 
+
+ pkmn = {320:(stats(hp=130,attack=70,defence=35,sp_attack=70,sp_defence=35,speed=60))} 
+return pkmn[320] 
+
+ pkmn = {321:(stats(hp=170,attack=90,defence=45,sp_attack=90,sp_defence=45,speed=60))} 
+return pkmn[321] 
+
+ pkmn = {322:(stats(hp=60,attack=60,defence=40,sp_attack=65,sp_defence=45,speed=35))} 
+return pkmn[322] 
+
+ pkmn = {323:(stats(hp=70,attack=100,defence=70,sp_attack=105,sp_defence=75,speed=40))} 
+return pkmn[323] 
+
+ pkmn = {324:(stats(hp=70,attack=85,defence=140,sp_attack=85,sp_defence=70,speed=20))} 
+return pkmn[324] 
+
+ pkmn = {325:(stats(hp=60,attack=25,defence=35,sp_attack=70,sp_defence=80,speed=60))} 
+return pkmn[325] 
+
+ pkmn = {326:(stats(hp=80,attack=45,defence=65,sp_attack=90,sp_defence=110,speed=80))} 
+return pkmn[326] 
+
+ pkmn = {327:(stats(hp=60,attack=60,defence=60,sp_attack=60,sp_defence=60,speed=60))} 
+return pkmn[327] 
+
+ pkmn = {328:(stats(hp=45,attack=100,defence=45,sp_attack=45,sp_defence=45,speed=10))} 
+return pkmn[328] 
+
+ pkmn = {329:(stats(hp=50,attack=70,defence=50,sp_attack=50,sp_defence=50,speed=70))} 
+return pkmn[329] 
+
+ pkmn = {330:(stats(hp=80,attack=100,defence=80,sp_attack=80,sp_defence=80,speed=100))} 
+return pkmn[330] 
+
+ pkmn = {331:(stats(hp=50,attack=85,defence=40,sp_attack=85,sp_defence=40,speed=35))} 
+return pkmn[331] 
+
+ pkmn = {332:(stats(hp=70,attack=115,defence=60,sp_attack=115,sp_defence=60,speed=55))} 
+return pkmn[332] 
+
+ pkmn = {333:(stats(hp=45,attack=40,defence=60,sp_attack=40,sp_defence=75,speed=50))} 
+return pkmn[333] 
+
+ pkmn = {334:(stats(hp=75,attack=70,defence=90,sp_attack=70,sp_defence=105,speed=80))} 
+return pkmn[334] 
+
+ pkmn = {335:(stats(hp=73,attack=115,defence=60,sp_attack=60,sp_defence=60,speed=90))} 
+return pkmn[335] 
+
+ pkmn = {336:(stats(hp=73,attack=100,defence=60,sp_attack=100,sp_defence=60,speed=65))} 
+return pkmn[336] 
+
+ pkmn = {337:(stats(hp=90,attack=55,defence=65,sp_attack=95,sp_defence=85,speed=70))} 
+return pkmn[337] 
+
+ pkmn = {338:(stats(hp=90,attack=95,defence=85,sp_attack=55,sp_defence=65,speed=70))} 
+return pkmn[338] 
+
+ pkmn = {339:(stats(hp=50,attack=48,defence=43,sp_attack=46,sp_defence=41,speed=60))} 
+return pkmn[339] 
+
+ pkmn = {340:(stats(hp=110,attack=78,defence=73,sp_attack=76,sp_defence=71,speed=60))} 
+return pkmn[340] 
+
+ pkmn = {341:(stats(hp=43,attack=80,defence=65,sp_attack=50,sp_defence=35,speed=35))} 
+return pkmn[341] 
+
+ pkmn = {342:(stats(hp=63,attack=120,defence=85,sp_attack=90,sp_defence=55,speed=55))} 
+return pkmn[342] 
+
+ pkmn = {343:(stats(hp=40,attack=40,defence=55,sp_attack=40,sp_defence=70,speed=55))} 
+return pkmn[343] 
+
+ pkmn = {344:(stats(hp=60,attack=70,defence=105,sp_attack=70,sp_defence=120,speed=75))} 
+return pkmn[344] 
+
+ pkmn = {345:(stats(hp=66,attack=41,defence=77,sp_attack=61,sp_defence=87,speed=23))} 
+return pkmn[345] 
+
+ pkmn = {346:(stats(hp=86,attack=81,defence=97,sp_attack=81,sp_defence=107,speed=43))} 
+return pkmn[346] 
+
+ pkmn = {347:(stats(hp=45,attack=95,defence=50,sp_attack=40,sp_defence=50,speed=75))} 
+return pkmn[347] 
+
+ pkmn = {348:(stats(hp=75,attack=125,defence=100,sp_attack=70,sp_defence=80,speed=45))} 
+return pkmn[348] 
+
+ pkmn = {349:(stats(hp=20,attack=15,defence=20,sp_attack=10,sp_defence=55,speed=80))} 
+return pkmn[349] 
+
+ pkmn = {350:(stats(hp=95,attack=60,defence=79,sp_attack=100,sp_defence=125,speed=81))} 
+return pkmn[350] 
+
+ pkmn = {351:(stats(hp=70,attack=70,defence=70,sp_attack=70,sp_defence=70,speed=70))} 
+return pkmn[351] 
+
+ pkmn = {352:(stats(hp=60,attack=90,defence=70,sp_attack=60,sp_defence=120,speed=40))} 
+return pkmn[352] 
+
+ pkmn = {353:(stats(hp=44,attack=75,defence=35,sp_attack=63,sp_defence=33,speed=45))} 
+return pkmn[353] 
+
+ pkmn = {354:(stats(hp=64,attack=115,defence=65,sp_attack=83,sp_defence=63,speed=65))} 
+return pkmn[354] 
+
+ pkmn = {355:(stats(hp=20,attack=40,defence=90,sp_attack=30,sp_defence=90,speed=25))} 
+return pkmn[355] 
+
+ pkmn = {356:(stats(hp=40,attack=70,defence=130,sp_attack=60,sp_defence=130,speed=25))} 
+return pkmn[356] 
+
+ pkmn = {357:(stats(hp=99,attack=68,defence=83,sp_attack=72,sp_defence=87,speed=51))} 
+return pkmn[357] 
+
+ pkmn = {358:(stats(hp=75,attack=50,defence=80,sp_attack=95,sp_defence=90,speed=65))} 
+return pkmn[358] 
+
+ pkmn = {359:(stats(hp=65,attack=130,defence=60,sp_attack=75,sp_defence=60,speed=75))} 
+return pkmn[359] 
+
+ pkmn = {360:(stats(hp=95,attack=23,defence=48,sp_attack=23,sp_defence=48,speed=23))} 
+return pkmn[360] 
+
+ pkmn = {361:(stats(hp=50,attack=50,defence=50,sp_attack=50,sp_defence=50,speed=50))} 
+return pkmn[361] 
+
+ pkmn = {362:(stats(hp=80,attack=80,defence=80,sp_attack=80,sp_defence=80,speed=80))} 
+return pkmn[362] 
+
+ pkmn = {363:(stats(hp=70,attack=40,defence=50,sp_attack=55,sp_defence=50,speed=25))} 
+return pkmn[363] 
+
+ pkmn = {364:(stats(hp=90,attack=60,defence=70,sp_attack=75,sp_defence=70,speed=45))} 
+return pkmn[364] 
+
+ pkmn = {365:(stats(hp=110,attack=80,defence=90,sp_attack=95,sp_defence=90,speed=65))} 
+return pkmn[365] 
+
+ pkmn = {366:(stats(hp=35,attack=64,defence=85,sp_attack=74,sp_defence=55,speed=32))} 
+return pkmn[366] 
+
+ pkmn = {367:(stats(hp=55,attack=104,defence=105,sp_attack=94,sp_defence=75,speed=52))} 
+return pkmn[367] 
+
+ pkmn = {368:(stats(hp=55,attack=84,defence=105,sp_attack=114,sp_defence=75,speed=52))} 
+return pkmn[368] 
+
+ pkmn = {369:(stats(hp=100,attack=90,defence=130,sp_attack=45,sp_defence=65,speed=55))} 
+return pkmn[369] 
+
+ pkmn = {370:(stats(hp=43,attack=30,defence=55,sp_attack=40,sp_defence=65,speed=97))} 
+return pkmn[370] 
+
+ pkmn = {371:(stats(hp=45,attack=75,defence=60,sp_attack=40,sp_defence=30,speed=50))} 
+return pkmn[371] 
+
+ pkmn = {372:(stats(hp=65,attack=95,defence=100,sp_attack=60,sp_defence=50,speed=50))} 
+return pkmn[372] 
+
+ pkmn = {373:(stats(hp=95,attack=135,defence=80,sp_attack=110,sp_defence=80,speed=100))} 
+return pkmn[373] 
+
+ pkmn = {374:(stats(hp=40,attack=55,defence=80,sp_attack=35,sp_defence=60,speed=30))} 
+return pkmn[374] 
+
+ pkmn = {375:(stats(hp=60,attack=75,defence=100,sp_attack=55,sp_defence=80,speed=50))} 
+return pkmn[375] 
+
+ pkmn = {376:(stats(hp=80,attack=135,defence=130,sp_attack=95,sp_defence=90,speed=70))} 
+return pkmn[376] 
+
+ pkmn = {377:(stats(hp=80,attack=100,defence=200,sp_attack=50,sp_defence=100,speed=50))} 
+return pkmn[377] 
+
+ pkmn = {378:(stats(hp=80,attack=50,defence=100,sp_attack=100,sp_defence=200,speed=50))} 
+return pkmn[378] 
+
+ pkmn = {379:(stats(hp=80,attack=75,defence=150,sp_attack=75,sp_defence=150,speed=50))} 
+return pkmn[379] 
+
+ pkmn = {380:(stats(hp=80,attack=80,defence=90,sp_attack=110,sp_defence=130,speed=110))} 
+return pkmn[380] 
+
+ pkmn = {381:(stats(hp=80,attack=90,defence=80,sp_attack=130,sp_defence=110,speed=110))} 
+return pkmn[381] 
+
+ pkmn = {382:(stats(hp=100,attack=100,defence=90,sp_attack=150,sp_defence=140,speed=90))} 
+return pkmn[382] 
+
+ pkmn = {383:(stats(hp=100,attack=150,defence=140,sp_attack=100,sp_defence=90,speed=90))} 
+return pkmn[383] 
+
+ pkmn = {384:(stats(hp=105,attack=150,defence=90,sp_attack=150,sp_defence=90,speed=95))} 
+return pkmn[384] 
+
+ pkmn = {385:(stats(hp=100,attack=100,defence=100,sp_attack=100,sp_defence=100,speed=100))} 
+return pkmn[385] 
+
+ pkmn = {386:(stats(hp=50,attack=150,defence=50,sp_attack=150,sp_defence=50,speed=150))} 
+return pkmn[386] 
+
+ pkmn = {387:(stats(hp=55,attack=68,defence=64,sp_attack=45,sp_defence=55,speed=31))} 
+return pkmn[387] 
+
+ pkmn = {388:(stats(hp=75,attack=89,defence=85,sp_attack=55,sp_defence=65,speed=36))} 
+return pkmn[388] 
+
+ pkmn = {389:(stats(hp=95,attack=109,defence=105,sp_attack=75,sp_defence=85,speed=56))} 
+return pkmn[389] 
+
+ pkmn = {390:(stats(hp=44,attack=58,defence=44,sp_attack=58,sp_defence=44,speed=61))} 
+return pkmn[390] 
+
+ pkmn = {391:(stats(hp=64,attack=78,defence=52,sp_attack=78,sp_defence=52,speed=81))} 
+return pkmn[391] 
+
+ pkmn = {392:(stats(hp=76,attack=104,defence=71,sp_attack=104,sp_defence=71,speed=108))} 
+return pkmn[392] 
+
+ pkmn = {393:(stats(hp=53,attack=51,defence=53,sp_attack=61,sp_defence=56,speed=40))} 
+return pkmn[393] 
+
+ pkmn = {394:(stats(hp=64,attack=66,defence=68,sp_attack=81,sp_defence=76,speed=50))} 
+return pkmn[394] 
+
+ pkmn = {395:(stats(hp=84,attack=86,defence=88,sp_attack=111,sp_defence=101,speed=60))} 
+return pkmn[395] 
+
+ pkmn = {396:(stats(hp=40,attack=55,defence=30,sp_attack=30,sp_defence=30,speed=60))} 
+return pkmn[396] 
+
+ pkmn = {397:(stats(hp=55,attack=75,defence=50,sp_attack=40,sp_defence=40,speed=80))} 
+return pkmn[397] 
+
+ pkmn = {398:(stats(hp=85,attack=120,defence=70,sp_attack=50,sp_defence=60,speed=100))} 
+return pkmn[398] 
+
+ pkmn = {399:(stats(hp=59,attack=45,defence=40,sp_attack=35,sp_defence=40,speed=31))} 
+return pkmn[399] 
+
+ pkmn = {400:(stats(hp=79,attack=85,defence=60,sp_attack=55,sp_defence=60,speed=71))} 
+return pkmn[400] 
+
+ pkmn = {401:(stats(hp=37,attack=25,defence=41,sp_attack=25,sp_defence=41,speed=25))} 
+return pkmn[401] 
+
+ pkmn = {402:(stats(hp=77,attack=85,defence=51,sp_attack=55,sp_defence=51,speed=65))} 
+return pkmn[402] 
+
+ pkmn = {403:(stats(hp=45,attack=65,defence=34,sp_attack=40,sp_defence=34,speed=45))} 
+return pkmn[403] 
+
+ pkmn = {404:(stats(hp=60,attack=85,defence=49,sp_attack=60,sp_defence=49,speed=60))} 
+return pkmn[404] 
+
+ pkmn = {405:(stats(hp=80,attack=120,defence=79,sp_attack=95,sp_defence=79,speed=70))} 
+return pkmn[405] 
+
+ pkmn = {406:(stats(hp=40,attack=30,defence=35,sp_attack=50,sp_defence=70,speed=55))} 
+return pkmn[406] 
+
+ pkmn = {407:(stats(hp=60,attack=70,defence=65,sp_attack=125,sp_defence=105,speed=90))} 
+return pkmn[407] 
+
+ pkmn = {408:(stats(hp=67,attack=125,defence=40,sp_attack=30,sp_defence=30,speed=58))} 
+return pkmn[408] 
+
+ pkmn = {409:(stats(hp=97,attack=165,defence=60,sp_attack=65,sp_defence=50,speed=58))} 
+return pkmn[409] 
+
+ pkmn = {410:(stats(hp=30,attack=42,defence=118,sp_attack=42,sp_defence=88,speed=30))} 
+return pkmn[410] 
+
+ pkmn = {411:(stats(hp=60,attack=52,defence=168,sp_attack=47,sp_defence=138,speed=30))} 
+return pkmn[411] 
+
+ pkmn = {412:(stats(hp=40,attack=29,defence=45,sp_attack=29,sp_defence=45,speed=36))} 
+return pkmn[412] 
+
+ pkmn = {413:(stats(hp=60,attack=59,defence=85,sp_attack=79,sp_defence=105,speed=36))} 
+return pkmn[413] 
+
+ pkmn = {414:(stats(hp=70,attack=94,defence=50,sp_attack=94,sp_defence=50,speed=66))} 
+return pkmn[414] 
+
+ pkmn = {415:(stats(hp=30,attack=30,defence=42,sp_attack=30,sp_defence=42,speed=70))} 
+return pkmn[415] 
+
+ pkmn = {416:(stats(hp=70,attack=80,defence=102,sp_attack=80,sp_defence=102,speed=40))} 
+return pkmn[416] 
+
+ pkmn = {417:(stats(hp=60,attack=45,defence=70,sp_attack=45,sp_defence=90,speed=95))} 
+return pkmn[417] 
+
+ pkmn = {418:(stats(hp=55,attack=65,defence=35,sp_attack=60,sp_defence=30,speed=85))} 
+return pkmn[418] 
+
+ pkmn = {419:(stats(hp=85,attack=105,defence=55,sp_attack=85,sp_defence=50,speed=115))} 
+return pkmn[419] 
+
+ pkmn = {420:(stats(hp=45,attack=35,defence=45,sp_attack=62,sp_defence=53,speed=35))} 
+return pkmn[420] 
+
+ pkmn = {421:(stats(hp=70,attack=60,defence=70,sp_attack=87,sp_defence=78,speed=85))} 
+return pkmn[421] 
+
+ pkmn = {422:(stats(hp=76,attack=48,defence=48,sp_attack=57,sp_defence=62,speed=34))} 
+return pkmn[422] 
+
+ pkmn = {423:(stats(hp=111,attack=83,defence=68,sp_attack=92,sp_defence=82,speed=39))} 
+return pkmn[423] 
+
+ pkmn = {424:(stats(hp=75,attack=100,defence=66,sp_attack=60,sp_defence=66,speed=115))} 
+return pkmn[424] 
+
+ pkmn = {425:(stats(hp=90,attack=50,defence=34,sp_attack=60,sp_defence=44,speed=70))} 
+return pkmn[425] 
+
+ pkmn = {426:(stats(hp=150,attack=80,defence=44,sp_attack=90,sp_defence=54,speed=80))} 
+return pkmn[426] 
+
+ pkmn = {427:(stats(hp=55,attack=66,defence=44,sp_attack=44,sp_defence=56,speed=85))} 
+return pkmn[427] 
+
+ pkmn = {428:(stats(hp=65,attack=76,defence=84,sp_attack=54,sp_defence=96,speed=105))} 
+return pkmn[428] 
+
+ pkmn = {429:(stats(hp=60,attack=60,defence=60,sp_attack=105,sp_defence=105,speed=105))} 
+return pkmn[429] 
+
+ pkmn = {430:(stats(hp=100,attack=125,defence=52,sp_attack=105,sp_defence=52,speed=71))} 
+return pkmn[430] 
+
+ pkmn = {431:(stats(hp=49,attack=55,defence=42,sp_attack=42,sp_defence=37,speed=85))} 
+return pkmn[431] 
+
+ pkmn = {432:(stats(hp=71,attack=82,defence=64,sp_attack=64,sp_defence=59,speed=112))} 
+return pkmn[432] 
+
+ pkmn = {433:(stats(hp=45,attack=30,defence=50,sp_attack=65,sp_defence=50,speed=45))} 
+return pkmn[433] 
+
+ pkmn = {434:(stats(hp=63,attack=63,defence=47,sp_attack=41,sp_defence=41,speed=74))} 
+return pkmn[434] 
+
+ pkmn = {435:(stats(hp=103,attack=93,defence=67,sp_attack=71,sp_defence=61,speed=84))} 
+return pkmn[435] 
+
+ pkmn = {436:(stats(hp=57,attack=24,defence=86,sp_attack=24,sp_defence=86,speed=23))} 
+return pkmn[436] 
+
+ pkmn = {437:(stats(hp=67,attack=89,defence=116,sp_attack=79,sp_defence=116,speed=33))} 
+return pkmn[437] 
+
+ pkmn = {438:(stats(hp=50,attack=80,defence=95,sp_attack=10,sp_defence=45,speed=10))} 
+return pkmn[438] 
+
+ pkmn = {439:(stats(hp=20,attack=25,defence=45,sp_attack=70,sp_defence=90,speed=60))} 
+return pkmn[439] 
+
+ pkmn = {440:(stats(hp=100,attack=5,defence=5,sp_attack=15,sp_defence=65,speed=30))} 
+return pkmn[440] 
+
+ pkmn = {441:(stats(hp=76,attack=65,defence=45,sp_attack=92,sp_defence=42,speed=91))} 
+return pkmn[441] 
+
+ pkmn = {442:(stats(hp=50,attack=92,defence=108,sp_attack=92,sp_defence=108,speed=35))} 
+return pkmn[442] 
+
+ pkmn = {443:(stats(hp=58,attack=70,defence=45,sp_attack=40,sp_defence=45,speed=42))} 
+return pkmn[443] 
+
+ pkmn = {444:(stats(hp=68,attack=90,defence=65,sp_attack=50,sp_defence=55,speed=82))} 
+return pkmn[444] 
+
+ pkmn = {445:(stats(hp=108,attack=130,defence=95,sp_attack=80,sp_defence=85,speed=102))} 
+return pkmn[445] 
+
+ pkmn = {446:(stats(hp=135,attack=85,defence=40,sp_attack=40,sp_defence=85,speed=5))} 
+return pkmn[446] 
+
+ pkmn = {447:(stats(hp=40,attack=70,defence=40,sp_attack=35,sp_defence=40,speed=60))} 
+return pkmn[447] 
+
+ pkmn = {448:(stats(hp=70,attack=110,defence=70,sp_attack=115,sp_defence=70,speed=90))} 
+return pkmn[448] 
+
+ pkmn = {449:(stats(hp=68,attack=72,defence=78,sp_attack=38,sp_defence=42,speed=32))} 
+return pkmn[449] 
+
+ pkmn = {450:(stats(hp=108,attack=112,defence=118,sp_attack=68,sp_defence=72,speed=47))} 
+return pkmn[450] 
+
+ pkmn = {451:(stats(hp=40,attack=50,defence=90,sp_attack=30,sp_defence=55,speed=65))} 
+return pkmn[451] 
+
+ pkmn = {452:(stats(hp=70,attack=90,defence=110,sp_attack=60,sp_defence=75,speed=95))} 
+return pkmn[452] 
+
+ pkmn = {453:(stats(hp=48,attack=61,defence=40,sp_attack=61,sp_defence=40,speed=50))} 
+return pkmn[453] 
+
+ pkmn = {454:(stats(hp=83,attack=106,defence=65,sp_attack=86,sp_defence=65,speed=85))} 
+return pkmn[454] 
+
+ pkmn = {455:(stats(hp=74,attack=100,defence=72,sp_attack=90,sp_defence=72,speed=46))} 
+return pkmn[455] 
+
+ pkmn = {456:(stats(hp=49,attack=49,defence=56,sp_attack=49,sp_defence=61,speed=66))} 
+return pkmn[456] 
+
+ pkmn = {457:(stats(hp=69,attack=69,defence=76,sp_attack=69,sp_defence=86,speed=91))} 
+return pkmn[457] 
+
+ pkmn = {458:(stats(hp=45,attack=20,defence=50,sp_attack=60,sp_defence=120,speed=50))} 
+return pkmn[458] 
+
+ pkmn = {459:(stats(hp=60,attack=62,defence=50,sp_attack=62,sp_defence=60,speed=40))} 
+return pkmn[459] 
+
+ pkmn = {460:(stats(hp=90,attack=92,defence=75,sp_attack=92,sp_defence=85,speed=60))} 
+return pkmn[460] 
+
+ pkmn = {461:(stats(hp=70,attack=120,defence=65,sp_attack=45,sp_defence=85,speed=125))} 
+return pkmn[461] 
+
+ pkmn = {462:(stats(hp=70,attack=70,defence=115,sp_attack=130,sp_defence=90,speed=60))} 
+return pkmn[462] 
+
+ pkmn = {463:(stats(hp=110,attack=85,defence=95,sp_attack=80,sp_defence=95,speed=50))} 
+return pkmn[463] 
+
+ pkmn = {464:(stats(hp=115,attack=140,defence=130,sp_attack=55,sp_defence=55,speed=40))} 
+return pkmn[464] 
+
+ pkmn = {465:(stats(hp=100,attack=100,defence=125,sp_attack=110,sp_defence=50,speed=50))} 
+return pkmn[465] 
+
+ pkmn = {466:(stats(hp=75,attack=123,defence=67,sp_attack=95,sp_defence=85,speed=95))} 
+return pkmn[466] 
+
+ pkmn = {467:(stats(hp=75,attack=95,defence=67,sp_attack=125,sp_defence=95,speed=83))} 
+return pkmn[467] 
+
+ pkmn = {468:(stats(hp=85,attack=50,defence=95,sp_attack=120,sp_defence=115,speed=80))} 
+return pkmn[468] 
+
+ pkmn = {469:(stats(hp=86,attack=76,defence=86,sp_attack=116,sp_defence=56,speed=95))} 
+return pkmn[469] 
+
+ pkmn = {470:(stats(hp=65,attack=110,defence=130,sp_attack=60,sp_defence=65,speed=95))} 
+return pkmn[470] 
+
+ pkmn = {471:(stats(hp=65,attack=60,defence=110,sp_attack=130,sp_defence=95,speed=65))} 
+return pkmn[471] 
+
+ pkmn = {472:(stats(hp=75,attack=95,defence=125,sp_attack=45,sp_defence=75,speed=95))} 
+return pkmn[472] 
+
+ pkmn = {473:(stats(hp=110,attack=130,defence=80,sp_attack=70,sp_defence=60,speed=80))} 
+return pkmn[473] 
+
+ pkmn = {474:(stats(hp=85,attack=80,defence=70,sp_attack=135,sp_defence=75,speed=90))} 
+return pkmn[474] 
+
+ pkmn = {475:(stats(hp=68,attack=125,defence=65,sp_attack=65,sp_defence=115,speed=80))} 
+return pkmn[475] 
+
+ pkmn = {476:(stats(hp=60,attack=55,defence=145,sp_attack=75,sp_defence=150,speed=40))} 
+return pkmn[476] 
+
+ pkmn = {477:(stats(hp=45,attack=100,defence=135,sp_attack=65,sp_defence=135,speed=45))} 
+return pkmn[477] 
+
+ pkmn = {478:(stats(hp=70,attack=80,defence=70,sp_attack=80,sp_defence=70,speed=110))} 
+return pkmn[478] 
+
+ pkmn = {479:(stats(hp=50,attack=50,defence=77,sp_attack=95,sp_defence=77,speed=91))} 
+return pkmn[479] 
+
+ pkmn = {480:(stats(hp=75,attack=75,defence=130,sp_attack=75,sp_defence=130,speed=95))} 
+return pkmn[480] 
+
+ pkmn = {481:(stats(hp=80,attack=105,defence=105,sp_attack=105,sp_defence=105,speed=80))} 
+return pkmn[481] 
+
+ pkmn = {482:(stats(hp=75,attack=125,defence=70,sp_attack=125,sp_defence=70,speed=115))} 
+return pkmn[482] 
+
+ pkmn = {483:(stats(hp=100,attack=120,defence=120,sp_attack=150,sp_defence=100,speed=90))} 
+return pkmn[483] 
+
+ pkmn = {484:(stats(hp=90,attack=120,defence=100,sp_attack=150,sp_defence=120,speed=100))} 
+return pkmn[484] 
+
+ pkmn = {485:(stats(hp=91,attack=90,defence=106,sp_attack=130,sp_defence=106,speed=77))} 
+return pkmn[485] 
+
+ pkmn = {486:(stats(hp=110,attack=160,defence=110,sp_attack=80,sp_defence=110,speed=100))} 
+return pkmn[486] 
+
+ pkmn = {487:(stats(hp=150,attack=100,defence=120,sp_attack=100,sp_defence=120,speed=90))} 
+return pkmn[487] 
+
+ pkmn = {488:(stats(hp=120,attack=70,defence=120,sp_attack=75,sp_defence=130,speed=85))} 
+return pkmn[488] 
+
+ pkmn = {489:(stats(hp=80,attack=80,defence=80,sp_attack=80,sp_defence=80,speed=80))} 
+return pkmn[489] 
+
+ pkmn = {490:(stats(hp=100,attack=100,defence=100,sp_attack=100,sp_defence=100,speed=100))} 
+return pkmn[490] 
+
+ pkmn = {491:(stats(hp=70,attack=90,defence=90,sp_attack=135,sp_defence=90,speed=125))} 
+return pkmn[491] 
+
+ pkmn = {492:(stats(hp=100,attack=100,defence=100,sp_attack=100,sp_defence=100,speed=100))} 
+return pkmn[492] 
+
+ pkmn = {493:(stats(hp=120,attack=120,defence=120,sp_attack=120,sp_defence=120,speed=120))} 
+return pkmn[493] 
+
+ pkmn = {494:(stats(hp=100,attack=100,defence=100,sp_attack=100,sp_defence=100,speed=100))} 
+return pkmn[494] 
+
+ pkmn = {495:(stats(hp=45,attack=45,defence=55,sp_attack=45,sp_defence=55,speed=63))} 
+return pkmn[495] 
+
+ pkmn = {496:(stats(hp=60,attack=60,defence=75,sp_attack=60,sp_defence=75,speed=83))} 
+return pkmn[496] 
+
+ pkmn = {497:(stats(hp=75,attack=75,defence=95,sp_attack=75,sp_defence=95,speed=113))} 
+return pkmn[497] 
+
+ pkmn = {498:(stats(hp=65,attack=63,defence=45,sp_attack=45,sp_defence=45,speed=45))} 
+return pkmn[498] 
+
+ pkmn = {499:(stats(hp=90,attack=93,defence=55,sp_attack=70,sp_defence=55,speed=55))} 
+return pkmn[499] 
+
+ pkmn = {500:(stats(hp=110,attack=123,defence=65,sp_attack=100,sp_defence=65,speed=65))} 
+return pkmn[500] 
+
+ pkmn = {501:(stats(hp=55,attack=55,defence=45,sp_attack=63,sp_defence=45,speed=45))} 
+return pkmn[501] 
+
+ pkmn = {502:(stats(hp=75,attack=75,defence=60,sp_attack=83,sp_defence=60,speed=60))} 
+return pkmn[502] 
+
+ pkmn = {503:(stats(hp=95,attack=100,defence=85,sp_attack=108,sp_defence=70,speed=70))} 
+return pkmn[503] 
+
+ pkmn = {504:(stats(hp=45,attack=55,defence=39,sp_attack=35,sp_defence=39,speed=42))} 
+return pkmn[504] 
+
+ pkmn = {505:(stats(hp=60,attack=85,defence=69,sp_attack=60,sp_defence=69,speed=77))} 
+return pkmn[505] 
+
+ pkmn = {506:(stats(hp=45,attack=60,defence=45,sp_attack=25,sp_defence=45,speed=55))} 
+return pkmn[506] 
+
+ pkmn = {507:(stats(hp=65,attack=80,defence=65,sp_attack=35,sp_defence=65,speed=60))} 
+return pkmn[507] 
+
+ pkmn = {508:(stats(hp=85,attack=110,defence=90,sp_attack=45,sp_defence=90,speed=80))} 
+return pkmn[508] 
+
+ pkmn = {509:(stats(hp=41,attack=50,defence=37,sp_attack=50,sp_defence=37,speed=66))} 
+return pkmn[509] 
+
+ pkmn = {510:(stats(hp=64,attack=88,defence=50,sp_attack=88,sp_defence=50,speed=106))} 
+return pkmn[510] 
+
+ pkmn = {511:(stats(hp=50,attack=53,defence=48,sp_attack=53,sp_defence=48,speed=64))} 
+return pkmn[511] 
+
+ pkmn = {512:(stats(hp=75,attack=98,defence=63,sp_attack=98,sp_defence=63,speed=101))} 
+return pkmn[512] 
+
+ pkmn = {513:(stats(hp=50,attack=53,defence=48,sp_attack=53,sp_defence=48,speed=64))} 
+return pkmn[513] 
+
+ pkmn = {514:(stats(hp=75,attack=98,defence=63,sp_attack=98,sp_defence=63,speed=101))} 
+return pkmn[514] 
+
+ pkmn = {515:(stats(hp=50,attack=53,defence=48,sp_attack=53,sp_defence=48,speed=64))} 
+return pkmn[515] 
+
+ pkmn = {516:(stats(hp=75,attack=98,defence=63,sp_attack=98,sp_defence=63,speed=101))} 
+return pkmn[516] 
+
+ pkmn = {517:(stats(hp=76,attack=25,defence=45,sp_attack=67,sp_defence=55,speed=24))} 
+return pkmn[517] 
+
+ pkmn = {518:(stats(hp=116,attack=55,defence=85,sp_attack=107,sp_defence=95,speed=29))} 
+return pkmn[518] 
+
+ pkmn = {519:(stats(hp=50,attack=55,defence=50,sp_attack=36,sp_defence=30,speed=43))} 
+return pkmn[519] 
+
+ pkmn = {520:(stats(hp=62,attack=77,defence=62,sp_attack=50,sp_defence=42,speed=65))} 
+return pkmn[520] 
+
+ pkmn = {521:(stats(hp=80,attack=115,defence=80,sp_attack=65,sp_defence=55,speed=93))} 
+return pkmn[521] 
+
+ pkmn = {522:(stats(hp=45,attack=60,defence=32,sp_attack=50,sp_defence=32,speed=76))} 
+return pkmn[522] 
+
+ pkmn = {523:(stats(hp=75,attack=100,defence=63,sp_attack=80,sp_defence=63,speed=116))} 
+return pkmn[523] 
+
+ pkmn = {524:(stats(hp=55,attack=75,defence=85,sp_attack=25,sp_defence=25,speed=15))} 
+return pkmn[524] 
+
+ pkmn = {525:(stats(hp=70,attack=105,defence=105,sp_attack=50,sp_defence=40,speed=20))} 
+return pkmn[525] 
+
+ pkmn = {526:(stats(hp=85,attack=135,defence=130,sp_attack=60,sp_defence=80,speed=25))} 
+return pkmn[526] 
+
+ pkmn = {527:(stats(hp=65,attack=45,defence=43,sp_attack=55,sp_defence=43,speed=72))} 
+return pkmn[527] 
+
+ pkmn = {528:(stats(hp=67,attack=57,defence=55,sp_attack=77,sp_defence=55,speed=114))} 
+return pkmn[528] 
+
+ pkmn = {529:(stats(hp=60,attack=85,defence=40,sp_attack=30,sp_defence=45,speed=68))} 
+return pkmn[529] 
+
+ pkmn = {530:(stats(hp=110,attack=135,defence=60,sp_attack=50,sp_defence=65,speed=88))} 
+return pkmn[530] 
+
+ pkmn = {531:(stats(hp=103,attack=60,defence=86,sp_attack=60,sp_defence=86,speed=50))} 
+return pkmn[531] 
+
+ pkmn = {532:(stats(hp=75,attack=80,defence=55,sp_attack=25,sp_defence=35,speed=35))} 
+return pkmn[532] 
+
+ pkmn = {533:(stats(hp=85,attack=105,defence=85,sp_attack=40,sp_defence=50,speed=40))} 
+return pkmn[533] 
+
+ pkmn = {534:(stats(hp=105,attack=140,defence=95,sp_attack=55,sp_defence=65,speed=45))} 
+return pkmn[534] 
+
+ pkmn = {535:(stats(hp=50,attack=50,defence=40,sp_attack=50,sp_defence=40,speed=64))} 
+return pkmn[535] 
+
+ pkmn = {536:(stats(hp=75,attack=65,defence=55,sp_attack=65,sp_defence=55,speed=69))} 
+return pkmn[536] 
+
+ pkmn = {537:(stats(hp=105,attack=95,defence=75,sp_attack=85,sp_defence=75,speed=74))} 
+return pkmn[537] 
+
+ pkmn = {538:(stats(hp=120,attack=100,defence=85,sp_attack=30,sp_defence=85,speed=45))} 
+return pkmn[538] 
+
+ pkmn = {539:(stats(hp=75,attack=125,defence=75,sp_attack=30,sp_defence=75,speed=85))} 
+return pkmn[539] 
+
+ pkmn = {540:(stats(hp=45,attack=53,defence=70,sp_attack=40,sp_defence=60,speed=42))} 
+return pkmn[540] 
+
+ pkmn = {541:(stats(hp=55,attack=63,defence=90,sp_attack=50,sp_defence=80,speed=42))} 
+return pkmn[541] 
+
+ pkmn = {542:(stats(hp=75,attack=103,defence=80,sp_attack=70,sp_defence=80,speed=92))} 
+return pkmn[542] 
+
+ pkmn = {543:(stats(hp=30,attack=45,defence=59,sp_attack=30,sp_defence=39,speed=57))} 
+return pkmn[543] 
+
+ pkmn = {544:(stats(hp=40,attack=55,defence=99,sp_attack=40,sp_defence=79,speed=47))} 
+return pkmn[544] 
+
+ pkmn = {545:(stats(hp=60,attack=100,defence=89,sp_attack=55,sp_defence=69,speed=112))} 
+return pkmn[545] 
+
+ pkmn = {546:(stats(hp=40,attack=27,defence=60,sp_attack=37,sp_defence=50,speed=66))} 
+return pkmn[546] 
+
+ pkmn = {547:(stats(hp=60,attack=67,defence=85,sp_attack=77,sp_defence=75,speed=116))} 
+return pkmn[547] 
+
+ pkmn = {548:(stats(hp=45,attack=35,defence=50,sp_attack=70,sp_defence=50,speed=30))} 
+return pkmn[548] 
+
+ pkmn = {549:(stats(hp=70,attack=60,defence=75,sp_attack=110,sp_defence=75,speed=90))} 
+return pkmn[549] 
+
+ pkmn = {550:(stats(hp=70,attack=92,defence=65,sp_attack=80,sp_defence=55,speed=98))} 
+return pkmn[550] 
+
+ pkmn = {551:(stats(hp=50,attack=72,defence=35,sp_attack=35,sp_defence=35,speed=65))} 
+return pkmn[551] 
+
+ pkmn = {552:(stats(hp=60,attack=82,defence=45,sp_attack=45,sp_defence=45,speed=74))} 
+return pkmn[552] 
+
+ pkmn = {553:(stats(hp=95,attack=117,defence=80,sp_attack=65,sp_defence=70,speed=92))} 
+return pkmn[553] 
+
+ pkmn = {554:(stats(hp=70,attack=90,defence=45,sp_attack=15,sp_defence=45,speed=50))} 
+return pkmn[554] 
+
+ pkmn = {555:(stats(hp=105,attack=140,defence=55,sp_attack=30,sp_defence=55,speed=95))} 
+return pkmn[555] 
+
+ pkmn = {556:(stats(hp=75,attack=86,defence=67,sp_attack=106,sp_defence=67,speed=60))} 
+return pkmn[556] 
+
+ pkmn = {557:(stats(hp=50,attack=65,defence=85,sp_attack=35,sp_defence=35,speed=55))} 
+return pkmn[557] 
+
+ pkmn = {558:(stats(hp=70,attack=105,defence=125,sp_attack=65,sp_defence=75,speed=45))} 
+return pkmn[558] 
+
+ pkmn = {559:(stats(hp=50,attack=75,defence=70,sp_attack=35,sp_defence=70,speed=48))} 
+return pkmn[559] 
+
+ pkmn = {560:(stats(hp=65,attack=90,defence=115,sp_attack=45,sp_defence=115,speed=58))} 
+return pkmn[560] 
+
+ pkmn = {561:(stats(hp=72,attack=58,defence=80,sp_attack=103,sp_defence=80,speed=97))} 
+return pkmn[561] 
+
+ pkmn = {562:(stats(hp=38,attack=30,defence=85,sp_attack=55,sp_defence=65,speed=30))} 
+return pkmn[562] 
+
+ pkmn = {563:(stats(hp=58,attack=50,defence=145,sp_attack=95,sp_defence=105,speed=30))} 
+return pkmn[563] 
+
+ pkmn = {564:(stats(hp=54,attack=78,defence=103,sp_attack=53,sp_defence=45,speed=22))} 
+return pkmn[564] 
+
+ pkmn = {565:(stats(hp=74,attack=108,defence=133,sp_attack=83,sp_defence=65,speed=32))} 
+return pkmn[565] 
+
+ pkmn = {566:(stats(hp=55,attack=112,defence=45,sp_attack=74,sp_defence=45,speed=70))} 
+return pkmn[566] 
+
+ pkmn = {567:(stats(hp=75,attack=140,defence=65,sp_attack=112,sp_defence=65,speed=110))} 
+return pkmn[567] 
+
+ pkmn = {568:(stats(hp=50,attack=50,defence=62,sp_attack=40,sp_defence=62,speed=65))} 
+return pkmn[568] 
+
+ pkmn = {569:(stats(hp=80,attack=95,defence=82,sp_attack=60,sp_defence=82,speed=75))} 
+return pkmn[569] 
+
+ pkmn = {570:(stats(hp=40,attack=65,defence=40,sp_attack=80,sp_defence=40,speed=65))} 
+return pkmn[570] 
+
+ pkmn = {571:(stats(hp=60,attack=105,defence=60,sp_attack=120,sp_defence=60,speed=105))} 
+return pkmn[571] 
+
+ pkmn = {572:(stats(hp=55,attack=50,defence=40,sp_attack=40,sp_defence=40,speed=75))} 
+return pkmn[572] 
+
+ pkmn = {573:(stats(hp=75,attack=95,defence=60,sp_attack=65,sp_defence=60,speed=115))} 
+return pkmn[573] 
+
+ pkmn = {574:(stats(hp=45,attack=30,defence=50,sp_attack=55,sp_defence=65,speed=45))} 
+return pkmn[574] 
+
+ pkmn = {575:(stats(hp=60,attack=45,defence=70,sp_attack=75,sp_defence=85,speed=55))} 
+return pkmn[575] 
+
+ pkmn = {576:(stats(hp=70,attack=55,defence=95,sp_attack=95,sp_defence=110,speed=65))} 
+return pkmn[576] 
+
+ pkmn = {577:(stats(hp=45,attack=30,defence=40,sp_attack=105,sp_defence=50,speed=20))} 
+return pkmn[577] 
+
+ pkmn = {578:(stats(hp=65,attack=40,defence=50,sp_attack=125,sp_defence=60,speed=30))} 
+return pkmn[578] 
+
+ pkmn = {579:(stats(hp=110,attack=65,defence=75,sp_attack=125,sp_defence=85,speed=30))} 
+return pkmn[579] 
+
+ pkmn = {580:(stats(hp=62,attack=44,defence=50,sp_attack=44,sp_defence=50,speed=55))} 
+return pkmn[580] 
+
+ pkmn = {581:(stats(hp=75,attack=87,defence=63,sp_attack=87,sp_defence=63,speed=98))} 
+return pkmn[581] 
+
+ pkmn = {582:(stats(hp=36,attack=50,defence=50,sp_attack=65,sp_defence=60,speed=44))} 
+return pkmn[582] 
+
+ pkmn = {583:(stats(hp=51,attack=65,defence=65,sp_attack=80,sp_defence=75,speed=59))} 
+return pkmn[583] 
+
+ pkmn = {584:(stats(hp=71,attack=95,defence=85,sp_attack=110,sp_defence=95,speed=79))} 
+return pkmn[584] 
+
+ pkmn = {585:(stats(hp=60,attack=60,defence=50,sp_attack=40,sp_defence=50,speed=75))} 
+return pkmn[585] 
+
+ pkmn = {586:(stats(hp=80,attack=100,defence=70,sp_attack=60,sp_defence=70,speed=95))} 
+return pkmn[586] 
+
+ pkmn = {587:(stats(hp=55,attack=75,defence=60,sp_attack=75,sp_defence=60,speed=103))} 
+return pkmn[587] 
+
+ pkmn = {588:(stats(hp=50,attack=75,defence=45,sp_attack=40,sp_defence=45,speed=60))} 
+return pkmn[588] 
+
+ pkmn = {589:(stats(hp=70,attack=135,defence=105,sp_attack=60,sp_defence=105,speed=20))} 
+return pkmn[589] 
+
+ pkmn = {590:(stats(hp=69,attack=55,defence=45,sp_attack=55,sp_defence=55,speed=15))} 
+return pkmn[590] 
+
+ pkmn = {591:(stats(hp=114,attack=85,defence=70,sp_attack=85,sp_defence=80,speed=30))} 
+return pkmn[591] 
+
+ pkmn = {592:(stats(hp=55,attack=40,defence=50,sp_attack=65,sp_defence=85,speed=40))} 
+return pkmn[592] 
+
+ pkmn = {593:(stats(hp=100,attack=60,defence=70,sp_attack=85,sp_defence=105,speed=60))} 
+return pkmn[593] 
+
+ pkmn = {594:(stats(hp=165,attack=75,defence=80,sp_attack=40,sp_defence=45,speed=65))} 
+return pkmn[594] 
+
+ pkmn = {595:(stats(hp=50,attack=47,defence=50,sp_attack=57,sp_defence=50,speed=65))} 
+return pkmn[595] 
+
+ pkmn = {596:(stats(hp=70,attack=77,defence=60,sp_attack=97,sp_defence=60,speed=108))} 
+return pkmn[596] 
+
+ pkmn = {597:(stats(hp=44,attack=50,defence=91,sp_attack=24,sp_defence=86,speed=10))} 
+return pkmn[597] 
+
+ pkmn = {598:(stats(hp=74,attack=94,defence=131,sp_attack=54,sp_defence=116,speed=20))} 
+return pkmn[598] 
+
+ pkmn = {599:(stats(hp=40,attack=55,defence=70,sp_attack=45,sp_defence=60,speed=30))} 
+return pkmn[599] 
+
+ pkmn = {600:(stats(hp=60,attack=80,defence=95,sp_attack=70,sp_defence=85,speed=50))} 
+return pkmn[600] 
+
+ pkmn = {601:(stats(hp=60,attack=100,defence=115,sp_attack=70,sp_defence=85,speed=90))} 
+return pkmn[601] 
+
+ pkmn = {602:(stats(hp=35,attack=55,defence=40,sp_attack=45,sp_defence=40,speed=60))} 
+return pkmn[602] 
+
+ pkmn = {603:(stats(hp=65,attack=85,defence=70,sp_attack=75,sp_defence=70,speed=40))} 
+return pkmn[603] 
+
+ pkmn = {604:(stats(hp=85,attack=115,defence=80,sp_attack=105,sp_defence=80,speed=50))} 
+return pkmn[604] 
+
+ pkmn = {605:(stats(hp=55,attack=55,defence=55,sp_attack=85,sp_defence=55,speed=30))} 
+return pkmn[605] 
+
+ pkmn = {606:(stats(hp=75,attack=75,defence=75,sp_attack=125,sp_defence=95,speed=40))} 
+return pkmn[606] 
+
+ pkmn = {607:(stats(hp=50,attack=30,defence=55,sp_attack=65,sp_defence=55,speed=20))} 
+return pkmn[607] 
+
+ pkmn = {608:(stats(hp=60,attack=40,defence=60,sp_attack=95,sp_defence=60,speed=55))} 
+return pkmn[608] 
+
+ pkmn = {609:(stats(hp=60,attack=55,defence=90,sp_attack=145,sp_defence=90,speed=80))} 
+return pkmn[609] 
+
+ pkmn = {610:(stats(hp=46,attack=87,defence=60,sp_attack=30,sp_defence=40,speed=57))} 
+return pkmn[610] 
+
+ pkmn = {611:(stats(hp=66,attack=117,defence=70,sp_attack=40,sp_defence=50,speed=67))} 
+return pkmn[611] 
+
+ pkmn = {612:(stats(hp=76,attack=147,defence=90,sp_attack=60,sp_defence=70,speed=97))} 
+return pkmn[612] 
+
+ pkmn = {613:(stats(hp=55,attack=70,defence=40,sp_attack=60,sp_defence=40,speed=40))} 
+return pkmn[613] 
+
+ pkmn = {614:(stats(hp=95,attack=130,defence=80,sp_attack=70,sp_defence=80,speed=50))} 
+return pkmn[614] 
+
+ pkmn = {615:(stats(hp=80,attack=50,defence=50,sp_attack=95,sp_defence=135,speed=105))} 
+return pkmn[615] 
+
+ pkmn = {616:(stats(hp=50,attack=40,defence=85,sp_attack=40,sp_defence=65,speed=25))} 
+return pkmn[616] 
+
+ pkmn = {617:(stats(hp=80,attack=70,defence=40,sp_attack=100,sp_defence=60,speed=145))} 
+return pkmn[617] 
+
+ pkmn = {618:(stats(hp=109,attack=66,defence=84,sp_attack=81,sp_defence=99,speed=32))} 
+return pkmn[618] 
+
+ pkmn = {619:(stats(hp=45,attack=85,defence=50,sp_attack=55,sp_defence=50,speed=65))} 
+return pkmn[619] 
+
+ pkmn = {620:(stats(hp=65,attack=125,defence=60,sp_attack=95,sp_defence=60,speed=105))} 
+return pkmn[620] 
+
+ pkmn = {621:(stats(hp=77,attack=120,defence=90,sp_attack=60,sp_defence=90,speed=48))} 
+return pkmn[621] 
+
+ pkmn = {622:(stats(hp=59,attack=74,defence=50,sp_attack=35,sp_defence=50,speed=35))} 
+return pkmn[622] 
+
+ pkmn = {623:(stats(hp=89,attack=124,defence=80,sp_attack=55,sp_defence=80,speed=55))} 
+return pkmn[623] 
+
+ pkmn = {624:(stats(hp=45,attack=85,defence=70,sp_attack=40,sp_defence=40,speed=60))} 
+return pkmn[624] 
+
+ pkmn = {625:(stats(hp=65,attack=125,defence=100,sp_attack=60,sp_defence=70,speed=70))} 
+return pkmn[625] 
+
+ pkmn = {626:(stats(hp=95,attack=110,defence=95,sp_attack=40,sp_defence=95,speed=55))} 
+return pkmn[626] 
+
+ pkmn = {627:(stats(hp=70,attack=83,defence=50,sp_attack=37,sp_defence=50,speed=60))} 
+return pkmn[627] 
+
+ pkmn = {628:(stats(hp=100,attack=123,defence=75,sp_attack=57,sp_defence=75,speed=80))} 
+return pkmn[628] 
+
+ pkmn = {629:(stats(hp=70,attack=55,defence=75,sp_attack=45,sp_defence=65,speed=60))} 
+return pkmn[629] 
+
+ pkmn = {630:(stats(hp=110,attack=65,defence=105,sp_attack=55,sp_defence=95,speed=80))} 
+return pkmn[630] 
+
+ pkmn = {631:(stats(hp=85,attack=97,defence=66,sp_attack=105,sp_defence=66,speed=65))} 
+return pkmn[631] 
+
+ pkmn = {632:(stats(hp=58,attack=109,defence=112,sp_attack=48,sp_defence=48,speed=109))} 
+return pkmn[632] 
+
+ pkmn = {633:(stats(hp=52,attack=65,defence=50,sp_attack=45,sp_defence=50,speed=38))} 
+return pkmn[633] 
+
+ pkmn = {634:(stats(hp=72,attack=85,defence=70,sp_attack=65,sp_defence=70,speed=58))} 
+return pkmn[634] 
+
+ pkmn = {635:(stats(hp=92,attack=105,defence=90,sp_attack=125,sp_defence=90,speed=98))} 
+return pkmn[635] 
+
+ pkmn = {636:(stats(hp=55,attack=85,defence=55,sp_attack=50,sp_defence=55,speed=60))} 
+return pkmn[636] 
+
+ pkmn = {637:(stats(hp=85,attack=60,defence=65,sp_attack=135,sp_defence=105,speed=100))} 
+return pkmn[637] 
+
+ pkmn = {638:(stats(hp=91,attack=90,defence=129,sp_attack=90,sp_defence=72,speed=108))} 
+return pkmn[638] 
+
+ pkmn = {639:(stats(hp=91,attack=129,defence=90,sp_attack=72,sp_defence=90,speed=108))} 
+return pkmn[639] 
+
+ pkmn = {640:(stats(hp=91,attack=90,defence=72,sp_attack=90,sp_defence=129,speed=108))} 
+return pkmn[640] 
+
+ pkmn = {641:(stats(hp=79,attack=115,defence=70,sp_attack=125,sp_defence=80,speed=111))} 
+return pkmn[641] 
+
+ pkmn = {642:(stats(hp=79,attack=115,defence=70,sp_attack=125,sp_defence=80,speed=111))} 
+return pkmn[642] 
+
+ pkmn = {643:(stats(hp=100,attack=120,defence=100,sp_attack=150,sp_defence=120,speed=90))} 
+return pkmn[643] 
+
+ pkmn = {644:(stats(hp=100,attack=150,defence=120,sp_attack=120,sp_defence=100,speed=90))} 
+return pkmn[644] 
+
+ pkmn = {645:(stats(hp=89,attack=125,defence=90,sp_attack=115,sp_defence=80,speed=101))} 
+return pkmn[645] 
+
+ pkmn = {646:(stats(hp=125,attack=130,defence=90,sp_attack=130,sp_defence=90,speed=95))} 
+return pkmn[646] 
+
+ pkmn = {647:(stats(hp=91,attack=72,defence=90,sp_attack=129,sp_defence=90,speed=108))} 
+return pkmn[647] 
+
+ pkmn = {648:(stats(hp=100,attack=77,defence=77,sp_attack=128,sp_defence=128,speed=90))} 
+return pkmn[648] 
+
+ pkmn = {649:(stats(hp=71,attack=120,defence=95,sp_attack=120,sp_defence=95,speed=99))} 
+return pkmn[649] 
+
+ pkmn = {650:(stats(hp=56,attack=61,defence=65,sp_attack=48,sp_defence=45,speed=38))} 
+return pkmn[650] 
+
+ pkmn = {651:(stats(hp=61,attack=78,defence=95,sp_attack=56,sp_defence=58,speed=57))} 
+return pkmn[651] 
+
+ pkmn = {652:(stats(hp=88,attack=107,defence=122,sp_attack=74,sp_defence=75,speed=64))} 
+return pkmn[652] 
+
+ pkmn = {653:(stats(hp=40,attack=45,defence=40,sp_attack=62,sp_defence=60,speed=60))} 
+return pkmn[653] 
+
+ pkmn = {654:(stats(hp=59,attack=59,defence=58,sp_attack=90,sp_defence=70,speed=73))} 
+return pkmn[654] 
+
+ pkmn = {655:(stats(hp=75,attack=69,defence=72,sp_attack=114,sp_defence=100,speed=104))} 
+return pkmn[655] 
+
+ pkmn = {656:(stats(hp=41,attack=56,defence=40,sp_attack=62,sp_defence=44,speed=71))} 
+return pkmn[656] 
+
+ pkmn = {657:(stats(hp=54,attack=63,defence=52,sp_attack=83,sp_defence=56,speed=97))} 
+return pkmn[657] 
+
+ pkmn = {658:(stats(hp=72,attack=95,defence=67,sp_attack=103,sp_defence=71,speed=122))} 
+return pkmn[658] 
+
+ pkmn = {659:(stats(hp=38,attack=36,defence=38,sp_attack=32,sp_defence=36,speed=57))} 
+return pkmn[659] 
+
+ pkmn = {660:(stats(hp=85,attack=56,defence=77,sp_attack=50,sp_defence=77,speed=78))} 
+return pkmn[660] 
+
+ pkmn = {661:(stats(hp=45,attack=50,defence=43,sp_attack=40,sp_defence=38,speed=62))} 
+return pkmn[661] 
+
+ pkmn = {662:(stats(hp=62,attack=73,defence=55,sp_attack=56,sp_defence=52,speed=84))} 
+return pkmn[662] 
+
+ pkmn = {663:(stats(hp=78,attack=81,defence=71,sp_attack=74,sp_defence=69,speed=126))} 
+return pkmn[663] 
+
+ pkmn = {664:(stats(hp=38,attack=35,defence=40,sp_attack=27,sp_defence=25,speed=35))} 
+return pkmn[664] 
+
+ pkmn = {665:(stats(hp=45,attack=22,defence=60,sp_attack=27,sp_defence=30,speed=29))} 
+return pkmn[665] 
+
+ pkmn = {666:(stats(hp=80,attack=52,defence=50,sp_attack=90,sp_defence=50,speed=89))} 
+return pkmn[666] 
+
+ pkmn = {667:(stats(hp=62,attack=50,defence=58,sp_attack=73,sp_defence=54,speed=72))} 
+return pkmn[667] 
+
+ pkmn = {668:(stats(hp=86,attack=68,defence=72,sp_attack=109,sp_defence=66,speed=106))} 
+return pkmn[668] 
+
+ pkmn = {669:(stats(hp=44,attack=38,defence=39,sp_attack=61,sp_defence=79,speed=42))} 
+return pkmn[669] 
+
+ pkmn = {670:(stats(hp=54,attack=45,defence=47,sp_attack=75,sp_defence=98,speed=52))} 
+return pkmn[670] 
+
+ pkmn = {671:(stats(hp=78,attack=65,defence=68,sp_attack=112,sp_defence=154,speed=75))} 
+return pkmn[671] 
+
+ pkmn = {672:(stats(hp=66,attack=65,defence=48,sp_attack=62,sp_defence=57,speed=52))} 
+return pkmn[672] 
+
+ pkmn = {673:(stats(hp=123,attack=100,defence=62,sp_attack=97,sp_defence=81,speed=68))} 
+return pkmn[673] 
+
+ pkmn = {674:(stats(hp=67,attack=82,defence=62,sp_attack=46,sp_defence=48,speed=43))} 
+return pkmn[674] 
+
+ pkmn = {675:(stats(hp=95,attack=124,defence=78,sp_attack=69,sp_defence=71,speed=58))} 
+return pkmn[675] 
+
+ pkmn = {676:(stats(hp=75,attack=80,defence=60,sp_attack=65,sp_defence=90,speed=102))} 
+return pkmn[676] 
+
+ pkmn = {677:(stats(hp=62,attack=48,defence=54,sp_attack=63,sp_defence=60,speed=68))} 
+return pkmn[677] 
+
+ pkmn = {678:(stats(hp=74,attack=48,defence=76,sp_attack=83,sp_defence=81,speed=104))} 
+return pkmn[678] 
+
+ pkmn = {679:(stats(hp=45,attack=80,defence=100,sp_attack=35,sp_defence=37,speed=28))} 
+return pkmn[679] 
+
+ pkmn = {680:(stats(hp=59,attack=110,defence=150,sp_attack=45,sp_defence=49,speed=35))} 
+return pkmn[680] 
+
+ pkmn = {681:(stats(hp=60,attack=150,defence=50,sp_attack=150,sp_defence=50,speed=60))} 
+return pkmn[681] 
+
+ pkmn = {682:(stats(hp=78,attack=52,defence=60,sp_attack=63,sp_defence=65,speed=23))} 
+return pkmn[682] 
+
+ pkmn = {683:(stats(hp=101,attack=72,defence=72,sp_attack=99,sp_defence=89,speed=29))} 
+return pkmn[683] 
+
+ pkmn = {684:(stats(hp=62,attack=48,defence=66,sp_attack=59,sp_defence=57,speed=49))} 
+return pkmn[684] 
+
+ pkmn = {685:(stats(hp=82,attack=80,defence=86,sp_attack=85,sp_defence=75,speed=72))} 
+return pkmn[685] 
+
+ pkmn = {686:(stats(hp=53,attack=54,defence=53,sp_attack=37,sp_defence=46,speed=45))} 
+return pkmn[686] 
+
+ pkmn = {687:(stats(hp=86,attack=92,defence=88,sp_attack=68,sp_defence=75,speed=73))} 
+return pkmn[687] 
+
+ pkmn = {688:(stats(hp=42,attack=52,defence=67,sp_attack=39,sp_defence=56,speed=50))} 
+return pkmn[688] 
+
+ pkmn = {689:(stats(hp=72,attack=105,defence=115,sp_attack=54,sp_defence=86,speed=68))} 
+return pkmn[689] 
+
+ pkmn = {690:(stats(hp=50,attack=60,defence=60,sp_attack=60,sp_defence=60,speed=30))} 
+return pkmn[690] 
+
+ pkmn = {691:(stats(hp=65,attack=75,defence=90,sp_attack=97,sp_defence=123,speed=44))} 
+return pkmn[691] 
+
+ pkmn = {692:(stats(hp=50,attack=53,defence=62,sp_attack=58,sp_defence=63,speed=44))} 
+return pkmn[692] 
+
+ pkmn = {693:(stats(hp=71,attack=73,defence=88,sp_attack=120,sp_defence=89,speed=59))} 
+return pkmn[693] 
+
+ pkmn = {694:(stats(hp=44,attack=38,defence=33,sp_attack=61,sp_defence=43,speed=70))} 
+return pkmn[694] 
+
+ pkmn = {695:(stats(hp=62,attack=55,defence=52,sp_attack=109,sp_defence=94,speed=109))} 
+return pkmn[695] 
+
+ pkmn = {696:(stats(hp=58,attack=89,defence=77,sp_attack=45,sp_defence=45,speed=48))} 
+return pkmn[696] 
+
+ pkmn = {697:(stats(hp=82,attack=121,defence=119,sp_attack=69,sp_defence=59,speed=71))} 
+return pkmn[697] 
+
+ pkmn = {698:(stats(hp=77,attack=59,defence=50,sp_attack=67,sp_defence=63,speed=46))} 
+return pkmn[698] 
+
+ pkmn = {699:(stats(hp=123,attack=77,defence=72,sp_attack=99,sp_defence=92,speed=58))} 
+return pkmn[699] 
+
+ pkmn = {700:(stats(hp=95,attack=65,defence=65,sp_attack=110,sp_defence=130,speed=60))} 
+return pkmn[700] 
+
+ pkmn = {701:(stats(hp=78,attack=92,defence=75,sp_attack=74,sp_defence=63,speed=118))} 
+return pkmn[701] 
+
+ pkmn = {702:(stats(hp=67,attack=58,defence=57,sp_attack=81,sp_defence=67,speed=101))} 
+return pkmn[702] 
+
+ pkmn = {703:(stats(hp=50,attack=50,defence=150,sp_attack=50,sp_defence=150,speed=50))} 
+return pkmn[703] 
+
+ pkmn = {704:(stats(hp=45,attack=50,defence=35,sp_attack=55,sp_defence=75,speed=40))} 
+return pkmn[704] 
+
+ pkmn = {705:(stats(hp=68,attack=75,defence=53,sp_attack=83,sp_defence=113,speed=60))} 
+return pkmn[705] 
+
+ pkmn = {706:(stats(hp=90,attack=100,defence=70,sp_attack=110,sp_defence=150,speed=80))} 
+return pkmn[706] 
+
+ pkmn = {707:(stats(hp=57,attack=80,defence=91,sp_attack=80,sp_defence=87,speed=75))} 
+return pkmn[707] 
+
+ pkmn = {708:(stats(hp=43,attack=70,defence=48,sp_attack=50,sp_defence=60,speed=38))} 
+return pkmn[708] 
+
+ pkmn = {709:(stats(hp=85,attack=110,defence=76,sp_attack=65,sp_defence=82,speed=56))} 
+return pkmn[709] 
+
+ pkmn = {710:(stats(hp=49,attack=66,defence=70,sp_attack=44,sp_defence=55,speed=51))} 
+return pkmn[710] 
+
+ pkmn = {711:(stats(hp=65,attack=90,defence=122,sp_attack=58,sp_defence=75,speed=84))} 
+return pkmn[711] 
+
+ pkmn = {712:(stats(hp=55,attack=69,defence=85,sp_attack=32,sp_defence=35,speed=28))} 
+return pkmn[712] 
+
+ pkmn = {713:(stats(hp=95,attack=117,defence=184,sp_attack=44,sp_defence=46,speed=28))} 
+return pkmn[713] 
+
+ pkmn = {714:(stats(hp=40,attack=30,defence=35,sp_attack=45,sp_defence=40,speed=55))} 
+return pkmn[714] 
+
+ pkmn = {715:(stats(hp=85,attack=70,defence=80,sp_attack=97,sp_defence=80,speed=123))} 
+return pkmn[715] 
+
+ pkmn = {716:(stats(hp=126,attack=131,defence=95,sp_attack=131,sp_defence=98,speed=99))} 
+return pkmn[716] 
+
+ pkmn = {717:(stats(hp=126,attack=131,defence=95,sp_attack=131,sp_defence=98,speed=99))} 
+return pkmn[717] 
+
+ pkmn = {718:(stats(hp=108,attack=100,defence=121,sp_attack=81,sp_defence=95,speed=95))} 
+return pkmn[718] 
+
+ pkmn = {719:(stats(hp=50,attack=100,defence=150,sp_attack=100,sp_defence=150,speed=50))} 
+return pkmn[719] 
+
+ pkmn = {720:(stats(hp=80,attack=110,defence=60,sp_attack=150,sp_defence=130,speed=70))} 
+return pkmn[720] 
+
+ pkmn = {721:(stats(hp=80,attack=110,defence=120,sp_attack=130,sp_defence=90,speed=70))} 
+return pkmn[721] 
+
+ pkmn = {722:(stats(hp=68,attack=55,defence=55,sp_attack=50,sp_defence=50,speed=42))} 
+return pkmn[722] 
+
+ pkmn = {723:(stats(hp=78,attack=75,defence=75,sp_attack=70,sp_defence=70,speed=52))} 
+return pkmn[723] 
+
+ pkmn = {724:(stats(hp=78,attack=107,defence=75,sp_attack=100,sp_defence=100,speed=70))} 
+return pkmn[724] 
+
+ pkmn = {725:(stats(hp=45,attack=65,defence=40,sp_attack=60,sp_defence=40,speed=70))} 
+return pkmn[725] 
+
+ pkmn = {726:(stats(hp=65,attack=85,defence=50,sp_attack=80,sp_defence=50,speed=90))} 
+return pkmn[726] 
+
+ pkmn = {727:(stats(hp=95,attack=115,defence=90,sp_attack=80,sp_defence=90,speed=60))} 
+return pkmn[727] 
+
+ pkmn = {728:(stats(hp=50,attack=54,defence=54,sp_attack=66,sp_defence=56,speed=40))} 
+return pkmn[728] 
+
+ pkmn = {729:(stats(hp=60,attack=69,defence=69,sp_attack=91,sp_defence=81,speed=50))} 
+return pkmn[729] 
+
+ pkmn = {730:(stats(hp=80,attack=74,defence=74,sp_attack=126,sp_defence=116,speed=60))} 
+return pkmn[730] 
+
+ pkmn = {731:(stats(hp=35,attack=75,defence=30,sp_attack=30,sp_defence=30,speed=65))} 
+return pkmn[731] 
+
+ pkmn = {732:(stats(hp=55,attack=85,defence=50,sp_attack=40,sp_defence=50,speed=75))} 
+return pkmn[732] 
+
+ pkmn = {733:(stats(hp=80,attack=120,defence=75,sp_attack=75,sp_defence=75,speed=60))} 
+return pkmn[733] 
+
+ pkmn = {734:(stats(hp=48,attack=70,defence=30,sp_attack=30,sp_defence=30,speed=45))} 
+return pkmn[734] 
+
+ pkmn = {735:(stats(hp=88,attack=110,defence=60,sp_attack=55,sp_defence=60,speed=45))} 
+return pkmn[735] 
+
+ pkmn = {736:(stats(hp=47,attack=62,defence=45,sp_attack=55,sp_defence=45,speed=46))} 
+return pkmn[736] 
+
+ pkmn = {737:(stats(hp=57,attack=82,defence=95,sp_attack=55,sp_defence=75,speed=36))} 
+return pkmn[737] 
+
+ pkmn = {738:(stats(hp=77,attack=70,defence=90,sp_attack=145,sp_defence=75,speed=43))} 
+return pkmn[738] 
+
+ pkmn = {739:(stats(hp=47,attack=82,defence=57,sp_attack=42,sp_defence=47,speed=63))} 
+return pkmn[739] 
+
+ pkmn = {740:(stats(hp=97,attack=132,defence=77,sp_attack=62,sp_defence=67,speed=43))} 
+return pkmn[740] 
+
+ pkmn = {741:(stats(hp=75,attack=70,defence=70,sp_attack=98,sp_defence=70,speed=93))} 
+return pkmn[741] 
+
+ pkmn = {742:(stats(hp=40,attack=45,defence=40,sp_attack=55,sp_defence=40,speed=84))} 
+return pkmn[742] 
+
+ pkmn = {743:(stats(hp=60,attack=55,defence=60,sp_attack=95,sp_defence=70,speed=124))} 
+return pkmn[743] 
+
+ pkmn = {744:(stats(hp=45,attack=65,defence=40,sp_attack=30,sp_defence=40,speed=60))} 
+return pkmn[744] 
+
+ pkmn = {745:(stats(hp=75,attack=115,defence=65,sp_attack=55,sp_defence=65,speed=112))} 
+return pkmn[745] 
+
+ pkmn = {746:(stats(hp=45,attack=20,defence=20,sp_attack=25,sp_defence=25,speed=40))} 
+return pkmn[746] 
+
+ pkmn = {747:(stats(hp=50,attack=53,defence=62,sp_attack=43,sp_defence=52,speed=45))} 
+return pkmn[747] 
+
+ pkmn = {748:(stats(hp=50,attack=63,defence=152,sp_attack=53,sp_defence=142,speed=35))} 
+return pkmn[748] 
+
+ pkmn = {749:(stats(hp=70,attack=100,defence=70,sp_attack=45,sp_defence=55,speed=45))} 
+return pkmn[749] 
+
+ pkmn = {750:(stats(hp=100,attack=125,defence=100,sp_attack=55,sp_defence=85,speed=35))} 
+return pkmn[750] 
+
+ pkmn = {751:(stats(hp=38,attack=40,defence=52,sp_attack=40,sp_defence=72,speed=27))} 
+return pkmn[751] 
+
+ pkmn = {752:(stats(hp=68,attack=70,defence=92,sp_attack=50,sp_defence=132,speed=42))} 
+return pkmn[752] 
+
+ pkmn = {753:(stats(hp=40,attack=55,defence=35,sp_attack=50,sp_defence=35,speed=35))} 
+return pkmn[753] 
+
+ pkmn = {754:(stats(hp=70,attack=105,defence=90,sp_attack=80,sp_defence=90,speed=45))} 
+return pkmn[754] 
+
+ pkmn = {755:(stats(hp=40,attack=35,defence=55,sp_attack=65,sp_defence=75,speed=15))} 
+return pkmn[755] 
+
+ pkmn = {756:(stats(hp=60,attack=45,defence=80,sp_attack=90,sp_defence=100,speed=30))} 
+return pkmn[756] 
+
+ pkmn = {757:(stats(hp=48,attack=44,defence=40,sp_attack=71,sp_defence=40,speed=77))} 
+return pkmn[757] 
+
+ pkmn = {758:(stats(hp=68,attack=64,defence=60,sp_attack=111,sp_defence=60,speed=117))} 
+return pkmn[758] 
+
+ pkmn = {759:(stats(hp=70,attack=75,defence=50,sp_attack=45,sp_defence=50,speed=50))} 
+return pkmn[759] 
+
+ pkmn = {760:(stats(hp=120,attack=125,defence=80,sp_attack=55,sp_defence=60,speed=60))} 
+return pkmn[760] 
+
+ pkmn = {761:(stats(hp=42,attack=30,defence=38,sp_attack=30,sp_defence=38,speed=32))} 
+return pkmn[761] 
+
+ pkmn = {762:(stats(hp=52,attack=40,defence=48,sp_attack=40,sp_defence=48,speed=62))} 
+return pkmn[762] 
+
+ pkmn = {763:(stats(hp=72,attack=120,defence=98,sp_attack=50,sp_defence=98,speed=72))} 
+return pkmn[763] 
+
+ pkmn = {764:(stats(hp=51,attack=52,defence=90,sp_attack=82,sp_defence=110,speed=100))} 
+return pkmn[764] 
+
+ pkmn = {765:(stats(hp=90,attack=60,defence=80,sp_attack=90,sp_defence=110,speed=60))} 
+return pkmn[765] 
+
+ pkmn = {766:(stats(hp=100,attack=120,defence=90,sp_attack=40,sp_defence=60,speed=80))} 
+return pkmn[766] 
+
+ pkmn = {767:(stats(hp=25,attack=35,defence=40,sp_attack=20,sp_defence=30,speed=80))} 
+return pkmn[767] 
+
+ pkmn = {768:(stats(hp=75,attack=125,defence=140,sp_attack=60,sp_defence=90,speed=40))} 
+return pkmn[768] 
+
+ pkmn = {769:(stats(hp=55,attack=55,defence=80,sp_attack=70,sp_defence=45,speed=15))} 
+return pkmn[769] 
+
+ pkmn = {770:(stats(hp=85,attack=75,defence=110,sp_attack=100,sp_defence=75,speed=35))} 
+return pkmn[770] 
+
+ pkmn = {771:(stats(hp=55,attack=60,defence=130,sp_attack=30,sp_defence=130,speed=5))} 
+return pkmn[771] 
+
+ pkmn = {772:(stats(hp=95,attack=95,defence=95,sp_attack=95,sp_defence=95,speed=59))} 
+return pkmn[772] 
+
+ pkmn = {773:(stats(hp=95,attack=95,defence=95,sp_attack=95,sp_defence=95,speed=95))} 
+return pkmn[773] 
+
+ pkmn = {774:(stats(hp=60,attack=60,defence=100,sp_attack=60,sp_defence=100,speed=60))} 
+return pkmn[774] 
+
+ pkmn = {775:(stats(hp=65,attack=115,defence=65,sp_attack=75,sp_defence=95,speed=65))} 
+return pkmn[775] 
+
+ pkmn = {776:(stats(hp=60,attack=78,defence=135,sp_attack=91,sp_defence=85,speed=36))} 
+return pkmn[776] 
+
+ pkmn = {777:(stats(hp=65,attack=98,defence=63,sp_attack=40,sp_defence=73,speed=96))} 
+return pkmn[777] 
+
+ pkmn = {778:(stats(hp=55,attack=90,defence=80,sp_attack=50,sp_defence=105,speed=96))} 
+return pkmn[778] 
+
+ pkmn = {779:(stats(hp=68,attack=105,defence=70,sp_attack=70,sp_defence=70,speed=92))} 
+return pkmn[779] 
+
+ pkmn = {780:(stats(hp=78,attack=60,defence=85,sp_attack=135,sp_defence=91,speed=36))} 
+return pkmn[780] 
+
+ pkmn = {781:(stats(hp=70,attack=131,defence=100,sp_attack=86,sp_defence=90,speed=40))} 
+return pkmn[781] 
+
+ pkmn = {782:(stats(hp=45,attack=55,defence=65,sp_attack=45,sp_defence=45,speed=45))} 
+return pkmn[782] 
+
+ pkmn = {783:(stats(hp=55,attack=75,defence=90,sp_attack=65,sp_defence=70,speed=65))} 
+return pkmn[783] 
+
+ pkmn = {784:(stats(hp=75,attack=110,defence=125,sp_attack=100,sp_defence=105,speed=85))} 
+return pkmn[784] 
+
+ pkmn = {785:(stats(hp=70,attack=115,defence=85,sp_attack=95,sp_defence=75,speed=130))} 
+return pkmn[785] 
+
+ pkmn = {786:(stats(hp=70,attack=85,defence=75,sp_attack=130,sp_defence=115,speed=95))} 
+return pkmn[786] 
+
+ pkmn = {787:(stats(hp=70,attack=130,defence=115,sp_attack=85,sp_defence=95,speed=75))} 
+return pkmn[787] 
+
+ pkmn = {788:(stats(hp=70,attack=75,defence=115,sp_attack=95,sp_defence=130,speed=85))} 
+return pkmn[788] 
+
+ pkmn = {789:(stats(hp=43,attack=29,defence=31,sp_attack=29,sp_defence=31,speed=37))} 
+return pkmn[789] 
+
+ pkmn = {790:(stats(hp=43,attack=29,defence=131,sp_attack=29,sp_defence=131,speed=37))} 
+return pkmn[790] 
+
+ pkmn = {791:(stats(hp=137,attack=137,defence=107,sp_attack=113,sp_defence=89,speed=97))} 
+return pkmn[791] 
+
+ pkmn = {792:(stats(hp=137,attack=113,defence=89,sp_attack=137,sp_defence=107,speed=97))} 
+return pkmn[792] 
+
+ pkmn = {793:(stats(hp=109,attack=53,defence=47,sp_attack=127,sp_defence=131,speed=103))} 
+return pkmn[793] 
+
+ pkmn = {794:(stats(hp=107,attack=139,defence=139,sp_attack=53,sp_defence=53,speed=79))} 
+return pkmn[794] 
+
+ pkmn = {795:(stats(hp=71,attack=137,defence=37,sp_attack=137,sp_defence=37,speed=151))} 
+return pkmn[795] 
+
+ pkmn = {796:(stats(hp=83,attack=89,defence=71,sp_attack=173,sp_defence=71,speed=83))} 
+return pkmn[796] 
+
+ pkmn = {797:(stats(hp=97,attack=101,defence=103,sp_attack=107,sp_defence=101,speed=61))} 
+return pkmn[797] 
+
+ pkmn = {798:(stats(hp=59,attack=181,defence=131,sp_attack=59,sp_defence=31,speed=109))} 
+return pkmn[798] 
+
+ pkmn = {799:(stats(hp=223,attack=101,defence=53,sp_attack=97,sp_defence=53,speed=43))} 
+return pkmn[799] 
+
+ pkmn = {800:(stats(hp=97,attack=107,defence=101,sp_attack=127,sp_defence=89,speed=79))} 
+return pkmn[800] 
+
+ pkmn = {801:(stats(hp=80,attack=95,defence=115,sp_attack=130,sp_defence=115,speed=65))} 
+return pkmn[801] 
+
+ pkmn = {802:(stats(hp=90,attack=125,defence=80,sp_attack=90,sp_defence=90,speed=125))} 
+return pkmn[802] 
+
+ pkmn = {803:(stats(hp=67,attack=73,defence=67,sp_attack=73,sp_defence=67,speed=73))} 
+return pkmn[803] 
+
+ pkmn = {804:(stats(hp=73,attack=73,defence=73,sp_attack=127,sp_defence=73,speed=121))} 
+return pkmn[804] 
+
+ pkmn = {805:(stats(hp=61,attack=131,defence=211,sp_attack=53,sp_defence=101,speed=13))} 
+return pkmn[805] 
+
+ pkmn = {806:(stats(hp=53,attack=127,defence=53,sp_attack=151,sp_defence=79,speed=107))} 
+return pkmn[806] 
+
+ pkmn = {807:(stats(hp=88,attack=112,defence=75,sp_attack=102,sp_defence=80,speed=143))} 
+return pkmn[807] 
+
+ pkmn = {808:(stats(hp=46,attack=65,defence=65,sp_attack=55,sp_defence=35,speed=34))} 
+return pkmn[808] 
+
+ pkmn = {809:(stats(hp=135,attack=143,defence=143,sp_attack=80,sp_defence=65,speed=34))} 
+return pkmn[809] 
+
