@@ -77,13 +77,21 @@ WSGI_APPLICATION = 'PokemonDB.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dbuser11_database',
+        'USER': 'dbuser11',
+        'PASSWORD': 'WojLDLfeuesF',
+        'HOST': 'cslab-db.cs.wichita.edu',
+        'PORT': '3306'
+    },
+    'local': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
-    #'prod':{
+    # 'prod':{
     #    'ENGINE': 'django.db.backends.mysql',
     #    #TODO: Rest of the owl
-    #}
+    # }
 }
 
 
