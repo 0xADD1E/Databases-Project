@@ -8,7 +8,7 @@ def encode_image(image: bytes, mime: str):
     if image is None:
         return None
     else:
-        return f"data:{mime};base64,{b64encode(image).decode('UTF-8')}"
+        return "data:{};base64,{}".format(mime, b64encode(image).decode('UTF-8'))
 
 
 def pokemon_view(request):
