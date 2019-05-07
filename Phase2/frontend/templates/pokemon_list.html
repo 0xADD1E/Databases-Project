@@ -1,15 +1,28 @@
 {% extends "base.html" %} {% block content %}
+
 <div class="ui large modal">
     <div id="modal_header" class="header">Header</div>
     <div class="image content">
         <img id="modal_image" class="image">
-        <div class="description">
-            <p>Height: <span id="modal_height"></span>in</p>
-            <p>Weight: <span id="modal_weight"></span>lbs</p>
-            <p>Types: <span id="modal_types"></span></p>
+        <div class="ui two column very relaxed grid">
+            <div class="column">
+                <p>Height: <span id="modal_height"></span>in</p>
+                <p>Weight: <span id="modal_weight"></span>lbs</p>
+                <p>Types: <span id="modal_types"></span></p>
+                <p>Abilities: <span id="modal_abilities"></span></p>
+            </div>
+            <div class="column">
+                <p>HP: <span id="modal_hp"></span></p>
+                <p>Attack: <span id="modal_attack"></span></p>
+                <p>Defense: <span id="modal_defense"></span></p>
+                <p>Sp. Atk: <span id="modal_sp_atk"></span></p>
+                <p>Sp.Def: <span id="modal_sp_def"></span></p>
+                <p>Speed: <span id="modal_speed"></span></p>
+            </div>
         </div>
     </div>
 </div>
+
 <div class="ui segments">
     <div class="ui segment">
         <div class="ui six link cards">
@@ -34,7 +47,8 @@
     <div class="ui center aligned segment">
         <div class="ui pagination menu">
             <a class="item" href="?page=0"><i class="angle double left icon"></i></a> {%for itm in pages%}
-            <a class="{%if itm.is_active%}active{%endif%} item" href="?page={{itm.number}}"> {{itm.display}}</a> {%endfor%}
+            <a class="{%if itm.is_active%}active{%endif%} item" href="?page={{itm.number}}"> {{itm.display}}</a>
+            {%endfor%}
             <a class="item" href="?page={{max}}"><i class="angle double right icon"></i></a>
         </div>
     </div>
@@ -43,16 +57,25 @@
     function loadData(name) {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', `/pkmn?for=${name}`);
-        xhr.onload = function() {
+        xhr.onload = function () {
             if (xhr.status == 200) {
                 response_parsed = JSON.parse(xhr.response)
                 console.log(response_parsed)
-                $('#modal_header').text(response_parsed.name)
+                $('#modal_header').text(response_parsed.name + " #" + response_parsed.id)
                 $('#modal_height').text(response_parsed.height)
                 $('#modal_weight').text(response_parsed.weight)
                 $('#modal_types').text(response_parsed.types
-                    .map(x=>x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
-                    .reduce((acc,i)=>acc+', '+i))
+                    .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
+                    .reduce((acc, i) => acc + ', ' + i))
+                $('#modal_abilities').text(response_parsed.abilities.length > 0 ? response_parsed.abilities
+                    .map(x => x.charAt(0).toUpperCase() + x.substr(1).toLowerCase())
+                    .reduce((acc, i) => acc + ', ' + i) : "N/A")
+                $('#modal_hp').text(response_parsed.hp)
+                $('#modal_attack').text(response_parsed.attack)
+                $('#modal_defense').text(response_parsed.defense)
+                $('#modal_sp_atk').text(response_parsed.spAtk)
+                $('#modal_sp_def').text(response_parsed.spDef)
+                $('#modal_speed').text(response_parsed.speed)
                 $('#modal_image').attr('src', response_parsed.image)
                 $('.large.modal').modal('show');
             }
@@ -60,4 +83,5 @@
         xhr.send();
     }
 </script>
+
 {% endblock %}
