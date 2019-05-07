@@ -146,19 +146,15 @@ def matchup_uploader(request):
             self_t, created = Type.objects.get_or_create(name=s)
             if created:
                 self_t.save()
-                log.info(f'Added type {self_t}')
             other_t, created = Type.objects.get_or_create(name=o)
             if created:
                 other_t.save()
-                log.info(f'Added type {other_t}')
 
             matchup, created = TypeMatchup.objects.get_or_create(this=self_t,
                                                                  other=other_t)
 
             matchup.effectiveness_multiplier = m
             matchup.save()
-            if created:
-                log.info(f'Added matchup {matchup}')
         for self_t in Type.objects.all():
             for other_t in Type.objects.all():
                 matchup, created = TypeMatchup.objects.get_or_create(this=self_t,
@@ -166,7 +162,6 @@ def matchup_uploader(request):
                 if created:
                     matchup.effectiveness_multiplier = 1
                     matchup.save()
-                    log.info(f'Added matchup {matchup}')
     else:
         form = MatchupForm()
     return render(request, 'upload.html', {'form': form, 'is_valid': form.is_valid(), 'endpoint': 'matchup'})
@@ -219,14 +214,11 @@ def kalos_uploader(request):
                 new.gender_distribution = 0
                 new.legendary = False
                 new.save()
-                log.debug(f'Added pokemon {new.name}')
-            thumb, created = Media.objects.get_or_create(filename=f'{new.name}_thummbnail.png',
-                                                         mime=png,
+            thumb, created = Media.objects.get_or_create(filename='{}_thummbnail.png'.format(new.name),                                        mime=png,
                                                          of=new)
             if created:
                 thumb.data = get(pkmn['ThumbnailImage']).content
                 thumb.save()
-                log.debug(f'Saved thumbnail for {new.name}')
             for pkmnType in pkmn['type']:
                 newtype, created = Type.objects.get_or_create(
                     name=pkmnType)

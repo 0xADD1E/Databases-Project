@@ -3,7 +3,7 @@ from django.db import models
 
 class Pokemon(models.Model):
     def __str__(self):
-        return f'{self.name}'
+        return '{}'.format(self.name)
     pokedex_id: models.IntegerField = models.IntegerField(primary_key=True)
     name: models.TextField = models.TextField(default='')
     weight: models.FloatField = models.FloatField(default=0)
@@ -45,7 +45,7 @@ class PokemonAbility(models.Model):
 
 class PokemonEvolution(models.Model):
     def __str__(self):
-        return f'{self.base} -> {self.evolution}'
+        return '{} -> {}'.format(self.base, self.evolution)
     base: models.ForeignKey = models.ForeignKey(Pokemon,
                                                 on_delete=models.CASCADE,
                                                 related_name='evolves_to')
@@ -56,13 +56,13 @@ class PokemonEvolution(models.Model):
 
 class Type(models.Model):
     def __str__(self):
-        return f'{self.name}'
+        return '{}'.format(self.name)
     name: models.TextField = models.TextField(primary_key=True)
 
 
 class PokemonType(models.Model):
     def __str__(self):
-        return f'{self.pokemon}: {self.pokemon_type}'
+        return '{}: {}'.format(self.pokemon, self.pokemon_type)
     pokemon: models.ForeignKey = models.ForeignKey(Pokemon,
                                                    on_delete=models.CASCADE)
     pokemon_type: models.ForeignKey = models.ForeignKey(Type,
@@ -71,7 +71,7 @@ class PokemonType(models.Model):
 
 class MIMEType(models.Model):
     def __str__(self):
-        return f'{self.mime_string}'
+        return '{}'.format(self.mime_string)
     mime_string: models.TextField = models.TextField(primary_key=True)
     friendly_name: models.TextField = models.TextField()
     extension: models.TextField = models.TextField()
@@ -79,7 +79,7 @@ class MIMEType(models.Model):
 
 class Media(models.Model):
     def __str__(self):
-        return f'{self.filename}'
+        return '{}'.format(self.filename)
     # django auto-handles INT PK AI fields
     filename: models.TextField = models.TextField()
     data: models.BinaryField = models.BinaryField(default=b'')
@@ -91,7 +91,7 @@ class Media(models.Model):
 
 class Platform(models.Model):
     def __str__(self):
-        return f'{self.name}'
+        return '{}'.format(self.name)
     name: models.TextField = models.TextField(primary_key=True)
 
 
@@ -99,7 +99,7 @@ class Game(models.Model):
     from datetime import datetime
 
     def __str__(self):
-        return f'{self.name}'
+        return '{}'.format(self.name)
     name: models.TextField = models.TextField(primary_key=True)
     release_date: models.DateField = models.DateField(default=datetime.now)
     platform: models.ForeignKey = models.ForeignKey(Platform,
@@ -108,7 +108,7 @@ class Game(models.Model):
 
 class PokemonAppearance(models.Model):
     def __str__(self):
-        return f'{self.pokemon}'
+        return '{}'.format(self.pokemon)
     base_hp: models.IntegerField = models.IntegerField(default=0)
     base_speed: models.IntegerField = models.IntegerField(default=0)
     base_attack: models.IntegerField = models.IntegerField(default=0)
@@ -118,13 +118,11 @@ class PokemonAppearance(models.Model):
 
     pokemon: models.ForeignKey = models.ForeignKey(Pokemon,
                                                    on_delete=models.PROTECT)
-    # game: models.ForeignKey = models.ForeignKey(Game,
-    #                                             on_delete=models.PROTECT)
 
 
 class Attack(models.Model):
     def __str__(self):
-        return f'{self.name}'
+        return '{}'.format(self.name)
     name: models.TextField = models.TextField(primary_key=True)
     pp: models.IntegerField = models.IntegerField(default=0)
     power: models.IntegerField = models.IntegerField(default=0)
@@ -137,7 +135,7 @@ class Attack(models.Model):
 
 class PokemonCanLearn(models.Model):
     def __str__(self):
-        return f'{self.appearance}: {self.attack}'
+        return '{}: {}'.format(self.appearance, self.attack)
     at_level: models.IntegerField = models.IntegerField(default=0)
     appearance: models.ForeignKey = models.ForeignKey(PokemonAppearance,
                                                       on_delete=models.CASCADE)
@@ -147,7 +145,7 @@ class PokemonCanLearn(models.Model):
 
 class TypeMatchup(models.Model):
     def __str__(self):
-        return f'{self.this} vs {self.other}'
+        return '{} vs {}'.format(self.this, self.other)
     effectiveness_multiplier: models.FloatField = models.FloatField(default=0)
     this: models.ForeignKey = models.ForeignKey(Type,
                                                 on_delete=models.CASCADE,
@@ -159,7 +157,7 @@ class TypeMatchup(models.Model):
 
 class AttackTypes(models.Model):
     def __str__(self):
-        return f'{self.attack}: {self.attack_type}'
+        return '{}: {}'.format(self.attack, self.attack_type)
     attack: models.ForeignKey = models.ForeignKey(Attack,
                                                   on_delete=models.CASCADE)
     attack_type: models.ForeignKey = models.ForeignKey(Type,
