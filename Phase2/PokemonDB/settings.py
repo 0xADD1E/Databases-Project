@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '(b&r21qyl9*7vr^grc@o3i)xj2@#za8vd$fgc-(1m##8uf_e_w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -76,15 +76,15 @@ WSGI_APPLICATION = 'PokemonDB.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'a': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'dbuser11_database',
         'USER': 'dbuser11',
         'PASSWORD': 'WojLDLfeuesF',
-        'HOST': 'cslab-db.cs.wichita.edu',
+        'HOST': 'db',
         'PORT': '3306'
     },
-    'local': {
+    'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },

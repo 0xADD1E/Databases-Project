@@ -8,7 +8,7 @@ def encode_image(image: bytes, mime: str):
     if image is None:
         return None
     else:
-        return f"data:{mime};base64,{b64encode(image).decode('UTF-8')}"
+        return "data:{};base64,{}".format(mime, b64encode(image).decode('UTF-8'))
 
 
 def pokemon_view(request):
@@ -112,7 +112,6 @@ def stats_uploader(request):
                 x = t(pokedex_id=m.group('pokedex_id'), hp=m.group('hp'), attack=m.group('attk'), defence=m.group('defn'),
                       sp_attack=m.group('sp_attk'), sp_defence=m.group('sp_defn'), speed=m.group('speed'))
                 pkmn = Pokemon.objects.get(pokedex_id=x.pokedex_id)
-                log.warn(f'Added pokemon {x.pokedex_id}')
                 new, created = PokemonAppearance.objects.get_or_create(
                     pokemon=pkmn)
                 if created:

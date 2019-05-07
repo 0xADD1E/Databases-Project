@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+      MYSQL_DATABASE: dbuser11_database
+      MYSQL_USER: dbuser11
+      MYSQL_PASSWORD: WojLDLfeuesF
+    ports:
+      - 3306:3306
+  app:
+    build: .
+    depends_on: 
+      - db
+    ports:
+      - 8000:8000
