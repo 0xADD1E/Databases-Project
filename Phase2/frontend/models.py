@@ -15,16 +15,16 @@ class Pokemon(models.Model):
 class Ability(models.Model):
     def __str__(self):
         return '{}'.format(self.name)
-    name: models.TextField = models.TextField(primary_key=True)
+    name = models.TextField(primary_key=True)
 
 
 class PokemonAbility(models.Model):
     def __str__(self):
         return '{}: {}'.format(self.pokemon, self.pokemon_ability)
-    pokemon: models.ForeignKey = models.ForeignKey(Pokemon,
-                                                   on_delete=models.CASCADE)
-    pokemon_ability: models.ForeignKey = models.ForeignKey(Ability,
-                                                           on_delete=models.CASCADE)
+    pokemon = models.ForeignKey(Pokemon,
+                                on_delete=models.CASCADE)
+    pokemon_ability = models.ForeignKey(Ability,
+                                        on_delete=models.CASCADE)
 
 
 class PokemonEvolution(models.Model):
