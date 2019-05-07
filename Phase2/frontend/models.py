@@ -29,7 +29,7 @@ class PokemonAbility(models.Model):
 
 class PokemonEvolution(models.Model):
     def __str__(self):
-        return '{} -> {}'.format(self.base, self.evolution)
+        return '{} => {}'.format(self.base, self.evolution)
     base = models.ForeignKey(Pokemon,
                              on_delete=models.CASCADE,
                              related_name='evolves_to')
