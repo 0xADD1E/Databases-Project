@@ -5,7 +5,7 @@ class Pokemon(models.Model):
     def __str__(self):
         return '{}'.format(self.name)
     pokedex_id = models.IntegerField(primary_key=True)
-    name = models.TextField(default='')
+    name = models.TextField(default='', max_length=128)
     weight = models.FloatField(default=0)
     height = models.FloatField(default=0)
     gender_distribution = models.IntegerField(default=0)
@@ -15,7 +15,7 @@ class Pokemon(models.Model):
 class Ability(models.Model):
     def __str__(self):
         return '{}'.format(self.name)
-    name = models.TextField(primary_key=True)
+    name = models.TextField(primary_key=True, max_length=64)
 
 
 class PokemonAbility(models.Model):
@@ -41,7 +41,7 @@ class PokemonEvolution(models.Model):
 class Type(models.Model):
     def __str__(self):
         return '{}'.format(self.name)
-    name = models.TextField(primary_key=True)
+    name = models.TextField(primary_key=True, max_length=32)
 
 
 class PokemonType(models.Model):
@@ -56,16 +56,16 @@ class PokemonType(models.Model):
 class MIMEType(models.Model):
     def __str__(self):
         return '{}'.format(self.mime_string)
-    mime_string = models.TextField(primary_key=True)
-    friendly_name = models.TextField()
-    extension = models.TextField()
+    mime_string = models.TextField(primary_key=True, max_length=64)
+    friendly_name = models.TextField(max_length=128)
+    extension = models.TextField(max_length=128)
 
 
 class Media(models.Model):
     def __str__(self):
         return '{}'.format(self.filename)
     # django auto-handles INT PK AI fields
-    filename = models.TextField()
+    filename = models.TextField(max_length=128)
     data = models.BinaryField(default=b'')
     of = models.ForeignKey(Pokemon,
                            on_delete=models.CASCADE)
@@ -76,7 +76,7 @@ class Media(models.Model):
 class Platform(models.Model):
     def __str__(self):
         return '{}'.format(self.name)
-    name = models.TextField(primary_key=True)
+    name = models.TextField(primary_key=True, max_length=32)
 
 
 class Game(models.Model):
@@ -84,7 +84,7 @@ class Game(models.Model):
 
     def __str__(self):
         return '{}'.format(self.name)
-    name = models.TextField(primary_key=True)
+    name = models.TextField(primary_key=True, max_length=32)
     release_date = models.DateField(default=datetime.now)
     platform = models.ForeignKey(Platform,
                                  on_delete=models.PROTECT)
@@ -107,7 +107,7 @@ class PokemonAppearance(models.Model):
 class Attack(models.Model):
     def __str__(self):
         return '{}'.format(self.name)
-    name = models.TextField(primary_key=True)
+    name = models.TextField(primary_key=True, max_length=64)
     pp = models.IntegerField(default=0)
     power = models.IntegerField(default=0)
     priority = models.IntegerField(default=0)
